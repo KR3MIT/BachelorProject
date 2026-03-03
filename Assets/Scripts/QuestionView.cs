@@ -26,7 +26,7 @@ public class QuestionView : MonoBehaviour
         for (int i = 0; i < answers.Length; i++)
         {
             var button = Instantiate(answerButtonPrefab, answersContainer);
-            button.Initialize(i, answers[i].text, OnAnswerSelected);
+            button.Initialize(i, answers[i].answerText, OnAnswerSelected);
         }
     }
 

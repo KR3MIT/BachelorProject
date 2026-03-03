@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 894b73bc5a8861b4f9fe248b290962a9, type: 3}
-  m_Name: ExampleScenario
-  m_EditorClassIdentifier: Assembly-CSharp::ScenarioDefinition
-  startQuestion: {fileID: 11400000, guid: fddaf25f857de10448267ab0a48a089e, type: 2}
+  m_Script: {fileID: 11500000, guid: 409a617ee5cf4a84783e4b4abc2e10ae, type: 3}
+  m_Name: Timeline
+  m_EditorClassIdentifier: Assembly-CSharp::TimelineDefinition

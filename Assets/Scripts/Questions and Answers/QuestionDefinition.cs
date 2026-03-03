@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -11,18 +12,25 @@ public class QuestionDefinition : ScriptableObject
 
     public AnswerOption[] answers;
 
+    public enum ViewpointType
+    {
+        Realist,
+        Liberalist,
+    }
 }
 
 [Serializable]
 public class AnswerOption
 {
-    [TextArea] public string text;
+    [TextArea] public string answerText;
+    public QuestionDefinition.ViewpointType viewpoint;
 
-    //if question has a next question
-    public QuestionDefinition nextQuestion;
+    public List<Explanation> explanations;
+}
 
-    //how should i support the diferent views? score/bool/idk???
-    //public bool supportsview?
-
-
+[Serializable]
+public class Explanation
+{
+    [TextArea] public string explanationText;
+    public QuestionDefinition.ViewpointType viewpoint;
 }
