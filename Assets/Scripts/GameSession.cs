@@ -5,18 +5,14 @@ using UnityEngine;
 /// </summary>
 public class GameSession
 {
-    public QuestionDefinition.ViewpointType viewpoint { get; private set; }
+    public ViewpointType viewpoint { get; private set; }
     public int approvalRating { get; private set; }
 
     //callbacks for ui and stuff
-    public Action<QuestionDefinition, Action<int>> ShowQuestion;
+    public Action<QuestionStep, Action<int>> ShowQuestion;
     public Action<string, bool, Action> ShowExplanation;
 
-    public TimelineDefinition timeline { get; private set; }
-    public int currentQuestion { get; private set; }
-    public bool isFinished;
-
-    public GameSession(QuestionDefinition.ViewpointType viewpoint)
+    public GameSession(ViewpointType viewpoint)
     {
         this.viewpoint = viewpoint;
         approvalRating = 0;

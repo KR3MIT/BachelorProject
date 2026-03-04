@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
+  m_Name: QuestionStepExample
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
+  question: Liberalist or Realist?
+  answers:
+  - answerText: Liberalist
+    viewpoint: 1
+    explanations:
+    - explanationText: Liberalist Explanation
+      viewpoint: 1
+    - explanationText: Realist Explanation
+      viewpoint: 0
+  - answerText: Realist
+    viewpoint: 0
+    explanations:
+    - explanationText: Liberalist Explanation
+      viewpoint: 1
+    - explanationText: Realist Explanation
+      viewpoint: 0

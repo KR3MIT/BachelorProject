@@ -10,5 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 409a617ee5cf4a84783e4b4abc2e10ae, type: 3}
-  m_Name: Timeline
+  m_Name: TimelineExample
   m_EditorClassIdentifier: Assembly-CSharp::TimelineDefinition
+  steps:
+  - {fileID: 11400000, guid: 5762b17516751374183ad7629b0a99a0, type: 2}
+  - {fileID: 11400000, guid: 89777d667ab8e1e4b85114fe9f8423a5, type: 2}

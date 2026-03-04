@@ -13,7 +13,7 @@ public class QuestionView : MonoBehaviour
 
     public event Action<int> answerSelected;
 
-    public void Show(QuestionDefinition question)
+    public void Show(QuestionStep question)
     {
         questionText.text = question.question;
 
