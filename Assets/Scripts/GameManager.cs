@@ -6,11 +6,13 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private QuestionView questionView;
     [SerializeField] private TimelineDefinition timeline;
+    private GameSession session;
 
     public void Start()
     {
+        session = new GameSession(timeline, QuestionDefinition.ViewpointType.Realist);
         questionView.answerSelected += OnAnswerSelected;
-        questionView.Show(timeline.questions[0]);
+        questionView.Show(session.timeline.questions[0]);
     }
 
     private void OnAnswerSelected(int answerIndex)
