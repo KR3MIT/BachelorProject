@@ -15,10 +15,12 @@ public class GameManager : MonoBehaviour
     private GameSession session;
     private int currentStepIndex;
 
-    public void Start()
+    public void StartGame(int viewpointID)
     {
+        ViewpointType viewpoint = (ViewpointType)viewpointID;
+
         //replace with selection screen later
-        session = new GameSession(ViewpointType.Realist);
+        session = new GameSession(viewpoint);
 
         //ui callbacks
         session.ShowQuestion = OnShowQuestion;
