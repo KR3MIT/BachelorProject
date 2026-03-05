@@ -67,7 +67,10 @@ public class TMPTextFormatter : MonoBehaviour
         string keyword = linkInfo.GetLinkID();
 
         if (tooltipDefinition.TryGetDefinition(keyword, out string definition))
-            TooltipView.Instance.Show(definition, Input.mousePosition);
+        {
+            var capitalizedKeyword = char.ToUpper(keyword[0]) + keyword.Substring(1);
+            TooltipView.Instance.Show(capitalizedKeyword, definition, Input.mousePosition);
+        }
         else
             TooltipView.Instance.Hide();
     }
