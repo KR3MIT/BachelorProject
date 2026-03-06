@@ -62,6 +62,8 @@ public class QuestionView : MonoBehaviour
     { 
         await panel.DOAnchorPos(GetOffScreen(false), 2)
             .OnComplete(() => gameObject.SetActive(false)).AsyncWaitForCompletion();
+
+        panel.anchoredPosition = GetOffScreen(true);
     }
 
     private void OnAnswerSelected(int index)
