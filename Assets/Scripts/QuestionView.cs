@@ -55,7 +55,8 @@ public class QuestionView : MonoBehaviour
             button.Initialize(i, answers[i].answerText, OnAnswerSelected);
         }
 
-        panel.DOAnchorPos(Vector2.zero, 2);
+        panel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
+        FolderAnimation.Instance.SlideIn();
     }
 
     public async Task Hide() 
