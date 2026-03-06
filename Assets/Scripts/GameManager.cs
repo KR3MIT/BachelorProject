@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     private void OnShowQuestion(QuestionStep question, Action<int> onAnswerSelected)
     {
         explanationView.Hide();
-        questionView.gameObject.SetActive(true);
+        //questionView.gameObject.SetActive(true);
 
         //unsubscribe previous listener, then subscribe new
         questionView.answerSelected -= HandleAnswer;
@@ -68,10 +68,10 @@ public class GameManager : MonoBehaviour
 
     private Action<int> currentAnswerCallback;
 
-    private void HandleAnswer(int index)
+    private async void HandleAnswer(int index)
     {
         questionView.answerSelected -= HandleAnswer;
-        questionView.gameObject.SetActive(false);
+        await questionView.Hide();
         currentAnswerCallback?.Invoke(index);
     }
 
