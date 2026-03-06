@@ -44,6 +44,12 @@ public class TMPTextFormatter : MonoBehaviour
         bool isOverText = TMP_TextUtilities.IsIntersectingRectTransform(
             tmpText.rectTransform, Input.mousePosition, uiCamera);
 
+        bool isOverTooltipPanel = TMP_TextUtilities.IsIntersectingRectTransform(
+            TooltipView.Instance.panel, Input.mousePosition, uiCamera) &&
+            TooltipView.Instance.gameObject.activeSelf;
+
+        if (isOverTooltipPanel) { return; }
+
         if (!isOverText)
         {
             HideIfNeeded();

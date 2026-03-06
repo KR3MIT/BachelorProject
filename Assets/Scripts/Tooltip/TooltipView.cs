@@ -6,7 +6,7 @@ public class TooltipView : MonoBehaviour
 {
     public static TooltipView Instance;
 
-    [SerializeField] private RectTransform panel;
+    public RectTransform panel {  get; private set; }
     [SerializeField] private TMP_Text headerText;
     [SerializeField] private TMP_Text definitionText;
     [SerializeField] private Vector2 offset = new(15f,15f);
@@ -22,7 +22,8 @@ public class TooltipView : MonoBehaviour
         parentCanvas = GetComponentInParent<Canvas>();
         canvasRect = parentCanvas.GetComponent<RectTransform>();
         layoutElement = GetComponent<LayoutElement>();
-        panel.gameObject.SetActive(false);
+        panel = gameObject.GetComponent<RectTransform>();
+        gameObject.SetActive(false);
     }
 
     public void Show(string header, string definition, Vector2 screenPosition)

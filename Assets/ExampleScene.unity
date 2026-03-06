@@ -1669,7 +1669,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644261a92c4d7c648b2614aa331ac188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TooltipView
-  panel: {fileID: 1008198394}
   headerText: {fileID: 921725724}
   definitionText: {fileID: 262052219}
   offset: {x: 15, y: 15}
