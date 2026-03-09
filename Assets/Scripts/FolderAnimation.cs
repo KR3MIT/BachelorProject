@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class FolderAnimation : MonoBehaviour
@@ -43,24 +44,24 @@ public class FolderAnimation : MonoBehaviour
         animator.SetTrigger("SlideOut");
     }
 
-    public void MoveStamp(int index)
+    public async Task MoveStamp(int index)
     {
         switch (index)
         {
             case 0:
-                StampJump(left.position);
+                await StampJump(left.position);
                 break;
             case 1:
-                StampJump(center.position);
+                await StampJump(center.position);
                 break;
             case 2:
-                StampJump(right.position);
+                await StampJump(right.position);
                 break;
         }
 
-        void StampJump(Vector3 position)
+        async Task StampJump(Vector3 position)
         {
-            stamp.transform.DOJump(position, jumpPower, 1, 1f).SetEase(Ease.InOutSine).SetDelay(1).OnComplete(() => stamp.transform.DOJump(initialStampPosition, jumpPower, 1, 1).SetEase(Ease.InOutSine));
+            await stamp.transform.DOJump(position, jumpPower, 1, 1f).SetEase(Ease.InOutSine).SetDelay(1).OnComplete(() => stamp.transform.DOJump(initialStampPosition, jumpPower, 1, 1).SetEase(Ease.InOutSine)).AsyncWaitForCompletion();
         }
     }
 }

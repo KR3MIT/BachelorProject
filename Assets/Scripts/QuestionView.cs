@@ -58,17 +58,16 @@ public class QuestionView : MonoBehaviour
 
     private async void OnAnswerSelected(int index)
     {
-        //stamp anim here
-        FolderAnimation.Instance.MoveStamp(index);
-
         await Hide();
+
+        await FolderAnimation.Instance.MoveStamp(index);
         currentCallback?.Invoke(index);
         currentCallback = null;
     }
 
     public async Task Hide()
     {
-        await panel.DOAnchorPos(GetOffScreen(false), 2)
+        await panel.DOAnchorPos(GetOffScreen(false), 1)
             .OnComplete(() => gameObject.SetActive(false)).AsyncWaitForCompletion();
 
         panel.anchoredPosition = GetOffScreen(true);

@@ -14,7 +14,7 @@ public class ExplanationView : MonoBehaviour
 
     private Action onContinue;
 
-    public void Show(string explanation, bool wasCorrect, Action onContinue)
+    public async void Show(string explanation, bool wasCorrect, Action onContinue)
     {
         this.onContinue = onContinue;
 
@@ -24,11 +24,14 @@ public class ExplanationView : MonoBehaviour
         continueButton.onClick.RemoveAllListeners();
         continueButton.onClick.AddListener(OnContinueClicked);
 
+        await TabletController.Instance.MoveOnScreen();
+
         gameObject.SetActive(true);
     }
 
     public void Hide()
     {
+        TabletController.Instance.MoveOffScreen();
         gameObject.SetActive(false);
     }
 
