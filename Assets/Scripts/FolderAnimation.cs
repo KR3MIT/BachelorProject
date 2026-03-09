@@ -21,8 +21,6 @@ public class FolderAnimation : MonoBehaviour
 
         animator = GetComponent<Animator>();
         initialStampPosition = stamp.transform.position;
-
-        SlideIn();
     }
 
     public void Update()

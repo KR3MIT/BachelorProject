@@ -3,7 +3,7 @@ using System;
 /// <summary>
 /// overall manager
 /// </summary>
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, IGameUI
 {
     [Header("UI")]
     [SerializeField] private QuestionView questionView;
@@ -20,17 +20,15 @@ public class GameManager : MonoBehaviour
         ViewpointType viewpoint = (ViewpointType)viewpointID;
 
         //replace with selection screen later
-        session = new GameSession(viewpoint);
-
-        //ui callbacks
-        session.ShowQuestion = OnShowQuestion;
-        session.ShowExplanation = OnShowExplanation;
+        session = new GameSession(viewpoint, this);
 
         currentStepIndex = 0;
         explanationView.Hide();
         RunCurrentStep();
     }
 
+
+    #region steps
     private void RunCurrentStep()
     {
         if (currentStepIndex >= timeline.steps.Count)
@@ -42,8 +40,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        var step = timeline.steps[currentStepIndex];
-        step.Begin(session, OnStepComplete);
+        timeline.steps[currentStepIndex].Begin(session, OnStepComplete);
     }
 
     private void OnStepComplete()
@@ -51,31 +48,17 @@ public class GameManager : MonoBehaviour
         currentStepIndex++;
         RunCurrentStep();
     }
+    #endregion
 
-    #region UI methods
+    #region IGameUI
 
-    private void OnShowQuestion(QuestionStep question, Action<int> onAnswerSelected)
+    void IGameUI.ShowQuestion(QuestionStep question, Action<int> onAnswerSelected)
     {
         explanationView.Hide();
-        //questionView.gameObject.SetActive(true);
-
-        //unsubscribe previous listener, then subscribe new
-        questionView.answerSelected -= HandleAnswer;
-        currentAnswerCallback = onAnswerSelected;
-        questionView.answerSelected += HandleAnswer;
-        questionView.Show(question);
+        questionView.Show(question, onAnswerSelected);
     }
 
-    private Action<int> currentAnswerCallback;
-
-    private async void HandleAnswer(int index)
-    {
-        questionView.answerSelected -= HandleAnswer;
-        await questionView.Hide();
-        currentAnswerCallback?.Invoke(index);
-    }
-
-    private void OnShowExplanation(string text, bool wasCorrect, Action onContinue)
+    void IGameUI.ShowExplanation(string text, bool wasCorrect, Action onContinue)
     {
         explanationView.Show(text, wasCorrect, onContinue);
     }

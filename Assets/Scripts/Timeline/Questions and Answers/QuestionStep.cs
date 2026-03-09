@@ -44,21 +44,15 @@ public class QuestionStep : TimelineStep
         this.session = session;
         this.onComplete = onComplete;
 
-        session.ShowQuestion(this, OnAnswerSelected);
+        //ui show question, and callback to this
+        session.ui.ShowQuestion(this, OnAnswerSelected);
     }
 
     private void OnAnswerSelected(int answerIndex)
     {
         var answer = answers[answerIndex];
 
-        if (answer.viewpoint == session.viewpoint)
-        {
-            session.AddApproval(10);
-        }
-        else
-        {
-            session.AddApproval(-10);
-        }
+        session.AddApproval(answer.viewpoint == session.viewpoint ? 10 : -10);
 
         Explanation explanation = null;
         foreach (var exp in answer.explanations)
@@ -76,9 +70,6 @@ public class QuestionStep : TimelineStep
 
         bool wasCorrect = answer.viewpoint == session.viewpoint;
 
-        session.ShowExplanation(explanationText, wasCorrect, () =>
-        {
-            onComplete?.Invoke();
-        });
+        session.ui.ShowExplanation(explanationText, wasCorrect, () => onComplete?.Invoke());
     }
 }

@@ -9,12 +9,12 @@ public class GameSession
     public int approvalRating { get; private set; }
 
     //callbacks for ui and stuff
-    public Action<QuestionStep, Action<int>> ShowQuestion;
-    public Action<string, bool, Action> ShowExplanation;
+    public IGameUI ui;
 
-    public GameSession(ViewpointType viewpoint)
+    public GameSession(ViewpointType viewpoint, IGameUI ui)
     {
         this.viewpoint = viewpoint;
+        this.ui = ui;
         approvalRating = 0;
     }
 
@@ -22,25 +22,4 @@ public class GameSession
     {
         approvalRating += amount;
     }
-
-    //public void AnswerQuestion(int answerIndex)
-    //{
-    //    var answers = timeline.questions[currentQuestion].answers;
-    //    var answer = answers[answerIndex];
-
-    //    if(answer.viewpoint == sessionViewpoint)
-    //    {
-    //        approvalRating += 10;
-    //    }
-    //    else
-    //    {
-    //        approvalRating -= 10;
-    //    }
-
-    //    if (timeline.questions[currentQuestion++] == null)
-    //    {
-    //        isFinished = true;
-    //        return;
-    //    }
-    //}
 }
