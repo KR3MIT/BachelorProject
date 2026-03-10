@@ -35,10 +35,12 @@ public class FolderAnimation : MonoBehaviour
         animator.SetTrigger("SlideIn");
         if (twoOptions) 
         {
+            //Debug.Log("Using two option material");
             folderRenderer.material = twoOptionMaterial;
         }
         else
         {
+            //Debug.Log("Using three option material");
             folderRenderer.material = threeOptionMaterial;
         }
     }

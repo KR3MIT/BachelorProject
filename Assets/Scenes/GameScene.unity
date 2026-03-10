@@ -1402,6 +1402,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2068744235631632618, guid: a7cb92906886f944daaee62cabfec258, type: 3}
+      propertyPath: approvalRating
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5024585952560691726, guid: a7cb92906886f944daaee62cabfec258, type: 3}
       propertyPath: m_Name
       value: Approval Rating

@@ -51,7 +51,6 @@ public class QuestionView : MonoBehaviour
         var answers = question.answers;
 
         //randomize answers order
-
         for(int i = answers.Count() - 1; i >= 0; i--)
         {
             int randomIndex = UnityEngine.Random.Range(0, i + 1);
@@ -69,7 +68,7 @@ public class QuestionView : MonoBehaviour
         LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
 
         panel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
-        FolderAnimation.Instance.SlideIn(answersContainer.childCount == 2);
+        FolderAnimation.Instance.SlideIn(answers.Count() == 2);
     }
 
     private async void OnAnswerSelected(int index)
