@@ -61,15 +61,22 @@ public class QuestionView : MonoBehaviour
         await Hide();
 
         await FolderAnimation.Instance.MoveStamp(index);
+        FolderAnimation.Instance.SlideOut();
+
         currentCallback?.Invoke(index);
         currentCallback = null;
     }
 
     public async Task Hide()
     {
-        await panel.DOAnchorPos(GetOffScreen(false), 1)
-            .OnComplete(() => gameObject.SetActive(false)).AsyncWaitForCompletion();
+        float moveOffScreenTime = 1f;
 
-        panel.anchoredPosition = GetOffScreen(true);
+        panel.DOAnchorPos(GetOffScreen(false), moveOffScreenTime)
+            .OnComplete(() => { 
+                gameObject.SetActive(false);
+                panel.anchoredPosition = GetOffScreen(true);
+            });
+
+        await Task.Delay((int)(moveOffScreenTime * 1000f / 2f));//only wait for half move time because else stamp is slow af
     }
 }

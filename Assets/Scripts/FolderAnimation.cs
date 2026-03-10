@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Threading.Tasks;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class FolderAnimation : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class FolderAnimation : MonoBehaviour
 
     [SerializeField] private Transform left, center, right;
     [SerializeField] private GameObject stamp;
+    [SerializeField] private List<GameObject> selectionStamps;
 
     public float jumpPower = 0.5f;
 
@@ -24,24 +26,16 @@ public class FolderAnimation : MonoBehaviour
         initialStampPosition = stamp.transform.position;
     }
 
-    public void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("space");
-
-            stamp.transform.DOJump(left.position, jumpPower, 1, 1f).SetEase(Ease.InOutSine).SetDelay(1).OnComplete(()=> stamp.transform.DOJump(initialStampPosition, jumpPower, 1, 1).SetEase(Ease.InOutSine));
-        }
-    }
-
     public void SlideIn()
     {
         animator.SetTrigger("SlideIn");
     }
 
-    public void SlideOut()
+    public async void SlideOut()
     {
         animator.SetTrigger("SlideOut");
+        await Task.Delay(1000);
+        foreach (var stamp in selectionStamps) { stamp.SetActive(false); }
     }
 
     public async Task MoveStamp(int index)
@@ -49,19 +43,25 @@ public class FolderAnimation : MonoBehaviour
         switch (index)
         {
             case 0:
-                await StampJump(left.position);
+                await StampJumpIn(left.position);
                 break;
             case 1:
-                await StampJump(center.position);
+                await StampJumpIn(center.position);
                 break;
             case 2:
-                await StampJump(right.position);
+                await StampJumpIn(right.position);
                 break;
         }
 
-        async Task StampJump(Vector3 position)
+        async Task StampJumpIn(Vector3 position)
         {
-            await stamp.transform.DOJump(position, jumpPower, 1, 1f).SetEase(Ease.InOutSine).SetDelay(1).OnComplete(() => stamp.transform.DOJump(initialStampPosition, jumpPower, 1, 1).SetEase(Ease.InOutSine)).AsyncWaitForCompletion();
+            await stamp.transform.DOJump(position, jumpPower, 1, 1f).SetEase(Ease.InOutSine).SetDelay(1).OnComplete(()=> selectionStamps[index].SetActive(true)).AsyncWaitForCompletion();
+
+            await StampJumpOut();
+        }
+        async Task StampJumpOut()
+        {
+            await stamp.transform.DOJump(initialStampPosition, jumpPower, 1, 1).SetEase(Ease.InOutSine).AsyncWaitForCompletion();
         }
     }
 }

@@ -406,6 +406,10 @@ MonoBehaviour:
   center: {fileID: 5098801378562658025}
   right: {fileID: 663002503495870986}
   stamp: {fileID: 5098757735039235916}
+  selectionStamps:
+  - {fileID: 3300239277915446258}
+  - {fileID: 7991976720527127924}
+  - {fileID: 8686928957412806272}
   jumpPower: 0.2
 --- !u!1 &7052767763702436093
 GameObject:
@@ -580,7 +584,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3659559277441302200
 Transform:
   m_ObjectHideFlags: 0
