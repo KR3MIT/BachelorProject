@@ -66,6 +66,7 @@ public class QuestionView : MonoBehaviour
 
     private IEnumerator RefreshLayoutGroup()
     {
+        LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
         answersContainer.GetComponent<VerticalLayoutGroup>().enabled = false;
         yield return null; // Wait for one frame
         answersContainer.GetComponent<VerticalLayoutGroup>().enabled = true;
