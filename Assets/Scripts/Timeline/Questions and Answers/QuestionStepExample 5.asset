@@ -23,18 +23,31 @@ MonoBehaviour:
       relationer og/eller handel. "
     viewpoint: 1
     explanations:
-    - explanationText: Liberalist Explanation
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de, og rigtig
+        fint arbejde! Organisationer som NATO er et st\xE6rkt v\xE6rkt\xF8j for fredfyldt
+        udbredelse af f\xE6lles v\xE6rdier og normer, og det skal vi v\xE6re klar
+        til at anvende globalt."
       viewpoint: 1
-    - explanationText: Realist Explanation
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. Partiets
+        holdning til NATO er bestemt ikke rettet mod en ubetinget udvidelse af aftalen,
+        men snarere et st\xF8rre fokus p\xE5 at styrke magten for Danmark og de andre
+        medlemslande. Husk dette til n\xE6ste gang."
       viewpoint: 0
   - answerText: "NATO skal altid overveje den globale situation og planl\xE6gge herefter.
       Et st\xE6rkt samlet forsvar er vigtigt, og hvis nye lande vil integreres i
       NATO, skal det give mening for alle parter."
     viewpoint: 2
     explanations:
-    - explanationText: Liberalist Explanation
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. Jeg forventede,
+        at du ville l\xE6gge mere fokus p\xE5 NATOs mulighed for at bidrage til st\xF8rre
+        international samarbejde og fredfyldt skabelse af f\xE6llesv\xE6rdier, da
+        dette er partiets \xF8nskede retning for organisationen. Husk gerne dette
+        til n\xE6ste gang!"
       viewpoint: 1
-    - explanationText: Realist Explanation
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. Partiets
+        holdning til NATO er ikke rettet mod en umiddelbar udvidelse af medlemslandene,
+        men snarere et st\xF8rre fokus p\xE5 at styrke magten for Danmark og de andre
+        nuv\xE6rende medlemslande. Husk gerne dette til n\xE6ste gang!"
       viewpoint: 0
   - answerText: "NATO er en milit\xE6r alliance, og skal derfor have fokus p\xE5
       at styrke egen magt. Medlemsstaterne st\xE5r st\xE6rkere sammen i det globale
@@ -43,7 +56,13 @@ MonoBehaviour:
       positivt for Danmark."
     viewpoint: 0
     explanations:
-    - explanationText: Liberalist Explanation
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. Partiets
+        holdning til NATO er bestemt ikke rettet mod at g\xF8re Danmark eller NATO
+        en milit\xE6r supermagt, men i stedet til en organisation der fremmer internationalt
+        samarbejde og en fredfyldt skabelse af f\xE6lles v\xE6rdier og interesser.
+        Husk dette til n\xE6ste gang."
       viewpoint: 1
-    - explanationText: Realist Explanation
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de, og rigtig
+        fint arbejde! Hvis alliancen skal give mening for Danmark skal den bidrage
+        til vores magt i det globale anarki!"
       viewpoint: 0

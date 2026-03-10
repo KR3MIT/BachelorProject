@@ -63,14 +63,13 @@ MonoBehaviour:
     viewpoint: 0
     explanations:
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
-        regeringsleder her til morgen, godt arbejde til jeres m\xF8de! Det er vigtigt
-        for partiet, at vi bibeholder det gode samarbejde med gr\xF8nl\xE6nderne,
-        selv hvis de beslutter sig for at blive uafh\xE6ngige."
+        regeringsleder her til morgen, og jeg er utilfreds med din h\xE5ndtering
+        af m\xF8det. Det er ikke partiets intention at holde Gr\xF8nland som gidsel,
+        men vi skal i stedet opfordre til samarbejde og forst\xE5else for og med
+        det gr\xF8nlandske folk. Revurder dit ordvalg til n\xE6ste gang!"
       viewpoint: 1
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
-        regeringsleder her til morgen, og jeg er utilfreds med din h\xE5ndtering
-        af m\xF8det. Det er ikke i partiets interesse at miste kontrollen over Gr\xF8nland,
-        og derfor skal vi ikke opfordre deres mulige afh\xE6ngighed. I en usikker
-        verden er Danmarks magt en prioritet for os, og et uafh\xE6ngigt Gr\xF8nland
-        hj\xE6lper os p\xE5 ingen m\xE5de med at styrke den!"
+        regeringsleder her til morgen, godt arbejde til jeres m\xF8de! Det er vigtigt
+        for Danmark at beholde sin magt, og Gr\xF8nland har stor v\xE6rdi for Danmark
+        p\xE5 mange parametre."
       viewpoint: 0
