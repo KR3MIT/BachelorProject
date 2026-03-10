@@ -5,6 +5,7 @@ using DG.Tweening;
 using System.Threading.Tasks;
 using System.Linq;
 using UnityEngine.UI;
+using System.Collections;
 
 /// <summary>
 /// UI adapter thing
@@ -56,12 +57,18 @@ public class QuestionView : MonoBehaviour
         {
             var button = Instantiate(answerButtonPrefab, answersContainer);
             button.Initialize(i, answers[i].answerText, OnAnswerSelected);
-            answersContainer.GetComponent<VerticalLayoutGroup>().enabled = false;
-            answersContainer.GetComponent<VerticalLayoutGroup>().enabled = true;
         }
+        StartCoroutine(RefreshLayoutGroup());
 
         panel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
         FolderAnimation.Instance.SlideIn(answersContainer.childCount == 2);
+    }
+
+    private IEnumerator RefreshLayoutGroup()
+    {
+        answersContainer.GetComponent<VerticalLayoutGroup>().enabled = false;
+        yield return null; // Wait for one frame
+        answersContainer.GetComponent<VerticalLayoutGroup>().enabled = true;
     }
 
     private async void OnAnswerSelected(int index)
