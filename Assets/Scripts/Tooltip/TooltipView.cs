@@ -9,6 +9,7 @@ public class TooltipView : MonoBehaviour
     public RectTransform panel {  get; private set; }
     [SerializeField] private TMP_Text headerText;
     [SerializeField] private TMP_Text definitionText;
+    [SerializeField] private Image imageImage;
     [SerializeField] private Vector2 offset = new(15f,15f);
 
     private RectTransform canvasRect;
@@ -26,10 +27,11 @@ public class TooltipView : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void Show(string header, string definition, Vector2 screenPosition)
+    public void Show(string header, string definition, Sprite image, Vector2 screenPosition)
     {
         headerText.text = header;
         definitionText.text = definition;
+        imageImage.sprite = image;
         PositionAt(screenPosition);
 
         int headerLength = header.Length;
