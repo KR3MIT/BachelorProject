@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour, IGameUI
         ViewpointType viewpoint = (ViewpointType)viewpointID;
 
         //replace with selection screen later
-        session = new GameSession(viewpoint, this);
+        session = new GameSession(viewpoint, this, timeline);
 
         currentStepIndex = 0;
         explanationView.Hide();
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour, IGameUI
     {
         if (currentStepIndex >= timeline.steps.Count)
         {
-            Debug.Log("Game Finished! Approval rating: " + session.approvalRating);
+            Debug.Log("Game Finished! Approval rating: " + UIApprovalRating.Instance.GetApprovalRating() * 100f + "/100");
 
             //end screen show here
 
