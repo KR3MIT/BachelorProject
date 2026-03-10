@@ -53,7 +53,7 @@ public class QuestionView : MonoBehaviour
         }
 
         panel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
-        FolderAnimation.Instance.SlideIn();
+        FolderAnimation.Instance.SlideIn(answersContainer.childCount == 2);
     }
 
     private async void OnAnswerSelected(int index)

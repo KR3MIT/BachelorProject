@@ -7,9 +7,13 @@ public class FolderAnimation : MonoBehaviour
 {
     public static FolderAnimation Instance { get; private set; }
 
-    [SerializeField] private Transform left, center, right;
+    public MeshRenderer folderRenderer;
+
+    public Material twoOptionMaterial, threeOptionMaterial;
+
     [SerializeField] private GameObject stamp;
     [SerializeField] private List<GameObject> selectionStamps;
+    [SerializeField] private List<Transform> stampPositions;
 
     public float jumpPower = 0.5f;
 
@@ -26,9 +30,17 @@ public class FolderAnimation : MonoBehaviour
         initialStampPosition = stamp.transform.position;
     }
 
-    public void SlideIn()
+    public void SlideIn(bool twoOptions)
     {
         animator.SetTrigger("SlideIn");
+        if (twoOptions) 
+        {
+            folderRenderer.material = twoOptionMaterial;
+        }
+        else
+        {
+            folderRenderer.material = threeOptionMaterial;
+        }
     }
 
     public async void SlideOut()
@@ -40,18 +52,7 @@ public class FolderAnimation : MonoBehaviour
 
     public async Task MoveStamp(int index)
     {
-        switch (index)
-        {
-            case 0:
-                await StampJumpIn(left.position);
-                break;
-            case 1:
-                await StampJumpIn(center.position);
-                break;
-            case 2:
-                await StampJumpIn(right.position);
-                break;
-        }
+        await StampJumpIn(stampPositions[index].transform.position);
 
         async Task StampJumpIn(Vector3 position)
         {

@@ -23,4 +23,9 @@ public class TabletController : MonoBehaviour
     {
         transform.DOMove(offScreenPosition, 1).SetEase(Ease.InOutSine);
     }
+
+    public void TurnOnScreen()
+    {
+
+    }
 }
