@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Stamp
+  m_Name: M_Stamp Decal
   m_Shader: {fileID: -6465566751694194690, guid: ad2ef4b56d66df9419e6c8fdb9c5cd2b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
