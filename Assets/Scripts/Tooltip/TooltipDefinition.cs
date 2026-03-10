@@ -7,6 +7,7 @@ public class TooltipEntry
 {
     public string keyword;
     [TextArea] public string definition;
+    public Sprite image;
 }
 
 [CreateAssetMenu(fileName = "TooltipDefinition", menuName = "Scriptable Objects/TooltipDefinition")]

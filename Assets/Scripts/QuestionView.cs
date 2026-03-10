@@ -58,18 +58,10 @@ public class QuestionView : MonoBehaviour
             var button = Instantiate(answerButtonPrefab, answersContainer);
             button.Initialize(i, answers[i].answerText, OnAnswerSelected);
         }
-        StartCoroutine(RefreshLayoutGroup());
+        LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
 
         panel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
         FolderAnimation.Instance.SlideIn(answersContainer.childCount == 2);
-    }
-
-    private IEnumerator RefreshLayoutGroup()
-    {
-        LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
-        answersContainer.GetComponent<VerticalLayoutGroup>().enabled = false;
-        yield return null; // Wait for one frame
-        answersContainer.GetComponent<VerticalLayoutGroup>().enabled = true;
     }
 
     private async void OnAnswerSelected(int index)
