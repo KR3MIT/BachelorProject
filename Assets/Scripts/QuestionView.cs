@@ -49,9 +49,17 @@ public class QuestionView : MonoBehaviour
             Destroy(answersContainer.GetChild(i).gameObject);
 
         var answers = question.answers;
-        
+
         //randomize answers order
-        answers = answers.OrderBy(x => Guid.NewGuid()).ToArray();
+
+        for(int i = answers.Count() - 1; i >= 0; i--)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, i + 1);
+            var temp = answers[i];
+            answers[i] = answers[randomIndex];
+            answers[randomIndex] = temp;
+        }
+        Debug.Log("answers order: " + string.Join(", ", answers.Select(a => a.viewpoint)));
 
         for (int i = 0; i < answers.Length; i++)
         {

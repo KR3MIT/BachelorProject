@@ -6,20 +6,44 @@ using UnityEngine;
 public class GameSession
 {
     public ViewpointType viewpoint { get; private set; }
-    public int approvalRating { get; private set; }
+
+    public TimelineDefinition timeline { get; private set; }
 
     //callbacks for ui and stuff
     public IGameUI ui;
 
-    public GameSession(ViewpointType viewpoint, IGameUI ui)
+    public GameSession(ViewpointType viewpoint, IGameUI ui, TimelineDefinition timeline)
     {
         this.viewpoint = viewpoint;
         this.ui = ui;
-        approvalRating = 0;
+        this.timeline = timeline;
     }
 
-    public void AddApproval(int amount)
+
+    
+    public void ChangeApproval(ApprovalChangeType approvalType)
     {
-        approvalRating += amount;
+        int questionCount = 0;
+        foreach (var step in timeline.steps)
+        {
+            if(step is QuestionStep questionStep)
+            {
+                questionCount++;
+            }
+        }
+        float approvalChangeAmount = 50f / questionCount;
+
+        if (approvalType == ApprovalChangeType.Add)
+            UIApprovalRating.Instance.AddApproval(approvalChangeAmount);
+        else if(approvalType == ApprovalChangeType.Remove)
+            UIApprovalRating.Instance.RemoveApproval(approvalChangeAmount);
+        else if(approvalType == ApprovalChangeType.SmallRemove)
+            UIApprovalRating.Instance.RemoveApproval(approvalChangeAmount / 2f);
     }
+}
+public enum ApprovalChangeType
+{
+    Add,
+    Remove,
+    SmallRemove,
 }

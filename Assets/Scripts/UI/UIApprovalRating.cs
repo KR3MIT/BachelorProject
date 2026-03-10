@@ -4,7 +4,8 @@ using UnityEngine.UI;
 
 public class UIApprovalRating : MonoBehaviour
 {
-    
+    public static UIApprovalRating Instance { get; private set; }
+
     // UI elements
     [SerializeField] private float approvalRating;
     [SerializeField] private Image approvalBarFill;
@@ -23,6 +24,8 @@ public class UIApprovalRating : MonoBehaviour
 
     void Start()
     {
+        Instance = this;
+
         approvalBarFill.fillAmount = approvalRating;
         approvalBarFade.fillAmount = 0f;
     }
@@ -33,7 +36,13 @@ public class UIApprovalRating : MonoBehaviour
         
     }
 
-   
+    //returns approvalrating in normalizee value
+    public float GetApprovalRating()
+    {
+        return approvalRating;
+    }
+
+
     private float ConvertToPercent (float amount)
     {
         float percent = amount / 100f;
