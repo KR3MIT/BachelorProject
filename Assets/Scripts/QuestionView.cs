@@ -3,6 +3,8 @@ using UnityEngine;
 using System;
 using DG.Tweening;
 using System.Threading.Tasks;
+using System.Linq;
+using UnityEngine.UI;
 
 /// <summary>
 /// UI adapter thing
@@ -46,10 +48,16 @@ public class QuestionView : MonoBehaviour
             Destroy(answersContainer.GetChild(i).gameObject);
 
         var answers = question.answers;
+        
+        //randomize answers order
+        answers = answers.OrderBy(x => Guid.NewGuid()).ToArray();
+
         for (int i = 0; i < answers.Length; i++)
         {
             var button = Instantiate(answerButtonPrefab, answersContainer);
             button.Initialize(i, answers[i].answerText, OnAnswerSelected);
+            answersContainer.GetComponent<VerticalLayoutGroup>().enabled = false;
+            answersContainer.GetComponent<VerticalLayoutGroup>().enabled = true;
         }
 
         panel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
