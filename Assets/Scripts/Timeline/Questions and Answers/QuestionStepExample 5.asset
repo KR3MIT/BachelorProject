@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
+  m_Name: QuestionStepExample 5
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
+  question: "Du er p\xE5 vej til m\xF8de i NATO, hvor udenrigsministre fra medlemslandene
+    skal diskutere den nuv\xE6rende verdenssituation og fremtiden af NATO. Du skal
+    beslutte, hvordan du vil udtrykke Danmarks synspunkt."
+  answers:
+  - answerText: "Danmark har en stor interesse i at forblive i kontrol af Gr\xF8nland,
+      og har derfor ikke nogen interesse i at miste denne kontrol. Ressourcerne p\xE5
+      \xF8en samt den strategiske lokation spiller en enorm rolle for Danmark og
+      eventuelle allierede under enhver fremtidig konflikt eller usikkerhed i globale
+      relationer og/eller handel. "
+    viewpoint: 1
+    explanations:
+    - explanationText: Liberalist Explanation
+      viewpoint: 1
+    - explanationText: Realist Explanation
+      viewpoint: 0
+  - answerText: "NATO skal altid overveje den globale situation og planl\xE6gge herefter.
+      Et st\xE6rkt samlet forsvar er vigtigt, og hvis nye lande vil integreres i
+      NATO, skal det give mening for alle parter."
+    viewpoint: 2
+    explanations:
+    - explanationText: Liberalist Explanation
+      viewpoint: 1
+    - explanationText: Realist Explanation
+      viewpoint: 0
+  - answerText: "NATO er en milit\xE6r alliance, og skal derfor have fokus p\xE5
+      at styrke egen magt. Medlemsstaterne st\xE5r st\xE6rkere sammen i det globale
+      anarki, s\xE5 l\xE6nge alle bidrager og er enige om de vigtigste udenrigspolitiske
+      og milit\xE6re emner. Hvis disse elementer ikke er p\xE5 plads, er NATO ikke
+      positivt for Danmark."
+    viewpoint: 0
+    explanations:
+    - explanationText: Liberalist Explanation
+      viewpoint: 1
+    - explanationText: Realist Explanation
+      viewpoint: 0

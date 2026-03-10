@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
+  m_Name: QuestionStepExample 2
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
+  question: "Du er til m\xF8de med dine ministerkolleger i regeringen, n\xE5r emnet
+    om internationale aftaler og traktater. Statsministeren beder dig forklare din
+    holdning til Danmarks udsyn og h\xE5ndtering af disse aftaler, og du skal bestemme
+    dig for, hvordan du synes, Danmark skal agere."
+  answers:
+  - answerText: " Internationale aftaler og traktater skal betragtes p\xE5 niveau
+      med nationale love, og skal altid respekteres. Aftalerne er et kritisk element
+      p\xE5 vejen til st\xF8rre samarbejde og interdependens globalt."
+    viewpoint: 1
+    explanations:
+    - explanationText: "Jeg har t\xE6nkt mere over det, du sagde til m\xF8det tidligere,
+        og jeg kunne ikke v\xE6re mere enig i dine overvejelser. Vores ageren p\xE5
+        den globale scene skal fremme det internationale samarbejde og varetage vores
+        alles f\xE6lles interesser!"
+      viewpoint: 1
+    - explanationText: "Jeg har t\xE6nkt mere over det, du sagde til m\xF8det tidligere,
+        og jeg er uenig i dine overvejelser. Danmarks interesser burde v\xE6re af
+        h\xF8jest prioritet for os i den danske regering, og vi kan kun forvente,
+        at andre lande g\xF8r det samme. Genovervej venligst din kommunikation af
+        partiets synspunkter p\xE5 emnet."
+      viewpoint: 0
+  - answerText: "Danmark skal altid fors\xF8ge at opfylde sine l\xF8fter, og skal
+      f\xF8lge traktater s\xE5 godt som muligt. Meget f\xE5 situationer berettiger
+      en anden tilgang."
+    viewpoint: 2
+    explanations:
+    - explanationText: "Jeg har t\xE6nkt mere over det, du sagde til m\xF8det tidligere,
+        og jeg har en hurtig note. Eftersom vi i partiet str\xE6ber efter at forbedre
+        det internationale samarbejde, burde vi f\xF8lge internationale aftaler og
+        traktater p\xE5 samme niveau med vores egne nationale love. Jeg ser ikke
+        noget scenarie, hvor disse internationale l\xF8fter burde brydes. Genovervej
+        gerne dette til n\xE6ste gang."
+      viewpoint: 1
+    - explanationText: "Jeg har t\xE6nkt mere over det, du sagde til m\xF8det tidligere,
+        og jeg har en hurtig note. Internationale aftaler og traktater kan v\xE6re
+        midlertidigt effektive, men vi kan ikke stole p\xE5 at andre lande overholder
+        dem. Derfor skal vi v\xE6re klar p\xE5 at tackle disse brud, og m\xE5ske
+        ogs\xE5 v\xE6re klar p\xE5 at bryde dem selv, hvis det bliver n\xF8dvendigt.
+        Genovervej gerne dette til n\xE6ste gang."
+      viewpoint: 0
+  - answerText: "Mens internationale aftaler kan v\xE6re midlertidigt effektive,
+      skal Danmark altid v\xE6re forberedt p\xE5, at andre lande ikke overholder
+      dem. Derudover skal Danmark selv v\xE6re klar p\xE5 at g\xE5 til opg\xF8r mod
+      disse aftaler, hvis det bliver skadeligt for danskerne at f\xF8lge dem."
+    viewpoint: 0
+    explanations:
+    - explanationText: "Jeg har t\xE6nkt mere over det, du sagde til m\xF8det tidligere,
+        og jeg er uenig i dine overvejelser. Vores regering bestr\xE6ber sig p\xE5
+        at \xF8ge det internationale samarbejde og sikkerhed, og dette kan simpelthen
+        ikke ske, hvis de aftaler, som vi indg\xE5r, bare kan brydes. Genovervej
+        venligst din kommunikation af partiets synspunkter p\xE5 emnet."
+      viewpoint: 1
+    - explanationText: "Jeg har t\xE6nkt mere over det, du sagde til m\xF8det tidligere,
+        og jeg kunne ikke v\xE6re mere enig i dine overvejelser. Danmark skal altid
+        v\xE6re forberedt p\xE5 konflikter b\xE5de t\xE6t p\xE5 og langt v\xE6k,
+        og intenationale aftaler vil brydes p\xE5 et tidspunkt.\n"
+      viewpoint: 0

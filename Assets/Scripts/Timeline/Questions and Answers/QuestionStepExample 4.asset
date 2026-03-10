@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
+  m_Name: QuestionStepExample 4
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
+  question: "Gr\xF8nland har v\xE6ret i det globale s\xF8gelys, og du er derfor p\xE5
+    vej til Nuuk for at m\xF8de den gr\xF8nlandske regeringsleder. Det gr\xF8nlandske
+    folk har l\xE6nge haft diskussioner og \xF8nsker om \xF8get selvst\xE6ndighed
+    fra Danmark, og du skal beslutte, hvordan du pr\xE6senterer det danske synspunkt
+    p\xE5 Gr\xF8nlands fremtid."
+  answers:
+  - answerText: "Det gr\xF8nlandske folks \xF8nsker burde komme f\xF8rst, og hvis
+      folket \xF8nsker st\xF8rre selvst\xE6ndighed fra Danmark, s\xE5 burde de kunne
+      f\xE5 det. Danmark vil altid anse Gr\xF8nland som en allieret og st\xE6rk partner,
+      ligemeget om de er selvst\xE6ndige eller under kongeriget."
+    viewpoint: 1
+    explanations:
+    - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
+        regeringsleder her til morgen, godt arbejde til jeres m\xF8de! Det er vigtigt
+        for partiet, at vi bibeholder det gode samarbejde med gr\xF8nl\xE6nderne,
+        selv hvis de beslutter sig for at blive uafh\xE6ngige."
+      viewpoint: 1
+    - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
+        regeringsleder her til morgen, og jeg er utilfreds med din h\xE5ndtering
+        af m\xF8det. Det er ikke i partiets interesse at miste kontrollen over Gr\xF8nland,
+        og derfor skal vi ikke opfordre deres mulige afh\xE6ngighed. I en usikker
+        verden er Danmarks magt en prioritet for os, og et uafh\xE6ngigt Gr\xF8nland
+        hj\xE6lper os p\xE5 ingen m\xE5de med at styrke den!"
+      viewpoint: 0
+  - answerText: "Gr\xF8nland og dets rolle p\xE5 den globale scene har altid haft
+      stor betydning for Danmark, ikke kun strategisk men ogs\xE5 historisk. Hvis
+      det gr\xF8nlandske folk skal blive uafh\xE6ngige, skal det diskuteres og planl\xE6gges
+      s\xE5 Danmark og regionen som helhed forbliver stabil for alle."
+    viewpoint: 2
+    explanations:
+    - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
+        regeringsleder her til morgen, og jeg har et par kommentarer til dig. Partiets
+        holdning er, at selv hvis Gr\xF8nland bliver uafh\xE6ngige vil vores samarbejde
+        forts\xE6tte, og derfor er folkets \xF8nsker vigtigst. Du kunne derfor godt
+        have st\xF8ttet dem mere, da f\xE6lles interesser og samarbejde er vigtigt
+        for vores alles fremtidige fred og sikkerhed!"
+      viewpoint: 1
+    - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
+        regeringsleder her til morgen, og jeg har et par kommentarer til dig. Det
+        er ikke i partiets interesse at miste kontrollen over Gr\xF8nland, og derfor
+        skal vi ikke opfordre deres mulige afh\xE6ngighed. I fremtiden ser jeg gerne,
+        at du fokuserer mere p\xE5 dette, end du gjorde til m\xF8det."
+      viewpoint: 0
+  - answerText: "Danmark har en stor interesse i at forblive i kontrol af Gr\xF8nland,
+      og har derfor ikke nogen interesse i at miste denne kontrol. Ressourcerne p\xE5
+      \xF8en samt den strategiske lokation spiller en enorm rolle for Danmark og
+      eventuelle allierede under enhver fremtidig konflikt eller usikkerhed i globale
+      relationer og/eller handel. "
+    viewpoint: 0
+    explanations:
+    - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
+        regeringsleder her til morgen, godt arbejde til jeres m\xF8de! Det er vigtigt
+        for partiet, at vi bibeholder det gode samarbejde med gr\xF8nl\xE6nderne,
+        selv hvis de beslutter sig for at blive uafh\xE6ngige."
+      viewpoint: 1
+    - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
+        regeringsleder her til morgen, og jeg er utilfreds med din h\xE5ndtering
+        af m\xF8det. Det er ikke i partiets interesse at miste kontrollen over Gr\xF8nland,
+        og derfor skal vi ikke opfordre deres mulige afh\xE6ngighed. I en usikker
+        verden er Danmarks magt en prioritet for os, og et uafh\xE6ngigt Gr\xF8nland
+        hj\xE6lper os p\xE5 ingen m\xE5de med at styrke den!"
+      viewpoint: 0

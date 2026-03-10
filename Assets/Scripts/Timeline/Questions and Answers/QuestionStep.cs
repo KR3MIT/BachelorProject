@@ -9,6 +9,7 @@ public enum ViewpointType
 {
     Realist,
     Liberalist,
+    MiddleRoad,
 }
 
 [Serializable]

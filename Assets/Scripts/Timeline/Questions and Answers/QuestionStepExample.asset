@@ -12,19 +12,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
   m_Name: QuestionStepExample
   m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
-  question: Liberalist or Realist?
+  question: "Du er blevet inviteret til et nationalt tv-transmitteret interview med
+    DR for at diskutere Danmarks forsvar og mulige trusler fra andre lande. Du skal
+    v\xE6lge hvilken handleplan, du vil pr\xE6sentere for det danske folk."
   answers:
-  - answerText: Liberalist
+  - answerText: "I disse sv\xE6re tider har verden brug for sammenhold og samarbejde
+      mere end nogensinde f\xF8r. Danmark skal g\xE5 forrest i fredfyldt kommunikation
+      og konfliktbil\xE6ggelse p\xE5 det globale plan, samt have fokus p\xE5 at \xF8ge
+      det globale samarbejde."
     viewpoint: 1
     explanations:
-    - explanationText: Liberalist Explanation
+    - explanationText: "Jeg har lige set dit interview, rigtig fint arbejde! Det
+        med fredfyldt konfliktbel\xE6ggelse var specielt godt n\xE6vnt."
       viewpoint: 1
-    - explanationText: Realist Explanation
+    - explanationText: "Jeg har lige set dit interview, og det var bestemt ikke det
+        bedste. Jeg har lige set dit interview, og jeg har et par noter til dig.
+        Dit svar ignorerer helt at Danmark burde styrke sin milit\xE6re magt, som
+        vi gik til valg p\xE5. Husk det n\xE6ste gang!"
       viewpoint: 0
-  - answerText: Realist
+  - answerText: "Mens Danmark aldrig skal ignorere forsvaret, s\xE5 er det ogs\xE5
+      vigtigt at bibeholde fokus p\xE5 at forhandle med andre lande. Internationale
+      aftaler er et vigtigt v\xE6rkt\xF8j til at bibeholde freden, men det danske
+      forsvar skal altid v\xE6re kampdygtigt, hvis disse aftaler brydes af andre
+      lande.\n"
+    viewpoint: 2
+    explanations:
+    - explanationText: "Jeg har lige set dit interview, og jeg har et par noter til
+        dig. N\xE6ste gang m\xE5 du gerne have mere fokus p\xE5 fremmelsen det internationale
+        samarbejde og interdependens, det er vores m\xE6rkesag!"
+      viewpoint: 1
+    - explanationText: "Jeg har lige set dit interview, og jeg har et par noter til
+        dig. N\xE6ste gang m\xE5 du gerne have mere fokus p\xE5 Danmarks milit\xE6re
+        magt, og at vi har et m\xE5l om at forbedre den. Husk det n\xE6ste gang!"
+      viewpoint: 0
+  - answerText: "Danmark skal f\xF8rst og fremmest v\xE6rne om egne interesser, og
+      dette g\xE6lder ogs\xE5 for forsvaret. Danmark skal fors\xE6tte med at styrke
+      sin egen magt p\xE5 den internationale scene uagtet krav eller normer p\xE5sat
+      danskerne internationalt."
     viewpoint: 0
     explanations:
-    - explanationText: Liberalist Explanation
+    - explanationText: "Jeg har lige set dit interview, og det var bestemt ikke det
+        bedste. Dit svar underspiller vores ambition om at \xF8ge Danmark internationale
+        samarbejde, og har i stedet fokus p\xE5 forsvarets magt, hvilket ikke er
+        vores partis fokus. Husk det n\xE6ste gang!"
       viewpoint: 1
-    - explanationText: Realist Explanation
+    - explanationText: "Jeg har lige set dit interview, rigtig fint arbejde! Du fik
+        kommunikeret vores \xF8nske om et st\xE6rkere og sikrere Danmark gennem et
+        st\xE6rkt forsvar rigtig godt!"
       viewpoint: 0

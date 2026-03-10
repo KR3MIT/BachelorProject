@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
+  m_Name: QuestionStepExample 3
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
+  question: "Du skal til at begynde din tale for EU parlamentet, hvor din chef, statsministeren,
+    har bedt dig udtrykke regeringens syn p\xE5 EU\u2019s samlede forsvar. Du skal
+    v\xE6lge, hvilket synspunkt du vil udtrykke."
+  answers:
+  - answerText: "Som set i den hidtil usete periode af fred p\xE5 det europ\xE6iske
+      kontinent siden anden verdenskrig er internationalt samarbejde den bedste m\xE5de
+      at bevare freden. EU burde v\xE6re s\xE5 \xE5bne s\xE5 muligt for globalt samarbejde
+      og g\xE5 forrest for fredelig konfliktbil\xE6ggelse og spredelse af demokratiet."
+    viewpoint: 1
+    explanations:
+    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne rose
+        dig for den. Fredelig konfliktbil\xE6ggelse er ekstremt vigtigt for at kunne
+        bygge en fredfyldt, samarbejdende verden!"
+      viewpoint: 1
+    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne snakke
+        med dig om den. Selvom \xE5bent samarbejde p\xE5 den m\xE5de lyder godt p\xE5
+        papiret, s\xE5 er det alt for farligt for Danmark at tage den position n\xE5r
+        konflikter viser sig. Partiets position p\xE5 forsvar passer heller ikke
+        med din tales beskrivelser. Husk dette til n\xE6ste gang!"
+      viewpoint: 0
+  - answerText: "De europ\xE6iske lande har st\xE5et sammen uden interne konflikter
+      i n\xE6sten 100 \xE5r, og mens dette forh\xE5bentligt kan forts\xE6tte i fremtiden,
+      skal vi altid v\xE6re v\xE5gne for at denne situation kan \xE6ndre sig. EU
+      skal bibeholde sit delte forsvar samt nationale forsvarsstyrker for at bibeholde
+      den nationale og regionale sikkerhed."
+    viewpoint: 2
+    explanations:
+    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne n\xE6vne
+        noget for dig. Selvom du rigtigt n\xE6vnte det gode samarbejde og fred fra
+        interne konflikter i EU, s\xE5 synes jeg, at du lagde for meget v\xE6gt p\xE5
+        de nationale milit\xE6r styrker. Det er vores m\xE5l p\xE5 sigt at eliminere
+        behovet for stor milit\xE6r magt i verden, og dine ord viste ikke dette klart
+        nok. Husk dette til n\xE6ste gang!"
+      viewpoint: 1
+    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne n\xE6vne
+        noget for dig. Det er partiets mening, at verden er og vil forblive usikker,
+        og derfor skal Danmarks og EUs fysiske magt have st\xF8rre fokus end du udtrykte
+        i talen. Husk dette til n\xE6ste gang."
+      viewpoint: 0
+  - answerText: "EU skal beskytte egne landes interesser f\xF8rst og v\xE6re klar
+      til at kunne h\xE5ndtere konflikter internt som eksternt p\xE5 ethvert tidspunkt.
+      For at Danmark kan retf\xE6rdigg\xF8re sin deltagelse i unionen, skal EU v\xE6rne
+      om og sikre regionale ressourcer og produktioner, s\xE5 regionen kan st\xE5
+      st\xE6rkt n\xE5r usikre tider h\xE6nder."
+    viewpoint: 0
+    explanations:
+    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne snakke
+        med dig om den. Det er ikke partiets holdning at EUs ressourcer og produktioner
+        skal beskyttes p\xE5 bekostning af det internationale samarbejde og handel,
+        s\xE5 dette vil jeg bede dig om ikke at sige i fremtiden. Husk dette til
+        n\xE6ste gang!"
+      viewpoint: 1
+    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne rose
+        dig for den. Hvis EU skal cementere sig som stormagt i fremtiden, s\xE5 er
+        den fysiske magt ekstremt vigtig for os!"
+      viewpoint: 0
