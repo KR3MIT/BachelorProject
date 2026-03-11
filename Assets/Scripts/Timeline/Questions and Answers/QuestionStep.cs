@@ -53,6 +53,8 @@ public class QuestionStep : TimelineStep
     {
         var answer = answers[answerIndex];
 
+
+        session.RecordQuestionSelection(answer.viewpoint);
         session.ChangeApproval(answer.viewpoint == session.viewpoint ? ApprovalChangeType.Add : answer.viewpoint == ViewpointType.MiddleRoad ? ApprovalChangeType.SmallRemove : ApprovalChangeType.Remove);
 
         Explanation explanation = null;

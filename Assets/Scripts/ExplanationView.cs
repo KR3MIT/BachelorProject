@@ -19,7 +19,7 @@ public class ExplanationView : MonoBehaviour
         this.onContinue = onContinue;
 
         explanationText.text = explanation;
-        resultLabel.text = wasCorrect ? "Correct!" : "Incorrect";
+        resultLabel.text = wasCorrect ? "Godt arbejde!" : "Hvad tænkte du på?";
 
         continueButton.onClick.RemoveAllListeners();
         continueButton.onClick.AddListener(OnContinueClicked);

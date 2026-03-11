@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections.Generic;
 /// <summary>
 /// overall manager
 /// </summary>
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour, IGameUI
     [Header("UI")]
     [SerializeField] private QuestionView questionView;
     [SerializeField] private ExplanationView explanationView;
+    [SerializeField] private EndView endView;
 
     [Header("Data")]
     [SerializeField] private TimelineDefinition timeline;
@@ -35,7 +37,8 @@ public class GameManager : MonoBehaviour, IGameUI
         {
             Debug.Log("Game Finished! Approval rating: " + UIApprovalRating.Instance.GetApprovalRating() * 100f + "/100");
 
-            //end screen show here
+            endView.Show(session.GetQuestionSelectionCounts(), UIApprovalRating.Instance.GetApprovalRating());
+            UIApprovalRating.Instance.gameObject.SetActive(false);
 
             return;
         }

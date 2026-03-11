@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 /// <summary>
 /// interface for UI, called by gamesession to show UI and UI calls back when the player has acted
