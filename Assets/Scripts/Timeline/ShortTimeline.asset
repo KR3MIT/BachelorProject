@@ -14,8 +14,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimelineDefinition
   steps:
   - {fileID: 11400000, guid: 5762b17516751374183ad7629b0a99a0, type: 2}
-  - {fileID: 11400000, guid: 89777d667ab8e1e4b85114fe9f8423a5, type: 2}
-  - {fileID: 11400000, guid: d81c8c04354e9e748b3940c1197b8fe8, type: 2}
-  - {fileID: 11400000, guid: 0d21da4c7e749c14eb10f4e3da71ae29, type: 2}
-  - {fileID: 11400000, guid: 819160c1d4314654abc5e54801a7a593, type: 2}
-  - {fileID: 11400000, guid: 1e66a7428d96da943afd0aea8ca178d6, type: 2}
