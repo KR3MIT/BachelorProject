@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_drabes
+  m_Name: M_plants 2
   m_Shader: {fileID: -6465566751694194690, guid: 34235d4e2a5ae264fa96ee95f4bd9a66, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -28,7 +28,7 @@ Material:
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 1
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses:
@@ -38,11 +38,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Base_Color:
-        m_Texture: {fileID: 2800000, guid: f5c0b9f653dc9bd4089316f42630c9c5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 15df8022bf7dcd54693f6038f2a2bcc7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: 18e7be46027c3a0458c2c6d85b694852, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -59,14 +59,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.9
+    - _Alpha: 1
     - _Metallic: 0
-    - _Normal_1: 1
+    - _Normal_1: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 1
+    - _Smoothness: 0.163
     - _Speed: 0.1
-    - _Sway: 0.1
+    - _Sway: 0.05
     m_Colors:
     - _Direction: {r: 1, g: 1, b: 0, a: 0}
     - _Min_Max_Sway: {r: -1, g: 1, b: 0, a: 0}
