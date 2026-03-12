@@ -14,6 +14,9 @@ public class TMPTextFormatter : MonoBehaviour
     private Camera uiCamera;
     private int hoveredLinkIndex = -1;
 
+    private bool isSetDirectly = false;
+    public bool tooltipEnabled = true;
+
     private void Awake()
     {
         tmpText = GetComponent<TMP_Text>();
@@ -33,12 +36,16 @@ public class TMPTextFormatter : MonoBehaviour
 
     private void Start()
     {
+        if(isSetDirectly) { return; }
+
         if (!string.IsNullOrEmpty(tmpText.text))
             tmpText.text = FormatWithTooltipLinks(tmpText.text, tooltipDefinition);
     }
 
     private void LateUpdate()
     {
+        if (!tooltipEnabled) return;
+
         if (tooltipDefinition == null || TooltipView.Instance == null) return;
 
         bool isOverText = TMP_TextUtilities.IsIntersectingRectTransform(
@@ -48,7 +55,7 @@ public class TMPTextFormatter : MonoBehaviour
             TooltipView.Instance.panel, Input.mousePosition, uiCamera) &&
             TooltipView.Instance.gameObject.activeSelf;
 
-        Debug.Log($"Mouse over text: {isOverText}, Mouse over tooltip: {isOverTooltipPanel}");
+        //Debug.Log($"Mouse over text: {isOverText}, Mouse over tooltip: {isOverTooltipPanel}");
 
         if (isOverTooltipPanel) { return; }
 
@@ -86,6 +93,7 @@ public class TMPTextFormatter : MonoBehaviour
     public void SetText(string rawText)
     {
         tmpText.text = FormatWithTooltipLinks(rawText, tooltipDefinition);
+        isSetDirectly = true;//dont allow start to run and double format the text
     }
 
 

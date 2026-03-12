@@ -8,6 +8,21 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
+[Serializable]
+public struct PaperData
+{
+    public RectTransform paper;
+    public TMPTextFormatter answerText;
+    public AnswerButton answerButton;
+
+    public PaperData(RectTransform paper, TMPTextFormatter answerText, AnswerButton answerButton)
+    {
+        this.paper = paper;
+        this.answerText = answerText;
+        this.answerButton = answerButton;
+    }
+}
+
 /// <summary>
 /// UI adapter thing
 /// </summary>
@@ -15,14 +30,17 @@ public class QuestionView : MonoBehaviour
 {
     [SerializeField] private TMP_Text questionText;
     [SerializeField] private Transform answersContainer;
-    [SerializeField] private AnswerButton answerButtonPrefab;
+    //[SerializeField] private AnswerButton answerButtonPrefab;
     [SerializeField] private RectTransform documentPanel;
     [SerializeField] private float offScreenBuffer = 50f;
 
-    [SerializeField] private List<RectTransform> papers;
-    [SerializeField] private List<Button> buttons;
-
     [SerializeField] private GameObject paperContainer;
+    [SerializeField] private List<PaperData> paperDatas;
+
+    //[SerializeField] private List<RectTransform> papers;
+    //[SerializeField] private List<TMPTextFormatter> answerTexts;
+    //private List<AnswerButton> answerButtons = new List<AnswerButton>();
+    
     private RectTransform canvasRect;
     private Action<int> currentCallback;
 
@@ -67,9 +85,14 @@ public class QuestionView : MonoBehaviour
 
         for (int i = 0; i < answers.Length; i++)
         {
-            var button = Instantiate(answerButtonPrefab, answersContainer);
-            button.Initialize(i, answers[i].answerText, OnAnswerSelected);
+            //fill paper 1s text with the 1st random answer and so on
+            paperDatas[i].answerText.SetText(answers[i].answerText);
+            //link button to answer index, so when clicked can callback with the index of the answer
+            paperDatas[i].answerButton.Initialize(i, OnAnswerSelected);
         }
+
+        MoveToTop(0);//always green first
+
         LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
 
         documentPanel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
@@ -100,9 +123,27 @@ public class QuestionView : MonoBehaviour
         await Task.Delay((int)(moveOffScreenTime * 1000f / 2f));//only wait for half move time because else stamp is slow af
     }
 
-    public void MoveToTop(int index)
+    public async void MoveToTop(int index)
     {
-        papers[index].SetAsLastSibling();
+        //get last child
+        var lastChild = paperContainer.transform.GetChild(paperContainer.transform.childCount - 1);
+
+        await lastChild.DOJump(paperDatas[index].paper.position, 100, 1, .3f).AsyncWaitForCompletion();
+
+
+        paperDatas[index].paper.SetAsLastSibling();
+
+        foreach (var paperData in paperDatas)
+        {
+            if (paperData.paper == paperDatas[index].paper)
+            {
+                paperData.answerText.tooltipEnabled = true;
+            }
+            else
+            {
+                paperData.answerText.tooltipEnabled = false;
+            }
+        }
     }
 
 }
