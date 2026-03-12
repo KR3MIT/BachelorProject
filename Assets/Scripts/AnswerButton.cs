@@ -8,18 +8,17 @@ using UnityEngine.UI;
 /// </summary>
 public class AnswerButton : MonoBehaviour
 {
-    [SerializeField] private Button button;
-    [SerializeField] private TMP_Text label;
+    private Button button;
 
     private int index;
     private Action<int> onClick;
 
-    public void Initialize(int index, string text, Action<int> onClick)
+    public void Initialize(int index, Action<int> onClick)
     {
         this.index = index;
-        label.text = text;
         this.onClick = onClick;
 
+        button = GetComponent<Button>();
         button.onClick.AddListener(OnButtonClicked);
     }
 
