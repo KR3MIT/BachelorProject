@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 /// <summary>
 /// UI adapter thing
@@ -15,24 +16,28 @@ public class QuestionView : MonoBehaviour
     [SerializeField] private TMP_Text questionText;
     [SerializeField] private Transform answersContainer;
     [SerializeField] private AnswerButton answerButtonPrefab;
-    [SerializeField] private RectTransform panel;
+    [SerializeField] private RectTransform documentPanel;
     [SerializeField] private float offScreenBuffer = 50f;
 
+    [SerializeField] private List<RectTransform> papers;
+    [SerializeField] private List<Button> buttons;
+
+    [SerializeField] private GameObject paperContainer;
     private RectTransform canvasRect;
     private Action<int> currentCallback;
 
     private void Awake()
     {
         canvasRect = GetComponentInParent<Canvas>().GetComponent<RectTransform>();
-        panel.anchoredPosition = GetOffScreen(true);
+        documentPanel.anchoredPosition = GetOffScreen(true);
     }
 
     private Vector2 GetOffScreen(bool isLeft)
     {
         if (isLeft)
-            return new Vector2(-(canvasRect.rect.width / 2f + panel.rect.width / 2f + offScreenBuffer), panel.anchoredPosition.y);
+            return new Vector2(-(canvasRect.rect.width / 2f + documentPanel.rect.width / 2f + offScreenBuffer), documentPanel.anchoredPosition.y);
         else
-            return new Vector2(canvasRect.rect.width / 2f + panel.rect.width / 2f + offScreenBuffer, panel.anchoredPosition.y);
+            return new Vector2(canvasRect.rect.width / 2f + documentPanel.rect.width / 2f + offScreenBuffer, documentPanel.anchoredPosition.y);
     }
 
     /// <summary>
@@ -67,7 +72,7 @@ public class QuestionView : MonoBehaviour
         }
         LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
 
-        panel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
+        documentPanel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
         FolderAnimation.Instance.SlideIn(answers.Count() == 2);
     }
 
@@ -86,12 +91,18 @@ public class QuestionView : MonoBehaviour
     {
         float moveOffScreenTime = 1f;
 
-        panel.DOAnchorPos(GetOffScreen(false), moveOffScreenTime)
+        documentPanel.DOAnchorPos(GetOffScreen(false), moveOffScreenTime)
             .OnComplete(() => { 
                 gameObject.SetActive(false);
-                panel.anchoredPosition = GetOffScreen(true);
+                documentPanel.anchoredPosition = GetOffScreen(true);
             });
 
         await Task.Delay((int)(moveOffScreenTime * 1000f / 2f));//only wait for half move time because else stamp is slow af
     }
+
+    public void MoveToTop(int index)
+    {
+        papers[index].SetAsLastSibling();
+    }
+
 }
