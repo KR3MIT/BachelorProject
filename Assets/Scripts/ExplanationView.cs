@@ -18,7 +18,7 @@ public class ExplanationView : MonoBehaviour
     {
         this.onContinue = onContinue;
 
-        explanationText.text = explanation;
+        explanationText.GetComponent<TMPTextFormatter>().SetText(explanation);
         resultLabel.text = wasCorrect ? "Godt arbejde!" : "Hvad tænkte du på?";
 
         continueButton.onClick.RemoveAllListeners();

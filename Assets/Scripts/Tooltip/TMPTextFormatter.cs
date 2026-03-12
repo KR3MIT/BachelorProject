@@ -48,6 +48,8 @@ public class TMPTextFormatter : MonoBehaviour
             TooltipView.Instance.panel, Input.mousePosition, uiCamera) &&
             TooltipView.Instance.gameObject.activeSelf;
 
+        Debug.Log($"Mouse over text: {isOverText}, Mouse over tooltip: {isOverTooltipPanel}");
+
         if (isOverTooltipPanel) { return; }
 
         if (!isOverText)

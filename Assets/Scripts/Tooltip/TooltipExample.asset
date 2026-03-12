@@ -22,3 +22,12 @@ MonoBehaviour:
   - keyword: Question
     definition: question???? wow
     image: {fileID: 0}
+  - keyword: Jeg
+    definition: Jeg er mig
+    image: {fileID: 0}
+  - keyword: mens
+    definition: mens du er i live kan du leve
+    image: {fileID: 0}
+  - keyword: du
+    definition: du er dum
+    image: {fileID: 0}
