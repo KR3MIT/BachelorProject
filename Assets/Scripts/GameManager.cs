@@ -1,21 +1,28 @@
 using UnityEngine;
 using System;
-using System.Collections.Generic;
 /// <summary>
 /// overall manager
 /// </summary>
 public class GameManager : MonoBehaviour, IGameUI
 {
     [Header("UI")]
+    [SerializeField] private ViewpointView viewpointView;
     [SerializeField] private QuestionView questionView;
     [SerializeField] private ExplanationView explanationView;
     [SerializeField] private EndView endView;
+    [SerializeField] private UIApprovalRating approvalRating;
 
     [Header("Data")]
     [SerializeField] private TimelineDefinition timeline;
 
     private GameSession session;
     private int currentStepIndex;
+
+    public void StartPreGame()
+    {
+        viewpointView.gameObject.SetActive(true);
+        approvalRating.gameObject.SetActive(true);
+    }
 
     public void StartGame(int viewpointID)
     {
