@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb66751e3ec4467468bbd7b899c97805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonHover
+  isActive: 1
 --- !u!1 &574394077258580321
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb66751e3ec4467468bbd7b899c97805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonHover
+  isActive: 1
 --- !u!1 &1715520583832829000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,12 +1588,16 @@ MonoBehaviour:
   - paper: {fileID: 5485635559362329429}
     answerText: {fileID: 9158717801127641863}
     answerButton: {fileID: 5844758648686373900}
+    buttonHover: {fileID: 7467291547297615683}
   - paper: {fileID: 8052121255520889878}
     answerText: {fileID: 3709208707179781655}
     answerButton: {fileID: 3053823004079626400}
+    buttonHover: {fileID: 1771536445105237169}
   - paper: {fileID: 1350003657090535249}
     answerText: {fileID: 7266855720948035540}
     answerButton: {fileID: 3816819049598239016}
+    buttonHover: {fileID: 2276471182990266080}
+  initialLeftPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3390104103477822924
 GameObject:
   m_ObjectHideFlags: 0
@@ -2902,6 +2908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb66751e3ec4467468bbd7b899c97805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  isActive: 1
 --- !u!1 &6817387022303316532
 GameObject:
   m_ObjectHideFlags: 0

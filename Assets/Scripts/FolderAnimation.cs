@@ -30,8 +30,9 @@ public class FolderAnimation : MonoBehaviour
         initialStampPosition = stamp.transform.position;
     }
 
-    public void SlideIn(bool twoOptions)
+    public async void SlideIn(bool twoOptions, int delay = 1000)
     {
+        await Task.Delay(delay);
         animator.SetTrigger("SlideIn");
         if (twoOptions) 
         {

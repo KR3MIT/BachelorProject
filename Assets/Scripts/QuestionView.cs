@@ -14,13 +14,7 @@ public struct PaperData
     public RectTransform paper;
     public TMPTextFormatter answerText;
     public AnswerButton answerButton;
-
-    public PaperData(RectTransform paper, TMPTextFormatter answerText, AnswerButton answerButton)
-    {
-        this.paper = paper;
-        this.answerText = answerText;
-        this.answerButton = answerButton;
-    }
+    public ButtonHover buttonHover;
 }
 
 /// <summary>
@@ -49,21 +43,25 @@ public class QuestionView : MonoBehaviour
     {
         canvasRect = GetComponentInParent<Canvas>().GetComponent<RectTransform>();
         initialLeftPosition = paperDatas[0].paper.position;
+    }
+
+    private void Start()
+    {
         documentPanel.anchoredPosition = GetOffScreen(true);
     }
 
-    private Vector2 GetOffScreen(bool isLeft)
+    private Vector2 GetOffScreen(bool isBottom)
     {
-        if (isLeft)
-            return new Vector2(-(canvasRect.rect.width / 2f + documentPanel.rect.width / 2f + offScreenBuffer), documentPanel.anchoredPosition.y);
+        if (isBottom)
+            return new Vector2(documentPanel.anchoredPosition.x, -(canvasRect.rect.height / 2f + documentPanel.rect.height / 2f + offScreenBuffer));
         else
-            return new Vector2(canvasRect.rect.width / 2f + documentPanel.rect.width / 2f + offScreenBuffer, documentPanel.anchoredPosition.y);
+            return new Vector2(documentPanel.anchoredPosition.x, canvasRect.rect.height / 2f + documentPanel.rect.height / 2f + offScreenBuffer);
     }
 
     /// <summary>
-    /// Shows the question and calls onAnswerSelected exactly once when the player picks an answer.
+    /// Shows the question and calls onAnswerSelected when the player picks an answer.
     /// </summary>
-    public void Show(QuestionStep question, Action<int> onAnswerSelected)
+    public async void Show(QuestionStep question, Action<int> onAnswerSelected)
     {
         currentCallback = onAnswerSelected;
         gameObject.SetActive(true);
@@ -97,8 +95,13 @@ public class QuestionView : MonoBehaviour
 
         LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
 
-        documentPanel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
         FolderAnimation.Instance.SlideIn(answers.Count() == 2);
+
+        foreach (var p in paperDatas) p.buttonHover.isActive = false;
+        await documentPanel.DOAnchorPos(Vector2.zero, 1).SetDelay(1).AsyncWaitForCompletion();
+        foreach (var p in paperDatas) p.buttonHover.isActive = true;
+
+
     }
 
     private async void OnAnswerSelected(int index)
