@@ -7,6 +7,7 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 {
     private Vector3 initialPosition;
     private RectTransform rectTransform;
+    public bool isActive = true;
 
     public void Awake()
     {
@@ -16,11 +17,13 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if (!isActive) return;
         rectTransform.DOMoveY(rectTransform.position.y + 10f, 0.2f).SetEase(Ease.OutQuad);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        if (!isActive) return;
         rectTransform.DOMoveY(initialPosition.y, 0.2f).SetEase(Ease.OutQuad);
     }
 }

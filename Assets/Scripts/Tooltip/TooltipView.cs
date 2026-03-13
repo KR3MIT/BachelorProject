@@ -32,7 +32,6 @@ public class TooltipView : MonoBehaviour
         headerText.text = header;
         definitionText.text = definition;
         imageImage.sprite = image;
-        PositionAt(screenPosition);
 
         int headerLength = header.Length;
         int definitionLength = definition.Length;
@@ -40,6 +39,11 @@ public class TooltipView : MonoBehaviour
         layoutElement.enabled = headerLength > characterWrapLimit || definitionLength > characterWrapLimit;
 
         panel.gameObject.SetActive(true);
+
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(panel);
+
+        PositionAt(screenPosition);
     }
 
     public void Hide()
@@ -51,6 +55,11 @@ public class TooltipView : MonoBehaviour
     {
         Camera cam = parentCanvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : parentCanvas.worldCamera;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPosition, cam, out Vector2 localPoint);
-        panel.anchoredPosition = localPoint + offset;
+
+        //place at left bottom corner
+        Vector2 tooltipSize = panel.rect.size;
+        Vector2 pivotOffset = new Vector2(panel.pivot.x * tooltipSize.x, panel.pivot.y * tooltipSize.y);
+
+        panel.anchoredPosition = localPoint + pivotOffset + offset;
     }
 }

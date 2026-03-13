@@ -14,13 +14,7 @@ public struct PaperData
     public RectTransform paper;
     public TMPTextFormatter answerText;
     public AnswerButton answerButton;
-
-    public PaperData(RectTransform paper, TMPTextFormatter answerText, AnswerButton answerButton)
-    {
-        this.paper = paper;
-        this.answerText = answerText;
-        this.answerButton = answerButton;
-    }
+    public ButtonHover buttonHover;
 }
 
 /// <summary>
@@ -36,32 +30,38 @@ public class QuestionView : MonoBehaviour
 
     [SerializeField] private GameObject paperContainer;
     [SerializeField] private List<PaperData> paperDatas;
+    [SerializeField] private Vector3 initialLeftPosition;
 
     //[SerializeField] private List<RectTransform> papers;
     //[SerializeField] private List<TMPTextFormatter> answerTexts;
     //private List<AnswerButton> answerButtons = new List<AnswerButton>();
-    
+
     private RectTransform canvasRect;
     private Action<int> currentCallback;
 
     private void Awake()
     {
         canvasRect = GetComponentInParent<Canvas>().GetComponent<RectTransform>();
+        initialLeftPosition = paperDatas[0].paper.position;
+    }
+
+    private void Start()
+    {
         documentPanel.anchoredPosition = GetOffScreen(true);
     }
 
-    private Vector2 GetOffScreen(bool isLeft)
+    private Vector2 GetOffScreen(bool isBottom)
     {
-        if (isLeft)
-            return new Vector2(-(canvasRect.rect.width / 2f + documentPanel.rect.width / 2f + offScreenBuffer), documentPanel.anchoredPosition.y);
+        if (isBottom)
+            return new Vector2(documentPanel.anchoredPosition.x, -(canvasRect.rect.height / 2f + documentPanel.rect.height / 2f + offScreenBuffer));
         else
-            return new Vector2(canvasRect.rect.width / 2f + documentPanel.rect.width / 2f + offScreenBuffer, documentPanel.anchoredPosition.y);
+            return new Vector2(documentPanel.anchoredPosition.x, canvasRect.rect.height / 2f + documentPanel.rect.height / 2f + offScreenBuffer);
     }
 
     /// <summary>
-    /// Shows the question and calls onAnswerSelected exactly once when the player picks an answer.
+    /// Shows the question and calls onAnswerSelected when the player picks an answer.
     /// </summary>
-    public void Show(QuestionStep question, Action<int> onAnswerSelected)
+    public async void Show(QuestionStep question, Action<int> onAnswerSelected)
     {
         currentCallback = onAnswerSelected;
         gameObject.SetActive(true);
@@ -91,12 +91,17 @@ public class QuestionView : MonoBehaviour
             paperDatas[i].answerButton.Initialize(i, OnAnswerSelected);
         }
 
-        MoveToTop(0);//always green first
+        paperDatas[0].paper.SetAsLastSibling();//green first
 
         LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
 
-        documentPanel.DOAnchorPos(Vector2.zero, 2).SetDelay(1);
         FolderAnimation.Instance.SlideIn(answers.Count() == 2);
+
+        foreach (var p in paperDatas) p.buttonHover.isActive = false;
+        await documentPanel.DOAnchorPos(Vector2.zero, 1).SetDelay(1).AsyncWaitForCompletion();
+        foreach (var p in paperDatas) p.buttonHover.isActive = true;
+
+
     }
 
     private async void OnAnswerSelected(int index)
@@ -126,12 +131,18 @@ public class QuestionView : MonoBehaviour
     public async void MoveToTop(int index)
     {
         //get last child
-        var lastChild = paperContainer.transform.GetChild(paperContainer.transform.childCount - 1);
+        var lastChild = paperContainer.transform.GetChild(paperContainer.transform.childCount - 1); //get last child
 
-        await lastChild.DOJump(paperDatas[index].paper.position, 100, 1, .3f).AsyncWaitForCompletion();
+        if(lastChild == paperDatas[index].paper)
+        {
+            return;
+        }
 
+        paperDatas[index].paper.transform.SetSiblingIndex(lastChild.GetSiblingIndex() - 1);//set chosen child to be behind the last child
 
-        paperDatas[index].paper.SetAsLastSibling();
+        await lastChild.DOMoveX(initialLeftPosition.x - 500f, .3f).AsyncWaitForCompletion();//move last child
+
+        paperDatas[index].paper.SetAsLastSibling();//set chosen child to be the last child
 
         foreach (var paperData in paperDatas)
         {
@@ -144,6 +155,8 @@ public class QuestionView : MonoBehaviour
                 paperData.answerText.tooltipEnabled = false;
             }
         }
+
+        lastChild.DOMoveX(initialLeftPosition.x, .3f);
     }
 
 }
