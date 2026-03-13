@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour, IGameUI
     [SerializeField] private QuestionView questionView;
     [SerializeField] private ExplanationView explanationView;
     [SerializeField] private EndView endView;
-    [SerializeField] private UIApprovalRating approvalRating;
 
     [Header("Data")]
     [SerializeField] private TimelineDefinition timeline;
@@ -21,7 +20,8 @@ public class GameManager : MonoBehaviour, IGameUI
     public void StartPreGame()
     {
         viewpointView.gameObject.SetActive(true);
-        approvalRating.gameObject.SetActive(true);
+        UIApprovalRating.Instance.gameObject.SetActive(true);
+        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
     }
 
     public void StartGame(int viewpointID)

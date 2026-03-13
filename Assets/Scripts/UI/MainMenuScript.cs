@@ -43,6 +43,8 @@ public class MainMenuScript : MonoBehaviour
 
         string text = Mathf.Round(value * 100f) + "%";
         Text.text = text;
+        AudioManager.Instance.SetVolume(value);
+        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
     }
 
     private void ToggleSlider()

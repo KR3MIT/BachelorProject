@@ -488,7 +488,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1747771267}
         m_TargetAssemblyTypeName: SoundTest, Assembly-CSharp
-        m_MethodName: PlaySound2
+        m_MethodName: PlaySound0
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

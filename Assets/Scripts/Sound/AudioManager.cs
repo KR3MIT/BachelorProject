@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 
 
@@ -25,7 +26,9 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
     public Sound[] sounds;
+    public AudioMixerGroup mixerGroup;
     private Dictionary<SoundType, Sound> soundDictionary;
+    private float volumeMultiplier = 1f;
 
     private void Awake()
     {
@@ -42,6 +45,7 @@ public class AudioManager : MonoBehaviour
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
+            s.source.outputAudioMixerGroup = mixerGroup;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
 
@@ -51,6 +55,8 @@ public class AudioManager : MonoBehaviour
                 Debug.LogWarning("Duplicate sound type: " + s.type);
         }
     }
+
+
 
 
     public void Play(SoundType type)
@@ -69,8 +75,15 @@ public class AudioManager : MonoBehaviour
         else
             s.source.pitch = s.pitch;
 
+        s.source.volume = s.volume*volumeMultiplier;
         s.source.Play();
 
 
     }
+    
+    public void SetVolume(float v)
+    {
+        volumeMultiplier = v;
+    }
+
 }
