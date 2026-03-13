@@ -36,17 +36,19 @@ public class QuestionView : MonoBehaviour
 
     [SerializeField] private GameObject paperContainer;
     [SerializeField] private List<PaperData> paperDatas;
+    [SerializeField] private Vector3 initialLeftPosition;
 
     //[SerializeField] private List<RectTransform> papers;
     //[SerializeField] private List<TMPTextFormatter> answerTexts;
     //private List<AnswerButton> answerButtons = new List<AnswerButton>();
-    
+
     private RectTransform canvasRect;
     private Action<int> currentCallback;
 
     private void Awake()
     {
         canvasRect = GetComponentInParent<Canvas>().GetComponent<RectTransform>();
+        initialLeftPosition = paperDatas[0].paper.position;
         documentPanel.anchoredPosition = GetOffScreen(true);
     }
 
@@ -91,7 +93,7 @@ public class QuestionView : MonoBehaviour
             paperDatas[i].answerButton.Initialize(i, OnAnswerSelected);
         }
 
-        MoveToTop(0);//always green first
+        paperDatas[0].paper.SetAsLastSibling();//green first
 
         LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
 
@@ -126,12 +128,18 @@ public class QuestionView : MonoBehaviour
     public async void MoveToTop(int index)
     {
         //get last child
-        var lastChild = paperContainer.transform.GetChild(paperContainer.transform.childCount - 1);
+        var lastChild = paperContainer.transform.GetChild(paperContainer.transform.childCount - 1); //get last child
 
-        await lastChild.DOJump(paperDatas[index].paper.position, 100, 1, .3f).AsyncWaitForCompletion();
+        if(lastChild == paperDatas[index].paper)
+        {
+            return;
+        }
 
+        paperDatas[index].paper.transform.SetSiblingIndex(lastChild.GetSiblingIndex() - 1);//set chosen child to be behind the last child
 
-        paperDatas[index].paper.SetAsLastSibling();
+        await lastChild.DOMoveX(initialLeftPosition.x - 200f, .3f).AsyncWaitForCompletion();//move last child
+
+        paperDatas[index].paper.SetAsLastSibling();//set chosen child to be the last child
 
         foreach (var paperData in paperDatas)
         {
@@ -144,6 +152,8 @@ public class QuestionView : MonoBehaviour
                 paperData.answerText.tooltipEnabled = false;
             }
         }
+
+        lastChild.DOMoveX(initialLeftPosition.x, .3f);
     }
 
 }
