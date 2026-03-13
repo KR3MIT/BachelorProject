@@ -164,7 +164,7 @@ MonoBehaviour:
   - type: 2
     clips:
     - {fileID: 8300000, guid: 390cc633c6e831b45a604ae9e3eaa76a, type: 3}
-    volume: 1
+    volume: 0.8
     pitch: 1
     randomPitch: 1
     randomRange: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   - type: 3
     clips:
     - {fileID: 8300000, guid: 409aac42e181514439b83f48cc43621d, type: 3}
-    volume: 1
+    volume: 0.9
     pitch: 1
     randomPitch: 1
     randomRange: 0.175
