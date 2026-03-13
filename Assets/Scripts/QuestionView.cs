@@ -137,7 +137,7 @@ public class QuestionView : MonoBehaviour
 
         paperDatas[index].paper.transform.SetSiblingIndex(lastChild.GetSiblingIndex() - 1);//set chosen child to be behind the last child
 
-        await lastChild.DOMoveX(initialLeftPosition.x - 200f, .3f).AsyncWaitForCompletion();//move last child
+        await lastChild.DOMoveX(initialLeftPosition.x - 500f, .3f).AsyncWaitForCompletion();//move last child
 
         paperDatas[index].paper.SetAsLastSibling();//set chosen child to be the last child
 
