@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7985270288576638740}
   - component: {fileID: 700590827441319281}
+  - component: {fileID: 2292117840577442240}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -86,3 +87,16 @@ MonoBehaviour:
   sfxGroup: {fileID: 5868168192571771553, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
   musicGroup: {fileID: 5457690970618968382, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
   uiGroup: {fileID: 5032160897781415884, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
+--- !u!114 &2292117840577442240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2654251143621864153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0968e61061c1ff469f34d1045e228ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioMixerController
+  mixer: {fileID: 24100000, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
