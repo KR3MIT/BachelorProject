@@ -16,6 +16,7 @@ public enum SoundType
 public class Sound
 {
     public SoundType type;
+    public SoundCategory category;
     public AudioClip[] clips;
     [UnityEngine.Range(0f, 2f)]
     public float volume = 1f;
@@ -36,7 +37,6 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
     public AudioMixerGroup mixerGroup;
     private Dictionary<SoundType, Sound> soundDictionary;
-    private float volumeMultiplier = 1f;
 
     private void Awake()
     {
@@ -65,8 +65,6 @@ public class AudioManager : MonoBehaviour
     }
 
 
-
-
     public void Play(SoundType type)
     {
         if (!soundDictionary.TryGetValue(type, out Sound s))
@@ -75,23 +73,55 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        AudioClip clip = s.clips[Random.Range(0, s.clips.Length)];
-        s.source.clip = clip;
-
-        if (s.randomPitch)
-            s.source.pitch = Random.Range(s.pitch - s.randomRange, s.pitch + s.randomRange);
-        else
-            s.source.pitch = s.pitch;
-
-        s.source.volume = s.volume*volumeMultiplier;
-        s.source.Play();
-
-
+        switch (s.category)
+        {
+            case SoundCategory.Music:
+                PlayMusic(s);
+                break;
+            case SoundCategory.SFX:
+                PlaySFX(s);
+                break;
+            case SoundCategory.UI:
+                PlayUI(s);
+                break;
+        }
     }
-    
-    public void SetVolume(float v)
+
+    private void RandomizeClip(Sound s)
     {
-        volumeMultiplier = v;
+        s.source.clip = s.clips[Random.Range(0, s.clips.Length)];
     }
 
+    private void RandomizePitch(Sound s)
+    {
+        if (s.randomPitch)
+        {
+            s.source.pitch = Random.Range(s.pitch - s.randomRange, s.pitch + s.randomRange);
+        }
+        else
+        {
+            s.source.pitch = s.pitch;
+        }
+    }
+
+
+    private void PlaySFX(Sound s)
+    {
+        RandomizeClip(s);
+        RandomizePitch(s);
+        s.source.PlayOneShot(s.source.clip);
+    }
+
+    private void PlayMusic(Sound s)
+    {
+        RandomizeClip(s);
+        s.source.Play();
+    }
+
+    private void PlayUI(Sound s)
+    {
+        RandomizeClip(s);
+        RandomizePitch(s);
+        s.source.PlayOneShot(s.source.clip);
+    }
 }
