@@ -34,7 +34,7 @@ public class FolderAnimation : MonoBehaviour
     {
         await Task.Delay(delay);
         animator.SetTrigger("SlideIn");
-        AudioManager.Instance.Play(SoundType.PaperSlideHard);
+        AudioManager.Instance.Play(SoundType.PaperFlutter);
         if (twoOptions) 
         {
             //Debug.Log("Using two option material");

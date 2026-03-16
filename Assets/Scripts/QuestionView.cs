@@ -111,6 +111,8 @@ public class QuestionView : MonoBehaviour
 
     private async void OnAnswerSelected(int index)
     {
+        AudioManager.Instance.Play(SoundType.Click);
+
         await Hide();
 
         await FolderAnimation.Instance.MoveStamp(index);
@@ -145,6 +147,7 @@ public class QuestionView : MonoBehaviour
 
         paperDatas[index].paper.transform.SetSiblingIndex(lastChild.GetSiblingIndex() - 1);//set chosen child to be behind the last child
 
+        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
         await lastChild.DOMoveX(initialLeftPosition.x - 500f, .3f).AsyncWaitForCompletion();//move last child
 
         paperDatas[index].paper.SetAsLastSibling();//set chosen child to be the last child
@@ -161,6 +164,7 @@ public class QuestionView : MonoBehaviour
             }
         }
 
+        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
         lastChild.DOMoveX(initialLeftPosition.x, .3f);
     }
 

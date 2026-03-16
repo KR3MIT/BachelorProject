@@ -2,7 +2,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-
+public enum SoundType
+{
+    PaperSlideSoft,
+    PaperSlideHard,
+    PaperTear,
+    Stamp,
+    PaperFlutter,
+    Click,
+}
 
 [System.Serializable]
 public class Sound
