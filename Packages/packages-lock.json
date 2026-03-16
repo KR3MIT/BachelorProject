@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.unify.unified-universal-blur": {
+      "version": "0.7.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "17.0.3"
+      },
+      "url": "https://package.openupm.com"
+    },
     "com.unity.2d.animation": {
       "version": "13.0.4",
       "depth": 1,
