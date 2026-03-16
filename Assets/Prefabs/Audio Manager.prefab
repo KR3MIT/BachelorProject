@@ -82,7 +82,27 @@ MonoBehaviour:
     volume: 0.9
     pitch: 1
     randomPitch: 1
-    randomRange: 0.175
+    randomRange: 0.1412
+    currentClip: {fileID: 0}
+  - type: 7
+    category: 2
+    clips:
+    - {fileID: 8300000, guid: 98de4852ab94e264e921331357e2342c, type: 3}
+    - {fileID: 8300000, guid: 5ac7acdbab0f6094b8a1cf91fc953a1b, type: 3}
+    - {fileID: 8300000, guid: ac0ae096c72e7f54db6f2e6c30a8ffcb, type: 3}
+    volume: 0.9
+    pitch: 1
+    randomPitch: 0
+    randomRange: 0.1
+    currentClip: {fileID: 0}
+  - type: 6
+    category: 1
+    clips:
+    - {fileID: 8300000, guid: 24a4f401e82cc0049b4d73749dd8c76c, type: 3}
+    volume: 0.9
+    pitch: 1
+    randomPitch: 0
+    randomRange: 0.1919
     currentClip: {fileID: 0}
   sfxGroup: {fileID: 5868168192571771553, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
   musicGroup: {fileID: 5457690970618968382, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}

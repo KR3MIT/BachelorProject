@@ -10,6 +10,8 @@ public enum SoundType
     Stamp,
     PaperFlutter,
     Click,
+    Music,
+    UIClick
 }
 public enum SoundCategory
 {
