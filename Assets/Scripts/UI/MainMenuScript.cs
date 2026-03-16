@@ -76,7 +76,7 @@ public class MainMenuScript : MonoBehaviour
 
         string text = Mathf.Round(value * 100f) + "%";
         Text.text = text;
-
+        AudioMixerController.Instance.SetMasterVolume(value);
         // Only apply volume changes if enough time has passed (throttle while slider is open)
         // Allow immediate application when the slider is not visible (e.g. initial setup)
         if (!AudioSlider.gameObject.activeSelf || cooldown >= 0.1f)
