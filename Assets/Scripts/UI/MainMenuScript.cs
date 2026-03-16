@@ -1,10 +1,18 @@
+using System;
+using System.Threading.Tasks;
+using DG.Tweening;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour
 {
+    [Header("Scene")]
+    [SerializeField] private Transform gameCameraTransform;
+    [SerializeField] private Button startButton;
+    private GameObject cam;
+
+    [Header("Audio")]
     [SerializeField] private Button AudioButton;
     [SerializeField] private Slider AudioSlider;
     [SerializeField] private TMP_Text Text;
@@ -18,17 +26,26 @@ public class MainMenuScript : MonoBehaviour
     {
         _Image = AudioButton.gameObject.GetComponent<Image>();
         OnImage = _Image.sprite;
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        AudioSlider.gameObject.SetActive(false);
+        cam = Camera.main.gameObject;
 
         AudioSlider.onValueChanged.AddListener(DoAudioStuff);
         AudioButton.onClick.AddListener(ToggleSlider);
+    }
 
+    public void Show(Action onStartGame)
+    {
+        gameObject.SetActive(true);
+
+        AudioSlider.gameObject.SetActive(false);
         DoAudioStuff(AudioSlider.value);
+
+        startButton.onClick.RemoveAllListeners();
+        startButton.onClick.AddListener(() => onStartGame?.Invoke());
+    }
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
     }
 
     void Update()
@@ -37,6 +54,17 @@ public class MainMenuScript : MonoBehaviour
         {
             cooldown += Time.deltaTime;
         }
+    }
+
+    public async Task MoveCameraToGame() 
+    {
+        cam.transform.DOMove(gameCameraTransform.position, 1.5f).SetEase(Ease.InOutQuad);
+        await cam.transform.DORotateQuaternion(gameCameraTransform.rotation, 1.5f).SetEase(Ease.InOutQuad).AsyncWaitForCompletion();
+    }
+
+    public void MoveCameraToMenu() 
+    {
+
     }
 
     private void DoAudioStuff(float value)

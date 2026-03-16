@@ -6,6 +6,7 @@ using System;
 public class GameManager : MonoBehaviour, IGameUI
 {
     [Header("UI")]
+    [SerializeField] private MainMenuScript mainMenu;
     [SerializeField] private ViewpointView viewpointView;
     [SerializeField] private QuestionView questionView;
     [SerializeField] private ExplanationView explanationView;
@@ -17,11 +18,21 @@ public class GameManager : MonoBehaviour, IGameUI
     private GameSession session;
     private int currentStepIndex;
 
-    public void StartPreGame()
+    public void Start()
     {
+        ShowMenu(StartPreGame);//showmenu, callback to startpregame, when clicked start button
+    }
+
+    public async void StartPreGame()
+    {
+        //menu stuff
+        mainMenu.Hide();
+        await mainMenu.MoveCameraToGame();
+
+        //viewpoint stuff
+        Debug.Log("Starting pre-game setup...");
         viewpointView.gameObject.SetActive(true);
         UIApprovalRating.Instance.gameObject.SetActive(true);
-        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
     }
 
     public void StartGame(int viewpointID)
@@ -61,6 +72,10 @@ public class GameManager : MonoBehaviour, IGameUI
     #endregion
 
     #region IGameUI
+    public void ShowMenu(Action onStartGame)
+    {
+        mainMenu.Show(onStartGame);
+    }
 
     void IGameUI.ShowQuestion(QuestionStep question, Action<int> onAnswerSelected)
     {
