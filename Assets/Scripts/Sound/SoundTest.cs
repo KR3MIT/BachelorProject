@@ -14,20 +14,20 @@ public class SoundTest : MonoBehaviour
         
     }
 
-    public void PlaySound0()
+    public void PlaySoundMusic()
     {
-        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
+        AudioManager.Instance.Play(SoundType.Music);
     }
-    public void PlaySound1()
+    public void PlaySoundUI()
     {
-        AudioManager.Instance.Play(SoundType.PaperSlideHard);
+        AudioManager.Instance.Play(SoundType.UIClick);
     }
-    public void PlaySound2()
+    public void PlaySoundSFXSingle()
     {
         AudioManager.Instance.Play(SoundType.Stamp);
     }
-    public void PlaySound3()
+    public void PlaySoundSFXMultiple()
     {
-        AudioManager.Instance.Play(SoundType.PaperTear);
+        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
     }
 }
