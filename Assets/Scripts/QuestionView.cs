@@ -92,6 +92,11 @@ public class QuestionView : MonoBehaviour
         }
 
         paperDatas[0].paper.SetAsLastSibling();//green first
+        
+        if(answers.Count() == 2)
+            paperDatas[paperDatas.Count() - 1].paper.gameObject.SetActive(false);
+        else 
+            paperDatas[paperDatas.Count() - 1].paper.gameObject.SetActive(true);
 
         LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
 

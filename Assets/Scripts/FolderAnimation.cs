@@ -34,6 +34,7 @@ public class FolderAnimation : MonoBehaviour
     {
         await Task.Delay(delay);
         animator.SetTrigger("SlideIn");
+        AudioManager.Instance.Play(SoundType.PaperSlideHard);
         if (twoOptions) 
         {
             //Debug.Log("Using two option material");
@@ -60,6 +61,8 @@ public class FolderAnimation : MonoBehaviour
         async Task StampJumpIn(Vector3 position)
         {
             await stamp.transform.DOJump(position, jumpPower, 1, 1f).SetEase(Ease.InOutSine).SetDelay(1).OnComplete(()=> selectionStamps[index].SetActive(true)).AsyncWaitForCompletion();
+
+            AudioManager.Instance.Play(SoundType.Stamp);
 
             await StampJumpOut();
         }

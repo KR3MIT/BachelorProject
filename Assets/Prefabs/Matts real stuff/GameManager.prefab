@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eadc733d88eb8684fab49f19e9836f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  viewpointView: {fileID: 0}
   questionView: {fileID: 0}
   explanationView: {fileID: 0}
-  timeline: {fileID: 11400000, guid: 9a19713c443229241ac6df569e412657, type: 2}
+  endView: {fileID: 0}
+  timeline: {fileID: 11400000, guid: baad73201029e1e41b498b3bbfdc33dc, type: 2}
