@@ -53,7 +53,6 @@ public class MainMenuScript : MonoBehaviour
         // Allow immediate application when the slider is not visible (e.g. initial setup)
         if (!AudioSlider.gameObject.activeSelf || cooldown >= 0.1f)
         {
-            AudioManager.Instance.SetVolume(value);
             AudioManager.Instance.Play(SoundType.PaperSlideSoft);
             cooldown = 0f;
         }

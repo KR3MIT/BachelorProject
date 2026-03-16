@@ -11,6 +11,12 @@ public enum SoundType
     PaperFlutter,
     Click,
 }
+public enum SoundCategory
+{
+    SFX,
+    Music,
+    UI
+}
 
 [System.Serializable]
 public class Sound
