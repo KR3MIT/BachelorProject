@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   sounds:
   - type: 0
+    category: 0
     clips:
     - {fileID: 8300000, guid: 0ab90f44bb1214646a91d6f4745e3b67, type: 3}
     - {fileID: 8300000, guid: eb91bca6fa74f7c43ae294a068f51196, type: 3}
@@ -54,29 +55,34 @@ MonoBehaviour:
     pitch: 1
     randomPitch: 0
     randomRange: 0
-    source: {fileID: 0}
+    currentClip: {fileID: 0}
   - type: 1
+    category: 0
     clips:
     - {fileID: 8300000, guid: 8470efcbc92695e4491bb8751ee6b037, type: 3}
     volume: 1
     pitch: 1
     randomPitch: 1
     randomRange: 0
-    source: {fileID: 0}
+    currentClip: {fileID: 0}
   - type: 2
+    category: 0
     clips:
     - {fileID: 8300000, guid: 390cc633c6e831b45a604ae9e3eaa76a, type: 3}
     volume: 0.8
     pitch: 1
     randomPitch: 1
     randomRange: 0
-    source: {fileID: 0}
+    currentClip: {fileID: 0}
   - type: 3
+    category: 0
     clips:
     - {fileID: 8300000, guid: 409aac42e181514439b83f48cc43621d, type: 3}
     volume: 0.9
     pitch: 1
     randomPitch: 1
     randomRange: 0.175
-    source: {fileID: 0}
-  mixerGroup: {fileID: 24300002, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
+    currentClip: {fileID: 0}
+  sfxGroup: {fileID: 5868168192571771553, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
+  musicGroup: {fileID: 5457690970618968382, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
+  uiGroup: {fileID: 5032160897781415884, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
