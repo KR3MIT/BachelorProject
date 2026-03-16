@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +12,12 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField] private Sprite OnImage;
     [SerializeField] private Sprite OffImage;
     private Image _Image;
+    private float cooldown;
 
     private void Awake()
     {
         _Image = AudioButton.gameObject.GetComponent<Image>();
         OnImage = _Image.sprite;
-        DoAudioStuff(AudioSlider.value);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,12 +27,16 @@ public class MainMenuScript : MonoBehaviour
 
         AudioSlider.onValueChanged.AddListener(DoAudioStuff);
         AudioButton.onClick.AddListener(ToggleSlider);
+
+        DoAudioStuff(AudioSlider.value);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(AudioSlider.gameObject.activeSelf)
+        {
+            cooldown += Time.deltaTime;
+        }
     }
 
     private void DoAudioStuff(float value)
@@ -43,8 +48,15 @@ public class MainMenuScript : MonoBehaviour
 
         string text = Mathf.Round(value * 100f) + "%";
         Text.text = text;
-        AudioManager.Instance.SetVolume(value);
-        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
+
+        // Only apply volume changes if enough time has passed (throttle while slider is open)
+        // Allow immediate application when the slider is not visible (e.g. initial setup)
+        if (!AudioSlider.gameObject.activeSelf || cooldown >= 0.1f)
+        {
+            AudioManager.Instance.SetVolume(value);
+            AudioManager.Instance.Play(SoundType.PaperSlideSoft);
+            cooldown = 0f;
+        }
     }
 
     private void ToggleSlider()
