@@ -55,13 +55,13 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     randomPitch: 0
-    randomRange: 0
+    randomRange: 0.01
     currentClip: {fileID: 0}
   - type: 1
     category: 0
     clips:
     - {fileID: 8300000, guid: 8470efcbc92695e4491bb8751ee6b037, type: 3}
-    volume: 1
+    volume: 0.8
     pitch: 1
     randomPitch: 1
     randomRange: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
     category: 0
     clips:
     - {fileID: 8300000, guid: 409aac42e181514439b83f48cc43621d, type: 3}
-    volume: 0.9
+    volume: 0.4
     pitch: 1
     randomPitch: 1
     randomRange: 0.1412
@@ -87,19 +87,35 @@ MonoBehaviour:
   - type: 7
     category: 2
     clips:
-    - {fileID: 8300000, guid: 98de4852ab94e264e921331357e2342c, type: 3}
-    - {fileID: 8300000, guid: 5ac7acdbab0f6094b8a1cf91fc953a1b, type: 3}
-    - {fileID: 8300000, guid: ac0ae096c72e7f54db6f2e6c30a8ffcb, type: 3}
-    volume: 0.9
+    - {fileID: 8300000, guid: 9c3c81d0f5ad8b442a8d4ade59278a5b, type: 3}
+    volume: 1
     pitch: 1
-    randomPitch: 0
-    randomRange: 0.1
+    randomPitch: 1
+    randomRange: 0.04
     currentClip: {fileID: 0}
   - type: 6
     category: 1
     clips:
     - {fileID: 8300000, guid: 24a4f401e82cc0049b4d73749dd8c76c, type: 3}
-    volume: 0.9
+    volume: 0.2
+    pitch: 1
+    randomPitch: 0
+    randomRange: 0.1919
+    currentClip: {fileID: 0}
+  - type: 8
+    category: 2
+    clips:
+    - {fileID: 8300000, guid: d6e55c2d22079bd42a9ee53687882ca2, type: 3}
+    volume: 0.3
+    pitch: 1
+    randomPitch: 0
+    randomRange: 0.1919
+    currentClip: {fileID: 0}
+  - type: 9
+    category: 2
+    clips:
+    - {fileID: 8300000, guid: 7f79c8ac4b2038647baff96c40079fbd, type: 3}
+    volume: 0.3
     pitch: 1
     randomPitch: 0
     randomRange: 0.1919

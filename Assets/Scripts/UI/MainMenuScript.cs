@@ -1,9 +1,9 @@
-using System;
-using System.Threading.Tasks;
-using DG.Tweening;
 using TMPro;
+using System;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading.Tasks;
 
 public class MainMenuScript : MonoBehaviour
 {
@@ -21,6 +21,8 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField] private Sprite OffImage;
     private Image _Image;
     private float cooldown;
+    private bool hidden = true;
+    private Vector3 audioPos;
 
     private void Awake()
     {
@@ -30,13 +32,15 @@ public class MainMenuScript : MonoBehaviour
 
         AudioSlider.onValueChanged.AddListener(DoAudioStuff);
         AudioButton.onClick.AddListener(ToggleSlider);
+
+        audioPos = AudioSlider.gameObject.transform.position;
     }
 
     public void Show(Action onStartGame)
     {
         gameObject.SetActive(true);
 
-        AudioSlider.gameObject.SetActive(false);
+        //AudioSlider.gameObject.SetActive(false);
         DoAudioStuff(AudioSlider.value);
 
         startButton.onClick.RemoveAllListeners();
@@ -77,9 +81,8 @@ public class MainMenuScript : MonoBehaviour
         string text = Mathf.Round(value * 100f) + "%";
         Text.text = text;
         AudioMixerController.Instance.SetMasterVolume(value);
-        // Only apply volume changes if enough time has passed (throttle while slider is open)
-        // Allow immediate application when the slider is not visible (e.g. initial setup)
-        if (!AudioSlider.gameObject.activeSelf || cooldown >= 0.1f)
+
+        if (!AudioSlider.gameObject.activeSelf || cooldown >= 0.25f)
         {
             AudioManager.Instance.Play(SoundType.PaperSlideSoft);
             cooldown = 0f;
@@ -88,6 +91,23 @@ public class MainMenuScript : MonoBehaviour
 
     private void ToggleSlider()
     {
-        AudioSlider.gameObject.SetActive(!AudioSlider.gameObject.activeSelf);
+        hidden = !hidden;
+
+        if (!hidden)
+            AudioShow();
+        else
+            AudioHide();
+    }
+
+    private void AudioShow()
+    {
+        var transform = AudioSlider.gameObject.transform;
+        transform.DOJump(audioPos, 1f, 1, 1f).SetEase(Ease.OutBounce);
+    }
+
+    private void AudioHide()
+    {
+        var transform = AudioSlider.gameObject.transform;
+        transform.DOJump(audioPos + new Vector3(0, -500, 0), 1f, 1, 1f).SetEase(Ease.OutBounce);
     }
 }

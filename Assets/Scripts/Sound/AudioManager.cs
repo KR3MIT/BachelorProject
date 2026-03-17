@@ -11,7 +11,9 @@ public enum SoundType
     PaperFlutter,
     Click,
     Music,
-    UIClick
+    UIClick,
+    WhooshDragon,
+    WhooshFree
 }
 public enum SoundCategory
 {
@@ -31,7 +33,7 @@ public class Sound
     [UnityEngine.Range(0.1f, 3f)]
     public float pitch = 1f;
     public bool randomPitch = false;
-    [UnityEngine.Range(0.1f, 0.3f)]
+    [UnityEngine.Range(0.01f, 0.3f)]
     public float randomRange = 0f;
 
     [HideInInspector]
