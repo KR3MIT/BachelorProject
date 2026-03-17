@@ -4,6 +4,7 @@ using UnityEngine.Audio;
 
 public enum SoundType
 {
+    None,
     PaperSlideSoft,
     PaperSlideHard,
     PaperTear,
@@ -13,7 +14,8 @@ public enum SoundType
     Music,
     UIClick,
     WhooshDragon,
-    WhooshFree
+    WhooshFree,
+    Notification
 }
 public enum SoundCategory
 {
