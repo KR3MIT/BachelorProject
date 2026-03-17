@@ -14,18 +14,20 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         rectTransform = GetComponent<RectTransform>();
         button = GetComponent<Button>();
-        initialPosition = rectTransform.position;
+        initialPosition = rectTransform.anchoredPosition;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (!isActive) return;
-        rectTransform.DOMoveY(rectTransform.position.y + 10f, 0.2f).SetEase(Ease.OutQuad);
+        //rectTransform.DOMoveY(rectTransform.position.y + 10f, 0.2f).SetEase(Ease.OutQuad);
+        rectTransform.DOAnchorPosY(rectTransform.anchoredPosition.y + 10f, 0.2f).SetEase(Ease.OutQuad);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         if (!isActive) return;
-        rectTransform.DOMoveY(initialPosition.y, 0.2f).SetEase(Ease.OutQuad);
+        //rectTransform.DOMoveY(initialPosition.y, 0.2f).SetEase(Ease.OutQuad);
+        rectTransform.DOAnchorPosY(initialPosition.y, 0.2f).SetEase(Ease.OutQuad);
     }
 }
