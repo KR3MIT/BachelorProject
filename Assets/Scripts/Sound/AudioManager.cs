@@ -13,7 +13,8 @@ public enum SoundType
     Music,
     UIClick,
     WhooshDragon,
-    WhooshFree
+    WhooshFree,
+    Notification
 }
 public enum SoundCategory
 {

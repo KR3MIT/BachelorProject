@@ -45,4 +45,9 @@ public class SoundTest : MonoBehaviour
     {
         AudioManager.Instance.Play(SoundType.WhooshFree);
     }
+
+    public void PlayNotification ()
+    {
+        AudioManager.Instance.Play(SoundType.Notification);
+    }
 }
