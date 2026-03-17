@@ -30,4 +30,9 @@ public class SoundTest : MonoBehaviour
     {
         AudioManager.Instance.Play(SoundType.PaperSlideSoft);
     }
+
+    public void PlayStamp()
+    {
+        AudioManager.Instance.Play(SoundType.Stamp);
+    }
 }
