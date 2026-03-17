@@ -37,8 +37,8 @@ public class QuestionStep : TimelineStep
     [TextArea] public string question;
     public AnswerOption[] answers;
 
-    private GameSession session;
-    private Action onComplete;
+    protected GameSession session;
+    protected Action onComplete;
 
     public override void Begin(GameSession session, Action onComplete)
     {
@@ -49,7 +49,7 @@ public class QuestionStep : TimelineStep
         session.ui.ShowQuestion(this, OnAnswerSelected);
     }
 
-    private void OnAnswerSelected(int answerIndex)
+    protected virtual void OnAnswerSelected(int answerIndex)
     {
         var answer = answers[answerIndex];
 

@@ -9,5 +9,4 @@ public interface IGameUI
     void ShowMenu(Action onStartGame);
     void ShowQuestion(QuestionStep question, Action<int> onAnswerSelected);
     void ShowExplanation(string text, bool wasCorrect, Action onContinue);
-
 }

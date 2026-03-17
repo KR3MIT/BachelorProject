@@ -137,6 +137,9 @@ public class QuestionView : MonoBehaviour
 
     public async void MoveToTop(int index)
     {
+        //tutorial move on
+        TutorialView.Instance.CompleteStep(TutorialTrigger.ChangeAnswer);
+
         //get last child
         var lastChild = paperContainer.transform.GetChild(paperContainer.transform.childCount - 1); //get last child
 
