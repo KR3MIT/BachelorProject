@@ -36,6 +36,11 @@ public class MainMenuScript : MonoBehaviour
         audioPos = AudioSlider.gameObject.transform.position;
     }
 
+    public void Start()
+    {
+        ToggleSlider(true);
+    }
+
     public void Show(Action onStartGame)
     {
         gameObject.SetActive(true);
@@ -73,10 +78,7 @@ public class MainMenuScript : MonoBehaviour
 
     private void DoAudioStuff(float value)
     {
-        if(value == 0f)
-            _Image.sprite = OffImage;
-        else
-            _Image.sprite = OnImage;
+        if(value == 0f) _Image.sprite = OffImage; else _Image.sprite = OnImage;
 
         string text = Mathf.Round(value * 100f) + "%";
         Text.text = text;
@@ -89,14 +91,16 @@ public class MainMenuScript : MonoBehaviour
         }
     }
 
+    private void ToggleSlider(bool _bool)
+    {
+        hidden = _bool;
+        if (!hidden) AudioShow(); else AudioHide();
+    }
+
     private void ToggleSlider()
     {
         hidden = !hidden;
-
-        if (!hidden)
-            AudioShow();
-        else
-            AudioHide();
+        if (!hidden) AudioShow(); else AudioHide();
     }
 
     private void AudioShow()
