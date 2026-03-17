@@ -15,7 +15,9 @@ public enum SoundType
     UIClick,
     WhooshDragon,
     WhooshFree,
-    Notification
+    Notification,
+    ApprovalPositive,
+    ApprovalNegative
 }
 public enum SoundCategory
 {

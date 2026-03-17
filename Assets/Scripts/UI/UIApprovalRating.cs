@@ -87,6 +87,13 @@ public class UIApprovalRating : MonoBehaviour
         float timer = 0f;
         yield return new WaitForSeconds(fadeWaitTimer);
 
+        if (isPositive) {
+            AudioManager.Instance.Play(SoundType.ApprovalPositive);
+        }
+        else
+        {
+            AudioManager.Instance.Play(SoundType.ApprovalNegative);
+        }
         // Loop over frames until fadeDuration elapses, updating t in [0,1]
         while (timer < fadeDuration)
         {
