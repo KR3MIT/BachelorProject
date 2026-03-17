@@ -4,6 +4,7 @@ using UnityEngine.Audio;
 
 public enum SoundType
 {
+    None,
     PaperSlideSoft,
     PaperSlideHard,
     PaperTear,

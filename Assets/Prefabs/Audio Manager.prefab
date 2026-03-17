@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   sounds:
-  - type: 0
+  - type: 1
     category: 0
     clips:
     - {fileID: 8300000, guid: 0ab90f44bb1214646a91d6f4745e3b67, type: 3}
@@ -57,7 +57,7 @@ MonoBehaviour:
     randomPitch: 0
     randomRange: 0.01
     currentClip: {fileID: 0}
-  - type: 1
+  - type: 2
     category: 0
     clips:
     - {fileID: 8300000, guid: 8470efcbc92695e4491bb8751ee6b037, type: 3}
@@ -66,7 +66,7 @@ MonoBehaviour:
     randomPitch: 1
     randomRange: 0
     currentClip: {fileID: 0}
-  - type: 2
+  - type: 3
     category: 0
     clips:
     - {fileID: 8300000, guid: 390cc633c6e831b45a604ae9e3eaa76a, type: 3}
@@ -75,7 +75,7 @@ MonoBehaviour:
     randomPitch: 1
     randomRange: 0
     currentClip: {fileID: 0}
-  - type: 3
+  - type: 4
     category: 0
     clips:
     - {fileID: 8300000, guid: 409aac42e181514439b83f48cc43621d, type: 3}
@@ -84,7 +84,7 @@ MonoBehaviour:
     randomPitch: 1
     randomRange: 0.1412
     currentClip: {fileID: 0}
-  - type: 7
+  - type: 8
     category: 2
     clips:
     - {fileID: 8300000, guid: 9c3c81d0f5ad8b442a8d4ade59278a5b, type: 3}
@@ -93,7 +93,7 @@ MonoBehaviour:
     randomPitch: 1
     randomRange: 0.04
     currentClip: {fileID: 0}
-  - type: 6
+  - type: 7
     category: 1
     clips:
     - {fileID: 8300000, guid: 24a4f401e82cc0049b4d73749dd8c76c, type: 3}
@@ -102,7 +102,7 @@ MonoBehaviour:
     randomPitch: 0
     randomRange: 0.1919
     currentClip: {fileID: 0}
-  - type: 8
+  - type: 9
     category: 2
     clips:
     - {fileID: 8300000, guid: d6e55c2d22079bd42a9ee53687882ca2, type: 3}
@@ -111,7 +111,7 @@ MonoBehaviour:
     randomPitch: 0
     randomRange: 0.1919
     currentClip: {fileID: 0}
-  - type: 9
+  - type: 10
     category: 2
     clips:
     - {fileID: 8300000, guid: 7f79c8ac4b2038647baff96c40079fbd, type: 3}
@@ -120,7 +120,7 @@ MonoBehaviour:
     randomPitch: 0
     randomRange: 0.1919
     currentClip: {fileID: 0}
-  - type: 10
+  - type: 11
     category: 2
     clips:
     - {fileID: 8300000, guid: 38adc24333d583e489cb1daa9c3db688, type: 3}
