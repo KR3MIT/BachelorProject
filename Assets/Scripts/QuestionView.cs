@@ -24,17 +24,12 @@ public class QuestionView : MonoBehaviour
 {
     [SerializeField] private TMP_Text questionText;
     [SerializeField] private Transform answersContainer;
-    //[SerializeField] private AnswerButton answerButtonPrefab;
     [SerializeField] private RectTransform documentPanel;
     [SerializeField] private float offScreenBuffer = 50f;
 
     [SerializeField] private GameObject paperContainer;
     [SerializeField] private List<PaperData> paperDatas;
     [SerializeField] private Vector3 initialLeftPosition;
-
-    //[SerializeField] private List<RectTransform> papers;
-    //[SerializeField] private List<TMPTextFormatter> answerTexts;
-    //private List<AnswerButton> answerButtons = new List<AnswerButton>();
 
     private RectTransform canvasRect;
     private Action<int> currentCallback;

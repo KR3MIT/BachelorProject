@@ -22,7 +22,5 @@ public class TutorialQuestionStep : QuestionStep
     protected override void OnAnswerSelected(int answerIndex)
     {
         base.OnAnswerSelected(answerIndex);
-
-        TutorialView.Instance.EndTutorial();
     }
 }

@@ -20,6 +20,7 @@ public class AnswerButton : MonoBehaviour
 
         button = GetComponent<Button>();
         button.onClick.AddListener(OnButtonClicked);
+        button.onClick.AddListener(() => TutorialView.Instance.CompleteStep(TutorialTrigger.AnswerSelected));
     }
 
     private void OnButtonClicked()

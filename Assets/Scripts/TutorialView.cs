@@ -12,6 +12,7 @@ public enum TutorialTrigger
     Any,
     Click,
     ChangeAnswer,
+    AnswerSelected,
 
 }
 
@@ -21,6 +22,7 @@ public struct TutorialData
     public Vector2 position;
     [TextArea] public string tutorialText;
     public TutorialTrigger trigger;
+    public int delay;
 }
 
 public class TutorialView : MonoBehaviour
@@ -96,13 +98,15 @@ public class TutorialView : MonoBehaviour
         }
     }
 
-    void ShowStep(int stepIndex) 
+    async void ShowStep(int stepIndex) 
     {
-        tutorialText.text = tutorialSteps[stepIndex].tutorialText;
+        canvasGroup.alpha = 0f;
 
+        await Task.Delay(tutorialSteps[stepIndex].delay);
+
+        tutorialText.text = tutorialSteps[stepIndex].tutorialText;
         rect.anchoredPosition = tutorialSteps[stepIndex].position;
 
-        canvasGroup.alpha = 0f;
         canvasGroup.DOFade(1f, 0.3f);
     }
 
