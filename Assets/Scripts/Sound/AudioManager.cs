@@ -11,7 +11,9 @@ public enum SoundType
     PaperFlutter,
     Click,
     Music,
-    UIClick
+    UIClick,
+    WhooshDragon,
+    WhooshFree
 }
 public enum SoundCategory
 {

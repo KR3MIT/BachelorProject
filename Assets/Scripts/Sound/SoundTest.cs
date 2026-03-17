@@ -35,4 +35,14 @@ public class SoundTest : MonoBehaviour
     {
         AudioManager.Instance.Play(SoundType.Stamp);
     }
+
+    public void PlayWhooshDragon()
+    {
+        AudioManager.Instance.Play(SoundType.WhooshDragon);
+    }
+
+    public void PlayWhooshFree()
+    {
+        AudioManager.Instance.Play(SoundType.WhooshFree);
+    }
 }
