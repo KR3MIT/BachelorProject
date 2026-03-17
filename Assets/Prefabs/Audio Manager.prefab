@@ -129,6 +129,24 @@ MonoBehaviour:
     randomPitch: 0
     randomRange: 0.1919
     currentClip: {fileID: 0}
+  - type: 12
+    category: 2
+    clips:
+    - {fileID: 8300000, guid: 69d5620c9dd010b45ab409cc238c900a, type: 3}
+    volume: 0.3
+    pitch: 1
+    randomPitch: 0
+    randomRange: 0.1919
+    currentClip: {fileID: 0}
+  - type: 13
+    category: 2
+    clips:
+    - {fileID: 8300000, guid: 6322e5e6270260d44a7b42f2bb067297, type: 3}
+    volume: 0.3
+    pitch: 1
+    randomPitch: 0
+    randomRange: 0.1919
+    currentClip: {fileID: 0}
   sfxGroup: {fileID: 5868168192571771553, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
   musicGroup: {fileID: 5457690970618968382, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
   uiGroup: {fileID: 5032160897781415884, guid: 131866591686fb148ad34bd3f9ece39e, type: 2}
