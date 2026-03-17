@@ -106,7 +106,7 @@ MonoBehaviour:
     category: 2
     clips:
     - {fileID: 8300000, guid: d6e55c2d22079bd42a9ee53687882ca2, type: 3}
-    volume: 0.3
+    volume: 0.15
     pitch: 1
     randomPitch: 0
     randomRange: 0.1919
@@ -115,6 +115,15 @@ MonoBehaviour:
     category: 2
     clips:
     - {fileID: 8300000, guid: 7f79c8ac4b2038647baff96c40079fbd, type: 3}
+    volume: 0.15
+    pitch: 1
+    randomPitch: 0
+    randomRange: 0.1919
+    currentClip: {fileID: 0}
+  - type: 10
+    category: 2
+    clips:
+    - {fileID: 8300000, guid: 38adc24333d583e489cb1daa9c3db688, type: 3}
     volume: 0.3
     pitch: 1
     randomPitch: 0
