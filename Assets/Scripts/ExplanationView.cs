@@ -25,14 +25,11 @@ public class ExplanationView : MonoBehaviour
         continueButton.onClick.AddListener(OnContinueClicked);
 
         await TabletController.Instance.MoveOnScreen();
-
-        gameObject.SetActive(true);
     }
 
     public void Hide()
     {
         TabletController.Instance.MoveOffScreen();
-        gameObject.SetActive(false);
     }
 
     private void OnContinueClicked()
