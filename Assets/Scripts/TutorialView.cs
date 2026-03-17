@@ -1,5 +1,4 @@
 using DG.Tweening;
-using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -29,6 +28,7 @@ public class TutorialView : MonoBehaviour
 {
     public static TutorialView Instance;
     [SerializeField] private TMP_Text tutorialText;
+    [SerializeField] private QuestionView questionView; //sorry for my transgressions but idk how else to do this. Forgive me
 
     private List<TutorialData> tutorialSteps;
     private int currentStepIndex = 0;
@@ -100,6 +100,25 @@ public class TutorialView : MonoBehaviour
 
     async void ShowStep(int stepIndex) 
     {
+        switch (tutorialSteps[stepIndex].trigger)
+        {
+            case TutorialTrigger.Click:
+                questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.Everything);
+                break;
+            case TutorialTrigger.ChangeAnswer:
+                questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.SelectButton);
+                break;
+            case TutorialTrigger.AnswerSelected:
+                questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.HoverButtons);
+                break;
+            case TutorialTrigger.Any:
+                questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.Nothing);
+                break;
+            default:
+                questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.Nothing);
+                break;
+        }
+
         canvasGroup.alpha = 0f;
 
         await Task.Delay(tutorialSteps[stepIndex].delay);
@@ -112,6 +131,8 @@ public class TutorialView : MonoBehaviour
 
     public void EndTutorial()
     {
+        questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.Nothing);
+
         canvasGroup.DOFade(0f, 0.3f).OnComplete(() =>
         { 
             gameObject.SetActive(false);

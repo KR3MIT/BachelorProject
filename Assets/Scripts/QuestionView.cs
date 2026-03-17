@@ -7,6 +7,7 @@ using System.Linq;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 [Serializable]
 public struct PaperData
@@ -69,7 +70,7 @@ public class QuestionView : MonoBehaviour
         var answers = question.answers;
 
         //randomize answers order
-        for(int i = answers.Count() - 1; i >= 0; i--)
+        for (int i = answers.Count() - 1; i >= 0; i--)
         {
             int randomIndex = UnityEngine.Random.Range(0, i + 1);
             var temp = answers[i];
@@ -87,10 +88,10 @@ public class QuestionView : MonoBehaviour
         }
 
         paperDatas[0].paper.SetAsLastSibling();//green first
-        
-        if(answers.Count() == 2)
+
+        if (answers.Count() == 2)
             paperDatas[paperDatas.Count() - 1].paper.gameObject.SetActive(false);
-        else 
+        else
             paperDatas[paperDatas.Count() - 1].paper.gameObject.SetActive(true);
 
         LayoutRebuilder.ForceRebuildLayoutImmediate(answersContainer.GetComponent<RectTransform>());
@@ -122,7 +123,7 @@ public class QuestionView : MonoBehaviour
         float moveOffScreenTime = 1f;
 
         documentPanel.DOAnchorPos(GetOffScreen(false), moveOffScreenTime)
-            .OnComplete(() => { 
+            .OnComplete(() => {
                 gameObject.SetActive(false);
                 documentPanel.anchoredPosition = GetOffScreen(true);
             });
@@ -138,7 +139,7 @@ public class QuestionView : MonoBehaviour
         //get last child
         var lastChild = paperContainer.transform.GetChild(paperContainer.transform.childCount - 1); //get last child
 
-        if(lastChild == paperDatas[index].paper)
+        if (lastChild == paperDatas[index].paper)
         {
             return;
         }
@@ -166,4 +167,46 @@ public class QuestionView : MonoBehaviour
         lastChild.DOMoveX(initialLeftPosition.x, .3f);
     }
 
+    public enum SetNotInteractable
+    {
+        HoverButtons,
+        SelectButton,
+        Everything,
+        Nothing,
+    }
+    public void SetElementNotInteractable(SetNotInteractable interactables)
+    {
+        switch (interactables)
+        {
+            case SetNotInteractable.HoverButtons:
+                foreach (var p in paperDatas)
+                {
+                    p.buttonHover.button.interactable = false;
+                    p.answerButton.button.interactable = true;
+                }
+                break;
+            case SetNotInteractable.SelectButton:
+                foreach (var p in paperDatas)
+                {
+                    p.buttonHover.button.interactable = true;
+                    p.answerButton.button.interactable = false;
+                }
+                break;
+            case SetNotInteractable.Everything:
+                foreach (var p in paperDatas)
+                {
+                    p.buttonHover.button.interactable = false;
+                    p.answerButton.button.interactable = false;
+                }
+                break;
+            case SetNotInteractable.Nothing:
+                foreach (var p in paperDatas)
+                {
+                    p.buttonHover.button.interactable = true;
+                    p.answerButton.button.interactable = true;
+                }
+                break;
+
+        }
+    }
 }

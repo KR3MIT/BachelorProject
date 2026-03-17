@@ -53,9 +53,7 @@ public class QuestionStep : TimelineStep
     {
         var answer = answers[answerIndex];
 
-
-        session.RecordQuestionSelection(answer.viewpoint);
-        session.ChangeApproval(answer.viewpoint == session.viewpoint ? ApprovalChangeType.Add : answer.viewpoint == ViewpointType.MiddleRoad ? ApprovalChangeType.SmallRemove : ApprovalChangeType.Remove);
+        ApprovalRecordAndChange(answer);//a method so it can be overriden
 
         Explanation explanation = null;
         foreach (var exp in answer.explanations)
@@ -74,5 +72,12 @@ public class QuestionStep : TimelineStep
         bool wasCorrect = answer.viewpoint == session.viewpoint;
 
         session.ui.ShowExplanation(explanationText, wasCorrect, () => onComplete?.Invoke());
+    }
+
+    protected virtual void ApprovalRecordAndChange(AnswerOption answer)
+    {
+        session.RecordQuestionSelection(answer.viewpoint);
+        session.ChangeApproval(answer.viewpoint == session.viewpoint ? ApprovalChangeType.Add : answer.viewpoint == ViewpointType.MiddleRoad ? ApprovalChangeType.SmallRemove : ApprovalChangeType.Remove);
+
     }
 }

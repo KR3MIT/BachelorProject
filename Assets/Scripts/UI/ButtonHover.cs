@@ -8,10 +8,12 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     private Vector3 initialPosition;
     private RectTransform rectTransform;
     public bool isActive = true;
+    public Button button { get; private set; }
 
     public void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
+        button = GetComponent<Button>();
         initialPosition = rectTransform.position;
     }
 

@@ -404,6 +404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialView
   tutorialText: {fileID: 941261015}
+  questionView: {fileID: 761665722}
 --- !u!114 &375910811
 MonoBehaviour:
   m_ObjectHideFlags: 0

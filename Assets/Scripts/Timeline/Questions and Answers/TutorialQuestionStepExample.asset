@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TutorialQuestionStep
   question: This is the tutorial question
   answers:
-  - answerText: This is the realist answer
-    viewpoint: 0
+  - answerText: This is the liberalist answer
+    viewpoint: 1
     explanations:
     - explanationText: This is the realist explanation
       viewpoint: 0
     - explanationText: This is the liberalist explanation
       viewpoint: 1
-  - answerText: This is the liberalist answer
-    viewpoint: 1
+  - answerText: This is the realist answer
+    viewpoint: 0
     explanations:
     - explanationText: This is the realist explanation
       viewpoint: 0
@@ -50,4 +50,4 @@ MonoBehaviour:
       om dit valg, samt popularitet bla bla klik p\xE5 forts\xE6t for at forts\xE6tte
       hvis du vil forts\xE6tte"
     trigger: 1
-    delay: 1500
+    delay: 5000

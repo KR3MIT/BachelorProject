@@ -19,8 +19,8 @@ public class TutorialQuestionStep : QuestionStep
         });
     }
 
-    protected override void OnAnswerSelected(int answerIndex)
+    protected override void ApprovalRecordAndChange(AnswerOption answer)
     {
-        base.OnAnswerSelected(answerIndex);
+        //empty so it dont do anything
     }
 }

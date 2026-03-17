@@ -31,7 +31,6 @@ public class ExplanationView : MonoBehaviour
 
     public void Hide()
     {
-        TutorialView.Instance.EndTutorial();
         TabletController.Instance.MoveOffScreen();
         gameObject.SetActive(false);
     }
@@ -39,6 +38,7 @@ public class ExplanationView : MonoBehaviour
     private void OnContinueClicked()
     {
         Hide();
+        TutorialView.Instance.EndTutorial();
         onContinue?.Invoke();
     }
 }
