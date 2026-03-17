@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e680697196b9e408469a3706900ca3, type: 3}
+  m_Name: TutorialQuestionStepExample
+  m_EditorClassIdentifier: Assembly-CSharp::TutorialQuestionStep
+  question: This is the tutorial question
+  answers:
+  - answerText: This is the liberalist answer
+    viewpoint: 1
+    explanations:
+    - explanationText: This is the realist explanation
+      viewpoint: 0
+    - explanationText: This is the liberalist explanation
+      viewpoint: 1
+  - answerText: This is the realist answer
+    viewpoint: 0
+    explanations:
+    - explanationText: This is the realist explanation
+      viewpoint: 0
+    - explanationText: This is the liberalist explanation
+      viewpoint: 1
+  tutorialSteps:
+  - position: {x: 0, y: 0}
+    tutorialText: "Velkommen bla bla bla, dette er starten p\xE5 spillet heheheha,
+      tryk hvor som helst for at forts\xE6tte."
+    trigger: 1
+  - position: {x: -325, y: 0}
+    tutorialText: "P\xE5 h\xF8jre side af mappen vil du kunne se et sp\xF8rgsm\xE5l,
+      og p\xE5 venstre side vil du kunne se et af dine mulige svar. \n\nTryk p\xE5
+      m\xE6rkerne i toppen af venstre papir for at skifte svar."
+    trigger: 2
+  - position: {x: 0, y: 0}
+    tutorialText: Final step 3
+    trigger: 0
