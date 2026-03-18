@@ -107,7 +107,7 @@ public class QuestionView : MonoBehaviour
 
     private async void OnAnswerSelected(int index)
     {
-        AudioManager.Instance.Play(SoundType.Click);
+        AudioManager.Instance.Play(SoundType.UIClick);
 
         await Hide();
 
