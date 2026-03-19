@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &4981263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5024585952560691726, guid: a7cb92906886f944daaee62cabfec258, type: 3}
+  m_PrefabInstance: {fileID: 2060765084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &13400268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -207,6 +212,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &59435732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1612195736265142518, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+  m_PrefabInstance: {fileID: 398524611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &284132279 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
@@ -380,6 +390,22 @@ PrefabInstance:
       propertyPath: explanationView
       value: 
       objectReference: {fileID: 284132279}
+    - target: {fileID: 5362232983285991664, guid: bacf9a7112e020242999705a4222eaf4, type: 3}
+      propertyPath: popUpObjects.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5362232983285991664, guid: bacf9a7112e020242999705a4222eaf4, type: 3}
+      propertyPath: 'popUpObjects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 59435732}
+    - target: {fileID: 5362232983285991664, guid: bacf9a7112e020242999705a4222eaf4, type: 3}
+      propertyPath: 'popUpObjects.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1921052636}
+    - target: {fileID: 5362232983285991664, guid: bacf9a7112e020242999705a4222eaf4, type: 3}
+      propertyPath: 'popUpObjects.Array.data[2]'
+      value: 
+      objectReference: {fileID: 4981263}
     - target: {fileID: 7584087933217711428, guid: bacf9a7112e020242999705a4222eaf4, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -1415,6 +1441,11 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: bc3693fd6a7ab604bbc354683fda952d, type: 2}
+--- !u!1 &1921052636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6219354899514741290, guid: 970ab830e76abe345b996187b97bd977, type: 3}
+  m_PrefabInstance: {fileID: 1354699621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2015328708 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5362232983285991664, guid: bacf9a7112e020242999705a4222eaf4, type: 3}

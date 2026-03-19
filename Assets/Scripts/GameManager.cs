@@ -29,11 +29,11 @@ public class GameManager : MonoBehaviour, IGameUI
 
     public async void StartPreGame()
     {
-        StartCoroutine(PopUpDelay());
+       
         //menu stuff
         mainMenu.Hide();
         await mainMenu.MoveCameraToGame();
-
+        foreach (var obj in popUpObjects) obj.SetActive(true);
         //viewpoint stuff
         Debug.Log("Starting pre-game setup...");
         viewpointView.gameObject.SetActive(true);
@@ -110,9 +110,5 @@ public class GameManager : MonoBehaviour, IGameUI
     #endregion
 
   
-    IEnumerator PopUpDelay()
-    {
-        yield return new WaitForSeconds(1f);
-        foreach (var obj in popUpObjects) obj.SetActive(true);
-    }
+  
 }
