@@ -34,13 +34,13 @@ MonoBehaviour:
       tryk hvor som helst for at forts\xE6tte."
     trigger: 1
     delay: 0
-  - position: {x: -325, y: 0}
+  - position: {x: -160, y: 0}
     tutorialText: "P\xE5 h\xF8jre side af mappen vil du kunne se et sp\xF8rgsm\xE5l,
       og p\xE5 venstre side vil du kunne se et af dine mulige svar. \n\nTryk p\xE5
       m\xE6rkerne i toppen af venstre papir for at skifte svar."
     trigger: 2
     delay: 0
-  - position: {x: -325, y: -100}
+  - position: {x: -160, y: -100}
     tutorialText: "N\xE5r du har fundet det svar som du mener passer til dit parties
       holdning klik godkend."
     trigger: 3

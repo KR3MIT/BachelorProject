@@ -1,5 +1,6 @@
-using UnityEngine;
 using System;
+using System.Collections.Generic;
+using UnityEngine;
 /// <summary>
 /// overall manager
 /// </summary>
@@ -47,6 +48,12 @@ public class GameManager : MonoBehaviour, IGameUI
         RunCurrentStep();
     }
 
+    private void ResetGame()
+    {
+        session = null;
+        currentStepIndex = 0;
+        ShowMenu(StartPreGame);
+    }
 
     #region steps
     private void RunCurrentStep()
@@ -55,7 +62,9 @@ public class GameManager : MonoBehaviour, IGameUI
         {
             Debug.Log("Game Finished! Approval rating: " + UIApprovalRating.Instance.GetApprovalRating() * 100f + "/100");
 
-            endView.Show(session.GetQuestionSelectionCounts(), UIApprovalRating.Instance.GetApprovalRating());
+            ShowEndScreen(session.GetQuestionSelectionCounts(), UIApprovalRating.Instance.GetApprovalRating(), ResetGame);
+
+            //endView.Show(session.GetQuestionSelectionCounts(), UIApprovalRating.Instance.GetApprovalRating());
             UIApprovalRating.Instance.gameObject.SetActive(false);
 
             return;
@@ -76,6 +85,11 @@ public class GameManager : MonoBehaviour, IGameUI
     {
         mainMenu.Show(onStartGame);
     }
+    public void ShowEndScreen(Dictionary<ViewpointType, int> counts, float approvalRating, Action onEnd)
+    {
+        //its in explanation view gg
+        explanationView.ShowEndScreen(counts, approvalRating, onEnd);
+    }
 
     void IGameUI.ShowQuestion(QuestionStep question, Action<int> onAnswerSelected)
     {
@@ -87,5 +101,7 @@ public class GameManager : MonoBehaviour, IGameUI
     {
         explanationView.Show(text, wasCorrect, onContinue);
     }
+
+    
     #endregion
 }

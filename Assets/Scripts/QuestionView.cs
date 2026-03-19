@@ -38,7 +38,7 @@ public class QuestionView : MonoBehaviour
     private void Awake()
     {
         canvasRect = GetComponentInParent<Canvas>().GetComponent<RectTransform>();
-        initialLeftPosition = paperDatas[0].paper.position;
+        initialLeftPosition = paperDatas[0].paper.anchoredPosition;
     }
 
     private void Start()
@@ -107,7 +107,7 @@ public class QuestionView : MonoBehaviour
 
     private async void OnAnswerSelected(int index)
     {
-        AudioManager.Instance.Play(SoundType.Click);
+        AudioManager.Instance.Play(SoundType.UIClick);
 
         await Hide();
 
@@ -137,7 +137,7 @@ public class QuestionView : MonoBehaviour
         TutorialView.Instance.CompleteStep(TutorialTrigger.ChangeAnswer);
 
         //get last child
-        var lastChild = paperContainer.transform.GetChild(paperContainer.transform.childCount - 1); //get last child
+        var lastChild = paperContainer.transform.GetChild(paperContainer.transform.childCount - 1).GetComponent<RectTransform>(); //get last child
 
         if (lastChild == paperDatas[index].paper)
         {
@@ -147,7 +147,7 @@ public class QuestionView : MonoBehaviour
         paperDatas[index].paper.transform.SetSiblingIndex(lastChild.GetSiblingIndex() - 1);//set chosen child to be behind the last child
 
         AudioManager.Instance.Play(SoundType.PaperSlideSoft);
-        await lastChild.DOMoveX(initialLeftPosition.x - 500f, .3f).AsyncWaitForCompletion();//move last child
+        await lastChild.DOAnchorPosX(initialLeftPosition.x - 500f, .3f).AsyncWaitForCompletion();//move last child
 
         paperDatas[index].paper.SetAsLastSibling();//set chosen child to be the last child
 
@@ -164,7 +164,7 @@ public class QuestionView : MonoBehaviour
         }
 
         AudioManager.Instance.Play(SoundType.PaperSlideSoft);
-        lastChild.DOMoveX(initialLeftPosition.x, .3f);
+        lastChild.DOAnchorPosX(initialLeftPosition.x, .3f);
     }
 
     public enum SetNotInteractable

@@ -9,7 +9,7 @@ public class EndView : MonoBehaviour
     public TMP_Text resultsText;
     public void Show(Dictionary<ViewpointType, int> counts, float approvalRating)
     {
-        gameObject.SetActive(true);
+        //gameObject.SetActive(true);
 
         var sb = new StringBuilder();
         sb.AppendLine("Spørgsmåls valg:");
