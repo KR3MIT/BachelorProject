@@ -661,6 +661,10 @@ MonoBehaviour:
   explanationText: {fileID: 1315217263219374345}
   resultLabel: {fileID: 3751604286938276638}
   continueButton: {fileID: 772218439985121104}
+  endScreenMessages:
+  - most 0
+  - most 1
+  - most 2
 --- !u!1 &1314105052749867887
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6dc1e0ed1b3fff40931fdaeab54548d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  onScreenPosition: {x: 0, y: 1.72, z: 1.3}
+  onScreenPosition: {x: 0, y: 1.699, z: 1.329}
   offScreenPosition: {x: 0, y: 1.23, z: 0.944}
 --- !u!1 &1688448629145721943
 GameObject:
