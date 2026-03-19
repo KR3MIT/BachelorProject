@@ -103,12 +103,9 @@ public class GameManager : MonoBehaviour, IGameUI
 
     void IGameUI.ShowExplanation(string text, bool wasCorrect, Action onContinue)
     {
-        explanationView.Show(text, wasCorrect, onContinue);
+        explanationView.Show(text, wasCorrect, onContinue, session.viewpoint);
     }
-
 
     #endregion
 
-  
-  
 }

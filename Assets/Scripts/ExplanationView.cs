@@ -15,6 +15,8 @@ public class ExplanationView : MonoBehaviour
     [SerializeField] private TMP_Text explanationText;
     [SerializeField] private TMP_Text resultLabel;
     [SerializeField] private Button continueButton;
+    [SerializeField] private TMP_Text boss;
+    [SerializeField] private TMP_Text mail;
 
     [Header("End Screen")]
     [Tooltip("Uses the index from viewpointtype")]
@@ -23,12 +25,15 @@ public class ExplanationView : MonoBehaviour
     private Action onContinue;
     private Action onEnd;
 
-    public async void Show(string explanation, bool wasCorrect, Action onContinue)
+    public async void Show(string explanation, bool wasCorrect, Action onContinue, ViewpointType viewpoint)
     {
         this.onContinue = onContinue;
 
         explanationText.GetComponent<TMPTextFormatter>().SetText(explanation);
         resultLabel.text = wasCorrect ? "Godt arbejde!" : "Hvad tænkte du på?";
+
+        boss.text = viewpoint == ViewpointType.Realist ? "Statsminister Jensen, Realisternes Parti" : "Statminister Jørgensen, Liberalisternes Parti";
+        mail.text = viewpoint == ViewpointType.Realist ? "Realisternes Parti" : "Liberalisternes Parti";
 
         continueButton.onClick.RemoveAllListeners();
         continueButton.onClick.AddListener(OnContinueClicked);

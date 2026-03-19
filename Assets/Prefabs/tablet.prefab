@@ -661,6 +661,8 @@ MonoBehaviour:
   explanationText: {fileID: 1315217263219374345}
   resultLabel: {fileID: 3751604286938276638}
   continueButton: {fileID: 772218439985121104}
+  boss: {fileID: 8374898446894056884}
+  mail: {fileID: 7604511489540729481}
   endScreenMessages:
   - most 0
   - most 1
@@ -1360,8 +1362,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.461, y: 0.247}
-  m_SizeDelta: {x: 1.6254, y: 0.1854}
+  m_AnchoredPosition: {x: 2.4433, y: 0.247}
+  m_SizeDelta: {x: 5.59, y: 0.1854}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7752259184396185752
 CanvasRenderer:
