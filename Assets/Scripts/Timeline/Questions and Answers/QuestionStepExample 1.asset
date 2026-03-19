@@ -13,38 +13,39 @@ MonoBehaviour:
   m_Name: QuestionStepExample 1
   m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
   question: "Et lovforslag er blevet pr\xE6senteret for folketinget, og du skal v\xE6lge
-    hvordan du vil stemme. Hvis forslaget bliver stemt ind, vil det betyde, at Danmark
-    \xE5bner sine gr\xE6nser for en betydeligt st\xF8rre handel internationalt end
-    set f\xF8r. Mens \xF8konomer forudser at dette vil lade danskerne spare penge
-    ved at k\xF8be billige udenlandske varer i store m\xE6ngder, vil udspillet ogs\xE5
-    eliminere de hidtil eksisterende beskyttelser for produktionen af disse produkter
-    i Danmark. Derved vil Danmark alts\xE5 blive mere afh\xE6ngig af den internationale
-    handel for sin egen \xF8konomiske v\xE6kst og sikkerhed p\xE5 l\xE6ngere sigt."
+    hvordan du vil stemme. \n\nHvis forslaget bliver stemt ind, vil det betyde, at
+    Danmark \xE5bner sine gr\xE6nser for en betydeligt st\xF8rre handel internationalt
+    end set f\xF8r. \n\nMens \xF8konomer forudser at dette vil lade danskerne spare
+    penge ved at k\xF8be billige udenlandske varer i store m\xE6ngder, vil udspillet
+    ogs\xE5 eliminere de hidtil eksisterende beskyttelser for produktionen af disse
+    produkter i Danmark. \n\nDerved vil Danmark alts\xE5 blive mere afh\xE6ngig af
+    den internationale handel for sin egen \xF8konomiske v\xE6kst og sikkerhed p\xE5
+    l\xE6ngere sigt."
   answers:
-  - answerText: "Stem ja. B\xE5de Danmark og resten af verden har godt af st\xF8rre
-      samarbejde og stigende interdependens."
-    viewpoint: 1
-    explanations:
-    - explanationText: "Jeg s\xE5, at du stemte ja til lovforslaget, tusind tak for
-        det! En st\xE6rkere og nemmere handel med vores medlande kan kun v\xE6re
-        godt for danskerne, og s\xE5gar verden som helhed!"
-      viewpoint: 1
-    - explanationText: "Jeg s\xE5, at du stemte ja til lovforslaget som den eneste
-        i partiet, og jeg forst\xE5r ikke hvorfor. Forslaget vil sv\xE6kke Danmarks
-        kontrol over egen produktion og ressourcer, og dette er ikke m\xE5let for
-        vores parti. T\xE6nk lidt mere over det n\xE6ste gang!"
-      viewpoint: 0
   - answerText: "Stem nej. Danmark skal beskytte den nationale sikkerhed og produktion
       af egne varer for at beskytte sig selv n\xE5r internationale relationer uundg\xE5eligt
       forringes."
     viewpoint: 0
     explanations:
     - explanationText: "Jeg s\xE5, at du stemte nej til lovforslaget som den eneste
-        i partiet, og jeg forst\xE5r ikke hvorfor. Lovforslaget havde givet Danmark
+        i partiet, og jeg forst\xE5r ikke hvorfor. \n\nLovforslaget havde givet Danmark
         en mulighed for st\xE6rkere internationalt samarbejde, som vi st\xF8tter
-        i partiet. T\xE6nk lidt mere over det n\xE6ste gang!"
+        i partiet. \n\nT\xE6nk lidt mere over det n\xE6ste gang!"
       viewpoint: 1
     - explanationText: "Jeg s\xE5, at du stemte nej til lovforslaget, tusind tak
-        for det! Danmarks kontrol over egen produktion og ressourcer er vigtigt for
-        vores parti og danskerne som helhed."
+        for det! \n\nDanmarks kontrol over egen produktion og ressourcer er vigtigt
+        for vores parti og danskerne som helhed."
+      viewpoint: 0
+  - answerText: "Stem ja. B\xE5de Danmark og resten af verden har godt af st\xF8rre
+      samarbejde og stigende interdependens."
+    viewpoint: 1
+    explanations:
+    - explanationText: "Jeg s\xE5, at du stemte ja til lovforslaget, tusind tak for
+        det! \n\nEn st\xE6rkere og nemmere handel med vores medlande kan kun v\xE6re
+        godt for danskerne, og s\xE5gar verden som helhed!"
+      viewpoint: 1
+    - explanationText: "Jeg s\xE5, at du stemte ja til lovforslaget som den eneste
+        i partiet, og jeg forst\xE5r ikke hvorfor. Forslaget vil sv\xE6kke Danmarks
+        kontrol over egen produktion og ressourcer, og dette er ikke m\xE5let for
+        vores parti. \n\nT\xE6nk lidt mere over det n\xE6ste gang!"
       viewpoint: 0
