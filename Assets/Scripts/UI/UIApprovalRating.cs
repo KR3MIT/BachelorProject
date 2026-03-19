@@ -15,7 +15,7 @@ public class UIApprovalRating : MonoBehaviour
 
     // Coroutine variables
     private bool addRating = true;
-    private float fadeWaitTimer = 1f;
+    private float fadeWaitTimer = 2f;
     private float fadeDuration = 0.5f;
 
     // Debug

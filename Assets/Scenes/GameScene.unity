@@ -392,7 +392,7 @@ PrefabInstance:
       objectReference: {fileID: 284132279}
     - target: {fileID: 5362232983285991664, guid: bacf9a7112e020242999705a4222eaf4, type: 3}
       propertyPath: popUpObjects.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5362232983285991664, guid: bacf9a7112e020242999705a4222eaf4, type: 3}
       propertyPath: 'popUpObjects.Array.data[0]'
@@ -430,10 +430,6 @@ PrefabInstance:
     - target: {fileID: 1612195736265142518, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_Name
       value: tablet
-      objectReference: {fileID: 0}
-    - target: {fileID: 1612195736265142518, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3813041105920082957, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_LocalPosition.x
@@ -474,22 +470,6 @@ PrefabInstance:
     - target: {fileID: 3813041105920082957, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: endScreenMessages.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: 'endScreenMessages.Array.data[0]'
-      value: most 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: 'endScreenMessages.Array.data[1]'
-      value: most 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: 'endScreenMessages.Array.data[2]'
-      value: most 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1491,7 +1471,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5024585952560691726, guid: a7cb92906886f944daaee62cabfec258, type: 3}
       propertyPath: m_Name
-      value: Approval Rating
+      value: Approval Rating(INCLUDED IN TABLET)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024585952560691726, guid: a7cb92906886f944daaee62cabfec258, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8946303441363889308, guid: a7cb92906886f944daaee62cabfec258, type: 3}
       propertyPath: m_Pivot.x

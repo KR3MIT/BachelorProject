@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour, IGameUI
     [SerializeField] private QuestionView questionView;
     [SerializeField] private ExplanationView explanationView;
     [SerializeField] private EndView endView;
-    [SerializeField] private GameObject[] popUpObjects;
+    [SerializeField] private GameObject[] popUpObjects; // set objects in inspector.
 
     [Header("Data")]
     [SerializeField] private TimelineDefinition timeline;
