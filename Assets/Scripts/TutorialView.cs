@@ -56,7 +56,7 @@ public class TutorialView : MonoBehaviour
         }
     }
 
-    public async Awaitable StartTutorial(List<TutorialData> steps, Action onTutorialComplete)
+    public async void StartTutorial(List<TutorialData> steps, Action onTutorialComplete)
     {
         tutorialSteps = steps;
         currentStepIndex = 0;
@@ -99,7 +99,7 @@ public class TutorialView : MonoBehaviour
         }
     }
 
-    async Awaitable ShowStep(int stepIndex) 
+    async void ShowStep(int stepIndex) 
     {
         switch (tutorialSteps[stepIndex].trigger)
         {

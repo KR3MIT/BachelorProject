@@ -17,7 +17,7 @@ public enum SoundType
     WhooshFree,
     Notification,
     ApprovalPositive,
-    ApprovalNegative
+    ApprovalNegative,
 }
 public enum SoundCategory
 {
@@ -101,6 +101,9 @@ public class AudioManager : MonoBehaviour
             else
                 Debug.LogWarning("Duplicate sound type: " + s.type);
         }
+
+
+        Play(SoundType.Music);
     }
 
 
@@ -179,6 +182,7 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.clip = s.currentClip;
         musicSource.volume = s.volume;
+        musicSource.loop = true;
         musicSource.Play();
     }
 

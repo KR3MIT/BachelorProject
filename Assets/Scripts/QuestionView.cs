@@ -128,7 +128,8 @@ public class QuestionView : MonoBehaviour
                 documentPanel.anchoredPosition = GetOffScreen(true);
             });
 
-        await Task.Delay((int)(moveOffScreenTime * 1000f / 2f));//only wait for half move time because else stamp is slow af
+        await Awaitable.WaitForSecondsAsync((int)(moveOffScreenTime * 1000f / 2f) / 1000);
+        //await Task.Delay((int)(moveOffScreenTime * 1000f / 2f));//only wait for half move time because else stamp is slow af
     }
 
     public async void MoveToTop(int index)

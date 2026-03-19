@@ -32,7 +32,8 @@ public class FolderAnimation : MonoBehaviour
 
     public async void SlideIn(bool twoOptions, int delay = 1000)
     {
-        await Task.Delay(delay);
+        //await Task.Delay(delay);
+        await Awaitable.WaitForSecondsAsync(delay / 1000);
         animator.SetTrigger("SlideIn");
         AudioManager.Instance.Play(SoundType.PaperFlutter);
         if (twoOptions) 
@@ -50,7 +51,8 @@ public class FolderAnimation : MonoBehaviour
     public async void SlideOut()
     {
         animator.SetTrigger("SlideOut");
-        await Task.Delay(1000);
+        await Awaitable.WaitForSecondsAsync(1);
+        //await Task.Delay(1000);
         foreach (var stamp in selectionStamps) { stamp.SetActive(false); }
     }
 
