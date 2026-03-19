@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TimelineExample
   m_EditorClassIdentifier: Assembly-CSharp::TimelineDefinition
   steps:
+  - {fileID: 11400000, guid: 38c3779efc33398448f1581b63a9f1ad, type: 2}
   - {fileID: 11400000, guid: 5762b17516751374183ad7629b0a99a0, type: 2}
   - {fileID: 11400000, guid: 89777d667ab8e1e4b85114fe9f8423a5, type: 2}
   - {fileID: 11400000, guid: d81c8c04354e9e748b3940c1197b8fe8, type: 2}
