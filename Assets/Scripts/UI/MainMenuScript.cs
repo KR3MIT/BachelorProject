@@ -4,6 +4,9 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Threading.Tasks;
+using NUnit.Framework;
+using System.Collections;
+using System.Collections.Generic;
 
 public class MainMenuScript : MonoBehaviour
 {
@@ -11,6 +14,7 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField] private Transform gameCameraTransform;
     [SerializeField] private Button startButton;
     private GameObject cam;
+    [SerializeField] private List<GameObject> popUpObjects;
 
     [Header("Audio")]
     [SerializeField] private Button AudioButton;
@@ -34,6 +38,9 @@ public class MainMenuScript : MonoBehaviour
         AudioButton.onClick.AddListener(ToggleSlider);
 
         audioPos = AudioSlider.gameObject.transform.position;
+
+        foreach (var obj in popUpObjects)
+            obj.SetActive(false);
     }
 
     public void Start()
@@ -113,5 +120,19 @@ public class MainMenuScript : MonoBehaviour
     {
         var transform = AudioSlider.gameObject.transform;
         transform.DOJump(audioPos + new Vector3(0, -500, 0), 1f, 1, 1f).SetEase(Ease.OutBounce);
+    }
+
+    public void PopUp()
+    {
+        Debug.Log("1");
+        StartCoroutine(PopUpDelay());
+    }
+    IEnumerator PopUpDelay()
+    {
+        Debug.Log("2");
+        yield return new WaitForSeconds(1f);
+        foreach (var obj in popUpObjects)
+            obj.SetActive(true);
+        Debug.Log("3");
     }
 }

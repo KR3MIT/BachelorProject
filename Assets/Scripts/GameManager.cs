@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour, IGameUI
     [SerializeField] private QuestionView questionView;
     [SerializeField] private ExplanationView explanationView;
     [SerializeField] private EndView endView;
+    [SerializeField] private GameObject[] popUpObjects;
 
     [Header("Data")]
     [SerializeField] private TimelineDefinition timeline;
@@ -22,10 +24,12 @@ public class GameManager : MonoBehaviour, IGameUI
     public void Start()
     {
         ShowMenu(StartPreGame);//showmenu, callback to startpregame, when clicked start button
+        foreach (var obj in popUpObjects) obj.SetActive(false);
     }
 
     public async void StartPreGame()
     {
+        StartCoroutine(PopUpDelay());
         //menu stuff
         mainMenu.Hide();
         await mainMenu.MoveCameraToGame();
@@ -102,6 +106,13 @@ public class GameManager : MonoBehaviour, IGameUI
         explanationView.Show(text, wasCorrect, onContinue);
     }
 
-    
+
     #endregion
+
+  
+    IEnumerator PopUpDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        foreach (var obj in popUpObjects) obj.SetActive(true);
+    }
 }
