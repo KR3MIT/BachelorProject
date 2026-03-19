@@ -367,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 5362232983285991664, guid: bacf9a7112e020242999705a4222eaf4, type: 3}
       propertyPath: timeline
       value: 
-      objectReference: {fileID: 11400000, guid: baad73201029e1e41b498b3bbfdc33dc, type: 2}
+      objectReference: {fileID: 11400000, guid: 9a19713c443229241ac6df569e412657, type: 2}
     - target: {fileID: 5362232983285991664, guid: bacf9a7112e020242999705a4222eaf4, type: 3}
       propertyPath: questionView
       value: 
@@ -1609,7 +1609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4388499600183710616, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5330312149798521430, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
