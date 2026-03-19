@@ -56,13 +56,14 @@ public class TutorialView : MonoBehaviour
         }
     }
 
-    public async void StartTutorial(List<TutorialData> steps, Action onTutorialComplete)
+    public async Awaitable StartTutorial(List<TutorialData> steps, Action onTutorialComplete)
     {
         tutorialSteps = steps;
         currentStepIndex = 0;
         this.onTutorialComplete = onTutorialComplete;
 
-        await Task.Delay(1500);
+        await Awaitable.WaitForSecondsAsync(1.5f);
+
 
         gameObject.SetActive(true);
         ShowStep(0);
@@ -98,7 +99,7 @@ public class TutorialView : MonoBehaviour
         }
     }
 
-    async void ShowStep(int stepIndex) 
+    async Awaitable ShowStep(int stepIndex) 
     {
         switch (tutorialSteps[stepIndex].trigger)
         {
@@ -121,7 +122,8 @@ public class TutorialView : MonoBehaviour
 
         canvasGroup.alpha = 0f;
 
-        await Task.Delay(tutorialSteps[stepIndex].delay);
+        await Awaitable.WaitForSecondsAsync(tutorialSteps[stepIndex].delay/1000);
+        //await Task.Delay(tutorialSteps[stepIndex].delay);
 
         tutorialText.text = tutorialSteps[stepIndex].tutorialText;
         rect.anchoredPosition = tutorialSteps[stepIndex].position;
