@@ -72,6 +72,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1532900682081274851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3260697801201287732}
+  m_Layer: 5
+  m_Name: SliderPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3260697801201287732
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532900682081274851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8806291258770257114}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -30, y: 100}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3082774357306449893
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +787,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8066131827756829461}
+  - {fileID: 3260697801201287732}
   m_Father: {fileID: 8488906054135785135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
@@ -1147,9 +1183,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   gameCameraTransform: {fileID: 0}
-  startButton: {fileID: 0}
+  startButton: {fileID: 2042565454346794822}
+  popUpObjects: []
   AudioButton: {fileID: 5705074031047363272}
   AudioSlider: {fileID: 2440408308583767813}
-  Text: {fileID: 0}
+  Text: {fileID: 8137284829250922565}
   OnImage: {fileID: 21300000, guid: 32102cc70f566f44fa0eb5f6225b15ca, type: 3}
   OffImage: {fileID: 21300000, guid: 19de161c5f9bf6641afeb423787bf6e6, type: 3}
+  SliderPos: {fileID: 3260697801201287732}

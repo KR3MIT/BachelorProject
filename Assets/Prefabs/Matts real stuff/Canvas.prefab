@@ -3882,11 +3882,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2892839821128672011, guid: d9c02f6dad651a149a752edfaf9c893d, type: 3}
       propertyPath: m_text
-      value: Question
+      value: "Et lovforslag er blevet pr\xE6senteret for folketinget, og du skal
+        v\xE6lge hvordan du vil stemme. Hvis forslaget bliver stemt ind, vil det
+        betyde, at Danmark \xE5bner sine gr\xE6nser for en betydeligt st\xF8rre handel
+        internationalt end set f\xF8r. Mens \xF8konomer forudser at dette vil lade
+        danskerne spare penge ved at k\xF8be billige udenlandske varer i store m\xE6ngder,
+        vil udspillet ogs\xE5 eliminere de hidtil eksisterende beskyttelser for produktionen
+        af disse produkter i Danmark. Derved vil Danmark alts\xE5 blive mere afh\xE6ngig
+        af den internationale handel for sin egen \xF8konomiske v\xE6kst og sikkerhed
+        p\xE5 l\xE6ngere sigt.\n\nLiberalist: Stem ja. B\xE5de Danmark og resten
+        af verden har godt af st\xF8rre samarbejde og stigende interdependens.\n\nMiddelvejen
+        (gir m\xE5ske ik mening her?): Stem blankt. Dette er ikke vigtigt for mig.\n\nRealist:
+        Stem nej. Danmark skal beskytte den nationale sikkerhed og produktion af
+        egne varer for at beskytte sig selv n\xE5r internationale relationer uundg\xE5eligt
+        forringes."
       objectReference: {fileID: 0}
     - target: {fileID: 2892839821128672011, guid: d9c02f6dad651a149a752edfaf9c893d, type: 3}
       propertyPath: m_fontSize
-      value: 32
+      value: 22.35
       objectReference: {fileID: 0}
     - target: {fileID: 2892839821128672011, guid: d9c02f6dad651a149a752edfaf9c893d, type: 3}
       propertyPath: m_fontAsset
@@ -3912,6 +3925,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 6165147904916700276, guid: 7223a553d09403f42aa167ada0e6be16, type: 2}
+    - target: {fileID: 2892839821128672011, guid: d9c02f6dad651a149a752edfaf9c893d, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2892839821128672011, guid: d9c02f6dad651a149a752edfaf9c893d, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080

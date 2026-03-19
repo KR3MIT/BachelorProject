@@ -23,6 +23,8 @@ public class MainMenuScript : MonoBehaviour
 
     [SerializeField] private Sprite OnImage;
     [SerializeField] private Sprite OffImage;
+
+    [SerializeField] private Transform SliderPos;
     private Image _Image;
     private float cooldown;
     private bool hidden = true;
@@ -36,8 +38,6 @@ public class MainMenuScript : MonoBehaviour
 
         AudioSlider.onValueChanged.AddListener(DoAudioStuff);
         AudioButton.onClick.AddListener(ToggleSlider);
-
-        audioPos = AudioSlider.gameObject.transform.position;
 
         foreach (var obj in popUpObjects)
             obj.SetActive(false);
@@ -101,13 +101,22 @@ public class MainMenuScript : MonoBehaviour
     private void ToggleSlider(bool _bool)
     {
         hidden = _bool;
+
+        SetSliderPos();
         if (!hidden) AudioShow(); else AudioHide();
     }
 
     private void ToggleSlider()
     {
         hidden = !hidden;
+
+        SetSliderPos();
         if (!hidden) AudioShow(); else AudioHide();
+    }
+
+    private void SetSliderPos()
+    {
+        audioPos = SliderPos.position;
     }
 
     private void AudioShow()
