@@ -43,12 +43,12 @@ MonoBehaviour:
       forsvarsalliance, oprettet i 1949 for at sikre medlemslandenes frihed og sikkerhed
       gennem politisk og milit\xE6rt samarbejde. 32 lande er medlem af NATO, inklusiv
       Danmark samt en stor del af de europ\xE6iske lande, USA og Canada."
-    image: {fileID: 0}
+    image: {fileID: 21300000, guid: 092b7d6cde6248741ac28add0983f58b, type: 3}
   - keyword: EU
     definition: "Den Europ\xE6iske Union (EU) er\_et politisk og \xF8konomisk f\xE6llesskab
       mellem 27 europ\xE6iske lande. Form\xE5let med EU er at sikre \xF8konomisk
       velstand, stabilitet og sikkerhed i hele Europa."
-    image: {fileID: 0}
+    image: {fileID: 21300000, guid: 95c0d12c50fb2bf40a01f1463aae727e, type: 3}
   - keyword: Alliance
     definition: "En alliance i international politik er en formel aftale mellem to
       eller flere stater om samarbejde, typisk med fokus p\xE5 forsvar og sikkerhed."
