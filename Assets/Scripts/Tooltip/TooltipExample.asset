@@ -22,7 +22,7 @@ MonoBehaviour:
     definition: "Anarki opst\xE5r, n\xE5r der er mangel p\xE5 f\xE6lles spilleregler
       eller overordnet myndighed. Anarki kan derved bruges til at beskrive internationale
       relationer, hvor ingen myndighed findes over stater."
-    image: {fileID: 0}
+    image: {fileID: 21300000, guid: 19e9460c335776a49868ba19454a645a, type: 3}
   - keyword: Teori
     definition: "I International Politik bruges teorier som et grundlag for fortolkning
       af globale begivenheder. Teorier bruges alts\xE5 til at forklare observationer,

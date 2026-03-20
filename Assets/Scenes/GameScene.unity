@@ -2510,6 +2510,14 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 7252905723308678547, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
+      propertyPath: m_fontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252905723308678547, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 7381046641442778977, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

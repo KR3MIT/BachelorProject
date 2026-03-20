@@ -30,7 +30,7 @@ public class ExplanationView : MonoBehaviour
         this.onContinue = onContinue;
 
         explanationText.GetComponent<TMPTextFormatter>().SetText(explanation);
-        resultLabel.text = wasCorrect ? "Godt arbejde!" : "Hvad tænkte du på?";
+        //resultLabel.text = wasCorrect ? "Godt arbejde!" : "Hvad tænkte du på?";
 
         boss.text = viewpoint == ViewpointType.Realist ? "Statsminister Jensen, Realisternes Parti" : "Statminister Jørgensen, Liberalisternes Parti";
         mail.text = viewpoint == ViewpointType.Realist ? "Realisternes Parti" : "Liberalisternes Parti";
