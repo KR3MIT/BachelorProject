@@ -60,6 +60,16 @@ public class TooltipView : MonoBehaviour
         Vector2 tooltipSize = panel.rect.size;
         Vector2 pivotOffset = new Vector2(panel.pivot.x * tooltipSize.x, panel.pivot.y * tooltipSize.y);
 
-        panel.anchoredPosition = localPoint + pivotOffset + offset;
+        // Ensure the tooltip stays within the canvas bounds
+        float minX = (canvasRect.sizeDelta.x - panel.sizeDelta.x) * -0.5f;
+        float maxX = (canvasRect.sizeDelta.x - panel.sizeDelta.x) * 0.5f;
+        float minY = (canvasRect.sizeDelta.y - panel.sizeDelta.y) * -0.5f;
+        float maxY = (canvasRect.sizeDelta.y - panel.sizeDelta.y) * 0.5f;
+
+        float panelX = Mathf.Clamp(localPoint.x + pivotOffset.x + offset.x, minX, maxX);
+        float panelY = Mathf.Clamp(localPoint.y + pivotOffset.y + offset.y, minY, maxY);
+
+        panel.anchoredPosition = new Vector2(panelX, panelY);
+
     }
 }
