@@ -16,39 +16,6 @@ MonoBehaviour:
     skal diskutere den nuv\xE6rende verdenssituation og fremtiden af NATO. \n\nDu
     skal beslutte, hvordan du vil udtrykke Danmarks synspunkt."
   answers:
-  - answerText: "NATO skal altid overveje den globale situation og planl\xE6gge herefter.
-      \n\nEt st\xE6rkt samlet forsvar er vigtigt, og hvis nye lande vil integreres
-      i NATO, skal det give mening for alle parter."
-    viewpoint: 2
-    explanations:
-    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nJeg
-        forventede, at du ville l\xE6gge mere fokus p\xE5 NATOs mulighed for at bidrage
-        til st\xF8rre international samarbejde og fredfyldt skabelse af f\xE6llesv\xE6rdier,
-        da dette er partiets \xF8nskede retning for organisationen. \n\nHusk gerne
-        dette til n\xE6ste gang!"
-      viewpoint: 1
-    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nPartiets
-        holdning til NATO er ikke rettet mod en umiddelbar udvidelse af medlemslandene,
-        men snarere et st\xF8rre fokus p\xE5 at styrke magten for Danmark og de andre
-        nuv\xE6rende medlemslande. \n\nHusk gerne dette til n\xE6ste gang!"
-      viewpoint: 0
-  - answerText: "Danmark har en stor interesse i at forblive i kontrol af Gr\xF8nland,
-      og har derfor ikke nogen interesse i at miste denne kontrol. \n\nRessourcerne
-      p\xE5 \xF8en samt den strategiske lokation spiller en enorm rolle for Danmark
-      og eventuelle allierede under enhver fremtidig konflikt eller usikkerhed i
-      globale relationer og/eller handel. "
-    viewpoint: 1
-    explanations:
-    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de, og rigtig
-        fint arbejde! \n\nOrganisationer som NATO er et st\xE6rkt v\xE6rkt\xF8j for
-        fredfyldt udbredelse af f\xE6lles v\xE6rdier og normer, og det skal vi v\xE6re
-        klar til at anvende globalt."
-      viewpoint: 1
-    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nPartiets
-        holdning til NATO er bestemt ikke rettet mod en ubetinget udvidelse af aftalen,
-        men snarere et st\xF8rre fokus p\xE5 at styrke magten for Danmark og de andre
-        medlemslande. \n\nHusk dette til n\xE6ste gang."
-      viewpoint: 0
   - answerText: "NATO er en milit\xE6r alliance, og skal derfor have fokus p\xE5
       at styrke egen magt. \n\nMedlemsstaterne st\xE5r st\xE6rkere sammen i det globale
       anarki, s\xE5 l\xE6nge alle bidrager og er enige om de vigtigste udenrigspolitiske
@@ -65,4 +32,36 @@ MonoBehaviour:
     - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de, og rigtig
         fint arbejde! \n\nHvis alliancen skal give mening for Danmark skal den bidrage
         til vores magt i det globale anarki!"
+      viewpoint: 0
+  - answerText: "NATO skal altid overveje den globale situation og planl\xE6gge herefter.
+      \n\nEt st\xE6rkt samlet forsvar er vigtigt, og hvis nye lande vil integreres
+      i NATO, skal det give mening for alle parter."
+    viewpoint: 2
+    explanations:
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nJeg
+        forventede, at du ville l\xE6gge mere fokus p\xE5 NATOs mulighed for at bidrage
+        til st\xF8rre international samarbejde og fredfyldt skabelse af f\xE6llesv\xE6rdier,
+        da dette er partiets \xF8nskede retning for organisationen. \n\nHusk gerne
+        dette til n\xE6ste gang!"
+      viewpoint: 1
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nPartiets
+        holdning til NATO er ikke rettet mod en umiddelbar udvidelse af medlemslandene,
+        men snarere et st\xF8rre fokus p\xE5 at styrke magten for Danmark og de andre
+        nuv\xE6rende medlemslande. \n\nHusk gerne dette til n\xE6ste gang!"
+      viewpoint: 0
+  - answerText: "NATO har indtil nu haft succes med at forhindre interne konflikter
+      mellem medlemslande, og denne trend skal udvides s\xE5 meget som muligt. \n\nEftersom
+      NATO vokser, kan medlemslandene st\xE5 st\xE6rkere sammen, skabe f\xE6lles
+      v\xE6rdier, samt \xE5bne muligheder til samarbejde p\xE5 alle omr\xE5der. "
+    viewpoint: 1
+    explanations:
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de, og rigtig
+        fint arbejde! \n\nOrganisationer som NATO er et st\xE6rkt v\xE6rkt\xF8j for
+        fredfyldt udbredelse af f\xE6lles v\xE6rdier og normer, og det skal vi v\xE6re
+        klar til at anvende globalt."
+      viewpoint: 1
+    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nPartiets
+        holdning til NATO er bestemt ikke rettet mod en ubetinget udvidelse af aftalen,
+        men snarere et st\xF8rre fokus p\xE5 at styrke magten for Danmark og de andre
+        medlemslande. \n\nHusk dette til n\xE6ste gang."
       viewpoint: 0

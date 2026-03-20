@@ -70,3 +70,7 @@ MonoBehaviour:
     definition: "Konfliktbil\xE6ggelse betyder at afslutte, l\xF8se eller d\xE6mpe
       en uoverensstemmelse eller konflikt mellem to eller flere parter."
     image: {fileID: 0}
+  - keyword: Traktater
+    definition: En traktat er en folkeretligt bindende, skriftlig aftale mellem to
+      eller flere stater eller internationale organisationer.
+    image: {fileID: 0}

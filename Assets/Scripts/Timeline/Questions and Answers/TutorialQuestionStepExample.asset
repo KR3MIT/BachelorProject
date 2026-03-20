@@ -12,42 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e680697196b9e408469a3706900ca3, type: 3}
   m_Name: TutorialQuestionStepExample
   m_EditorClassIdentifier: Assembly-CSharp::TutorialQuestionStep
-  question: This is the tutorial question
+  question: "Her st\xE5r beskrivelsen af scenariet."
   answers:
-  - answerText: This is the liberalist answer
+  - answerText: "Her st\xE5r et svar"
     viewpoint: 1
     explanations:
-    - explanationText: This is the realist explanation
+    - explanationText: "Her st\xE5r statsministerens reaktion"
       viewpoint: 0
-    - explanationText: This is the liberalist explanation
+    - explanationText: "Her st\xE5r statsministerens reaktion"
       viewpoint: 1
-  - answerText: This is the realist answer
+  - answerText: "Her st\xE5r et andet svar"
     viewpoint: 0
     explanations:
-    - explanationText: This is the realist explanation
+    - explanationText: "Her st\xE5r statsministerens reaktion"
       viewpoint: 0
-    - explanationText: This is the liberalist explanation
+    - explanationText: "Her st\xE5r statsministerens reaktion"
       viewpoint: 1
   tutorialSteps:
   - position: {x: 0, y: 0}
-    tutorialText: "Velkommen bla bla bla, dette er starten p\xE5 spillet heheheha,
-      tryk hvor som helst for at forts\xE6tte."
+    tutorialText: "Velkommen til [TITEL HER].\n\nDu er blevet valgt som udenrigsminister
+      i den nye regering, og det er nu din opgave at styre Danmarks udenrigspolitik.\n\nFor
+      at have succes i denne opgave, skal du f\xF8lge dit partis ideologi. Hvis ikke
+      dette lykkes, risikerer du at blive fyret at statsministeren.\n\nKlik et sted
+      p\xE5 sk\xE6rmen for at fors\xE6tte."
     trigger: 1
     delay: 0
-  - position: {x: -160, y: 0}
-    tutorialText: "P\xE5 h\xF8jre side af mappen vil du kunne se et sp\xF8rgsm\xE5l,
-      og p\xE5 venstre side vil du kunne se et af dine mulige svar. \n\nTryk p\xE5
-      m\xE6rkerne i toppen af venstre papir for at skifte svar."
+  - position: {x: -165, y: 0}
+    tutorialText: "P\xE5 h\xF8jre side af mappen vil du kunne se et scenarie, og
+      p\xE5 venstre side vil du kunne se et af dine mulige svar. \n\nTryk p\xE5 m\xE6rkerne
+      i toppen af venstre papir for at skifte svar."
     trigger: 2
     delay: 0
-  - position: {x: -160, y: -100}
-    tutorialText: "N\xE5r du har fundet det svar som du mener passer til dit parties
-      holdning klik godkend."
+  - position: {x: -165, y: -50}
+    tutorialText: "N\xE5r du har fundet det svar som du mener passer til dit partis
+      holdning, kan du klikke Godkend. \n\nDette l\xE5ser din handling i scenariet."
     trigger: 3
     delay: 0
-  - position: {x: 0, y: 0}
-    tutorialText: "Dette er din mail hvor du vil kunne se din partileders mening
-      om dit valg, samt popularitet bla bla klik p\xE5 forts\xE6t for at forts\xE6tte
-      hvis du vil forts\xE6tte"
+  - position: {x: -300, y: 0}
+    tutorialText: "Efter hvert scenarie vil du se statsministerens reaktion p\xE5
+      dine handlinger. \n\nHvis du gentagne gange handler udenfor partiets ideologi,
+      vil statsministeren tage din position fra dig\n.\nHvis du handler indenfor
+      partiets m\xE5l og ideologi, stiger din popularitet, og du kan forblive i stillingen.\n\nTryk
+      forts\xE6t for at g\xE5 videre til n\xE6ste scenarie.\n\nHeld og lykke!"
     trigger: 1
     delay: 5000
