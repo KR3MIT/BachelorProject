@@ -602,6 +602,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1393635233}
+    - target: {fileID: 1315217263219374345, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1531653713267123893, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -738,9 +742,25 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.2784314
       objectReference: {fileID: 0}
+    - target: {fileID: 7276788285857909906, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3.512
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276788285857909906, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276788285857909906, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.395
+      objectReference: {fileID: 0}
     - target: {fileID: 7604511489540729481, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_text
       value: 'Statsminister '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323400847430381575, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8374898446894056884, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_text
