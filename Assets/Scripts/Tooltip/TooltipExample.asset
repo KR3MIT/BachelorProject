@@ -27,13 +27,13 @@ MonoBehaviour:
     definition: "I International Politik bruges teorier som et grundlag for fortolkning
       af globale begivenheder. Teorier bruges alts\xE5 til at forklare observationer,
       men ikke til at planl\xE6gge fremtidige m\xE5ls\xE6tninger eller aktioner."
-    image: {fileID: 0}
+    image: {fileID: 21300000, guid: d0f1962df78d4754d9c5a3a527144870, type: 3}
   - keyword: Ideologi
     definition: "I International Politik bruges ideologier til at guide ops\xE6tningen
       af m\xE5ls\xE6tninger for et parti eller en regering. Ideologier f\xE5r ofte
       deres grundlag fra et verdenssyn dannet p\xE5 baggrund af teorier, og disse
       h\xE6nger derfor ofte, men ikke altid, sammen."
-    image: {fileID: 0}
+    image: {fileID: 21300000, guid: d0f1962df78d4754d9c5a3a527144870, type: 3}
   - keyword: Traktat
     definition: En traktat er en folkeretligt bindende, skriftlig aftale mellem to
       eller flere stater eller internationale organisationer.
