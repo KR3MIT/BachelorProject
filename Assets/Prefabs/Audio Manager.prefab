@@ -96,7 +96,7 @@ MonoBehaviour:
   - type: 7
     category: 1
     clips:
-    - {fileID: 8300000, guid: 24a4f401e82cc0049b4d73749dd8c76c, type: 3}
+    - {fileID: 8300000, guid: f4f67c1192acc2744a3913b256610a09, type: 3}
     volume: 0.2
     pitch: 1
     randomPitch: 0
