@@ -88,6 +88,7 @@ public class QuestionView : MonoBehaviour
         }
 
         paperDatas[0].paper.SetAsLastSibling();//green first
+        SetTooltipable(0);
 
         if (answers.Count() == 2)
             paperDatas[paperDatas.Count() - 1].paper.gameObject.SetActive(false);
@@ -152,6 +153,14 @@ public class QuestionView : MonoBehaviour
 
         paperDatas[index].paper.SetAsLastSibling();//set chosen child to be the last child
 
+        SetTooltipable(index);
+
+        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
+        lastChild.DOAnchorPosX(initialLeftPosition.x, .3f);
+    }
+
+    private void SetTooltipable(int index)
+    {
         foreach (var paperData in paperDatas)
         {
             if (paperData.paper == paperDatas[index].paper)
@@ -163,9 +172,6 @@ public class QuestionView : MonoBehaviour
                 paperData.answerText.tooltipEnabled = false;
             }
         }
-
-        AudioManager.Instance.Play(SoundType.PaperSlideSoft);
-        lastChild.DOAnchorPosX(initialLeftPosition.x, .3f);
     }
 
     public enum SetNotInteractable
