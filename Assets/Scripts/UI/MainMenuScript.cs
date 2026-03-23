@@ -1,10 +1,8 @@
-using TMPro;
 using System;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Threading.Tasks;
-using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -13,39 +11,21 @@ public class MainMenuScript : MonoBehaviour
     [Header("Scene")]
     [SerializeField] private Transform gameCameraTransform;
     [SerializeField] private Button startButton;
-    private GameObject cam;
     [SerializeField] private List<GameObject> popUpObjects;
-
-    [Header("Audio")]
-    [SerializeField] private Button AudioButton;
-    [SerializeField] private Slider AudioSlider;
-    [SerializeField] private TMP_Text Text;
-
-    [SerializeField] private Sprite OnImage;
-    [SerializeField] private Sprite OffImage;
-
-    [SerializeField] private Transform SliderPos;
-    private Image _Image;
-    private float cooldown;
-    private bool hidden = true;
-    private Vector3 audioPos;
+    
+    private GameObject cam;
 
     private void Awake()
     {
-        _Image = AudioButton.gameObject.GetComponent<Image>();
-        OnImage = _Image.sprite;
-        cam = Camera.main.gameObject;
-
-        AudioSlider.onValueChanged.AddListener(DoAudioStuff);
-        AudioButton.onClick.AddListener(ToggleSlider);
-
         foreach (var obj in popUpObjects)
             obj.SetActive(false);
+
+        cam = Camera.main.gameObject;
     }
 
     public void Start()
     {
-        ToggleSlider(true);
+
     }
 
     public void Show(Action onStartGame)
@@ -53,7 +33,6 @@ public class MainMenuScript : MonoBehaviour
         gameObject.SetActive(true);
 
         //AudioSlider.gameObject.SetActive(false);
-        DoAudioStuff(AudioSlider.value);
 
         startButton.onClick.RemoveAllListeners();
         startButton.onClick.AddListener(() => onStartGame?.Invoke());
@@ -66,10 +45,7 @@ public class MainMenuScript : MonoBehaviour
 
     void Update()
     {
-        if(AudioSlider.gameObject.activeSelf)
-        {
-            cooldown += Time.deltaTime;
-        }
+        
     }
 
     public async Task MoveCameraToGame() 
@@ -81,54 +57,6 @@ public class MainMenuScript : MonoBehaviour
     public void MoveCameraToMenu() 
     {
 
-    }
-
-    private void DoAudioStuff(float value)
-    {
-        if(value == 0f) _Image.sprite = OffImage; else _Image.sprite = OnImage;
-
-        string text = Mathf.Round(value * 100f) + "%";
-        Text.text = text;
-        AudioMixerController.Instance.SetMasterVolume(value);
-
-        if (!AudioSlider.gameObject.activeSelf || cooldown >= 0.25f)
-        {
-            AudioManager.Instance.Play(SoundType.PaperSlideSoft);
-            cooldown = 0f;
-        }
-    }
-
-    private void ToggleSlider(bool _bool)
-    {
-        hidden = _bool;
-
-        SetSliderPos();
-        if (!hidden) AudioShow(); else AudioHide();
-    }
-
-    private void ToggleSlider()
-    {
-        hidden = !hidden;
-
-        SetSliderPos();
-        if (!hidden) AudioShow(); else AudioHide();
-    }
-
-    private void SetSliderPos()
-    {
-        audioPos = SliderPos.position;
-    }
-
-    private void AudioShow()
-    {
-        var transform = AudioSlider.gameObject.transform;
-        transform.DOJump(audioPos, 1f, 1, 1f).SetEase(Ease.OutBounce);
-    }
-
-    private void AudioHide()
-    {
-        var transform = AudioSlider.gameObject.transform;
-        transform.DOJump(audioPos + new Vector3(0, -500, 0), 1f, 1, 1f).SetEase(Ease.OutBounce);
     }
 
     public void PopUp()
