@@ -17,6 +17,9 @@ public class ExplanationView : MonoBehaviour
     [SerializeField] private Button continueButton;
     [SerializeField] private TMP_Text boss;
     [SerializeField] private TMP_Text mail;
+    [SerializeField] private Image ideoImg;
+    [SerializeField] private Sprite realSprite;
+    [SerializeField] private Sprite libSprite;
 
     [Header("End Screen")]
     [Tooltip("Uses the index from viewpointtype")]
@@ -34,6 +37,7 @@ public class ExplanationView : MonoBehaviour
 
         boss.text = viewpoint == ViewpointType.Realist ? "Statsminister Jensen, Realisternes Parti" : "Statminister Jørgensen, Liberalisternes Parti";
         mail.text = viewpoint == ViewpointType.Realist ? "Realisternes Parti" : "Liberalisternes Parti";
+        ideoImg.sprite = viewpoint == ViewpointType.Realist ? realSprite : libSprite;
 
         continueButton.onClick.RemoveAllListeners();
         continueButton.onClick.AddListener(OnContinueClicked);

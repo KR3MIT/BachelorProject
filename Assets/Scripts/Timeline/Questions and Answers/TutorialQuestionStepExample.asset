@@ -51,7 +51,7 @@ MonoBehaviour:
   - position: {x: -300, y: 0}
     tutorialText: "Efter hvert scenarie vil du se statsministerens reaktion p\xE5
       dine handlinger. \n\nHvis du gentagne gange handler udenfor partiets ideologi,
-      vil statsministeren tage din position fra dig\n.\nHvis du handler indenfor
+      vil statsministeren tage din position fra dig.\n\nHvis du handler indenfor
       partiets m\xE5l og ideologi, stiger din popularitet, og du kan forblive i stillingen.\n\nTryk
       forts\xE6t for at g\xE5 videre til n\xE6ste scenarie.\n\nHeld og lykke!"
     trigger: 1
