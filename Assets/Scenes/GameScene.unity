@@ -471,6 +471,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: endScreenMessages.Array.data[0].badMessage
+      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+        og jeg er ked af at meddele at du er fyret fra stillingen pr dags dato.\n\nDu
+        har desv\xE6rre ageret uden for partiets ideologi for mange gange, og derfor
+        bliver jeg n\xF8dt til at erstatte dig.\n\nGod vind fremover. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: endScreenMessages.Array.data[0].midMessage
+      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+        og selvom jeg har besluttet at beholde dig i stillingen, s\xE5 er der plads
+        til forbedring i fremtiden.\n\nHusk at l\xE6se op p\xE5 partiets politiske
+        m\xE5l og ager derefter.\n\nJeg ser frem til at f\xF8lge din forbedring fremover!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: endScreenMessages.Array.data[1].badMessage
+      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+        og jeg er ked af at meddele at du er fyret fra stillingen pr dags dato.\n\nDu
+        har desv\xE6rre ageret uden for partiets ideologi for mange gange, og derfor
+        bliver jeg n\xF8dt til at erstatte dig.\n\nGod vind fremover."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: endScreenMessages.Array.data[1].midMessage
+      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+        og selvom jeg har besluttet at beholde dig i stillingen, s\xE5 er der plads
+        til forbedring i fremtiden.\n\nHusk at l\xE6se op p\xE5 partiets politiske
+        m\xE5l og ager derefter.\n\nJeg ser frem til at f\xF8lge din forbedring fremover!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: endScreenMessages.Array.data[0].goodMessage
+      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+        og jeg ville gerne rose dig for din indsats.\n\nDu har igennem dine handlinger
+        vist et stort kendskab til partiets politiske m\xE5l, og du har handlet i
+        partiets \xE5nd.\n\nJeg gl\xE6der mig til vores fortsatte samarbejde, godt
+        g\xE5et! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: endScreenMessages.Array.data[1].goodMessage
+      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+        og jeg ville gerne rose dig for din indsats.\n\nDu har igennem dine handlinger
+        vist et stort kendskab til partiets politiske m\xE5l, og du har handlet i
+        partiets \xE5nd.\n\nJeg gl\xE6der mig til vores fortsatte samarbejde, godt
+        g\xE5et! "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1074,13 +1118,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393635231}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03494024, y: -0.12677398, z: 0.008091057, w: 0.99128306}
-  m_LocalPosition: {x: 0.794, y: 1.438, z: -0.907}
+  m_LocalRotation: {x: 0.04480245, y: -0.16582279, z: 0.007541572, w: 0.9851085}
+  m_LocalPosition: {x: 1.385, y: 1.296, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 4.09, y: -14.561, z: 0.413}
+  m_LocalEulerAnglesHint: {x: 5.208, y: -19.11, z: 0}
 --- !u!114 &1393635235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,13 +1320,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415975487}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03494024, y: -0.12677398, z: 0.008091057, w: 0.99128306}
-  m_LocalPosition: {x: 0.794, y: 1.438, z: -0.907}
+  m_LocalRotation: {x: 0.04480245, y: -0.16582279, z: 0.007541572, w: 0.9851085}
+  m_LocalPosition: {x: 1.385, y: 1.296, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 4.09, y: -14.561, z: 0.413}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1670413678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,10 +1662,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 4388499600183710616, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5330312149798521430, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1678,6 +1718,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6809176843007165742, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809176843007165742, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809176843007165742, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7381046641442778977, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1707,6 +1759,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8061962113151050879, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298479190655146255, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298479190655146255, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
