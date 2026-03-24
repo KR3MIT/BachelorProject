@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /// <summary>
 /// overall manager
 /// </summary>
@@ -37,7 +38,6 @@ public class GameManager : MonoBehaviour, IGameUI
         //viewpoint stuff
         Debug.Log("Starting pre-game setup...");
         viewpointView.gameObject.SetActive(true);
-        UIApprovalRating.Instance.gameObject.SetActive(true);
     }
 
     public void StartGame(int viewpointID)
@@ -54,9 +54,10 @@ public class GameManager : MonoBehaviour, IGameUI
 
     private void ResetGame()
     {
-        session = null;
-        currentStepIndex = 0;
-        ShowMenu(StartPreGame);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //session = null;
+        //currentStepIndex = 0;
+        //ShowMenu(StartPreGame);
     }
 
     #region steps
@@ -66,10 +67,7 @@ public class GameManager : MonoBehaviour, IGameUI
         {
             Debug.Log("Game Finished! Approval rating: " + UIApprovalRating.Instance.GetApprovalRating() * 100f + "/100");
 
-            ShowEndScreen(session.GetQuestionSelectionCounts(), UIApprovalRating.Instance.GetApprovalRating(), ResetGame);
-
-            //endView.Show(session.GetQuestionSelectionCounts(), UIApprovalRating.Instance.GetApprovalRating());
-            UIApprovalRating.Instance.gameObject.SetActive(false);
+            ShowEndScreen(session.GetQuestionSelectionCounts(), session.viewpoint, ResetGame);
 
             return;
         }
@@ -89,10 +87,10 @@ public class GameManager : MonoBehaviour, IGameUI
     {
         mainMenu.Show(onStartGame);
     }
-    public void ShowEndScreen(Dictionary<ViewpointType, int> counts, float approvalRating, Action onEnd)
+    public void ShowEndScreen(Dictionary<ViewpointType, int> counts, ViewpointType viewpoint, Action onEnd)
     {
         //its in explanation view gg
-        explanationView.ShowEndScreen(counts, approvalRating, onEnd);
+        explanationView.ShowEndScreen(counts, viewpoint, onEnd);
     }
 
     void IGameUI.ShowQuestion(QuestionStep question, Action<int> onAnswerSelected)

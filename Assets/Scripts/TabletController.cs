@@ -24,6 +24,11 @@ public class TabletController : MonoBehaviour
         transform.DOMove(offScreenPosition, 1).SetEase(Ease.InOutSine);
     }
 
+    public async Task MoveOffScreen(bool hasTask)//whatever
+    {
+        await transform.DOMove(offScreenPosition, 1).SetEase(Ease.InOutSine).AsyncWaitForCompletion();
+    }
+
     public void TurnOnScreen()
     {
 

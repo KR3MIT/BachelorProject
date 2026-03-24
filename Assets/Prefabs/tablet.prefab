@@ -667,9 +667,20 @@ MonoBehaviour:
   realSprite: {fileID: 21300000, guid: 33124779aa6c2034dbe2758a259175fc, type: 3}
   libSprite: {fileID: 21300000, guid: 889502f11140c8f44bc70cfa0877d305, type: 3}
   endScreenMessages:
-  - most 0
-  - most 1
-  - most 2
+  - viewpoint: 0
+    badMessage: Jeg er meget utilfreds med dine valg over den sidste periode, og
+      du er derfor fyret. idk man im not a writer
+    midMessage: "Du bliver n\xF8dt til at samle op p\xE5 vores parti's holdninger
+      da der er meget plads til forbedring."
+    goodMessage: Godt arbejde! Du tog de rigtige valg for vores parti langt det meste
+      af tiden
+  - viewpoint: 1
+    badMessage: Jeg er meget utilfreds med dine valg over den sidste periode, og
+      du er derfor fyret. idk man im not a writer
+    midMessage: "Du bliver n\xF8dt til at samle op p\xE5 vores parti's holdninger
+      da der er meget plads til forbedring."
+    goodMessage: Godt arbejde! Du tog de rigtige valg for vores parti langt det meste
+      af tiden
 --- !u!1 &1314105052749867887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,7 +2793,6 @@ GameObject:
   - component: {fileID: 1189838931933615623}
   - component: {fileID: 317424002772206611}
   - component: {fileID: 7575286169126229231}
-  - component: {fileID: 376744866105591534}
   m_Layer: 0
   m_Name: Ipad Canvas
   m_TagString: Untagged
@@ -2873,25 +2883,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &376744866105591534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5166503193158703060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886a4821dd28d4c418f187f9d5497b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIApprovalRating
-  approvalRating: 0.5
-  approvalBarFill: {fileID: 511364439939726546}
-  approvalBarFade: {fileID: 2222616846137705125}
-  approvalBarFadeColorPos: {r: 0.1467165, g: 0.509434, b: 0.13360623, a: 1}
-  approvalBarFadeColorNeg: {r: 0.52062863, g: 0.5698112, b: 0.14084013, a: 1}
-  debug: 0
-  fadeRuns: 0
 --- !u!1 &5223151128169921860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3116,8 +3107,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9141292442598053448}
+  - component: {fileID: 7059537889902733877}
   m_Layer: 0
-  m_Name: Position
+  m_Name: UIApproval
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3144,6 +3136,25 @@ RectTransform:
   m_AnchoredPosition: {x: 1.347, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7059537889902733877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5453111848730308256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886a4821dd28d4c418f187f9d5497b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIApprovalRating
+  approvalRating: 0.5
+  approvalBarFill: {fileID: 511364439939726546}
+  approvalBarFade: {fileID: 2222616846137705125}
+  approvalBarFadeColorPos: {r: 0.1467165, g: 0.509434, b: 0.13360623, a: 1}
+  approvalBarFadeColorNeg: {r: 0.52062863, g: 0.5698112, b: 0.14084013, a: 1}
+  debug: 0
+  fadeRuns: 0
 --- !u!1 &5721196761729802515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,7 +3888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.014905, y: -0.656}
+  m_AnchoredPosition: {x: -0.014905, y: -2.46}
   m_SizeDelta: {x: 5.4018, y: 0.25895}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2825605392416802827

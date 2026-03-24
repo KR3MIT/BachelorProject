@@ -6,6 +6,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[Serializable]
+public struct EndScreenMessage
+{
+    public ViewpointType viewpoint;
+    [TextArea] public string badMessage;
+    [TextArea] public string midMessage;
+    [TextArea] public string goodMessage;
+}
+
 /// <summary>
 /// UI for explanations, also used for end screen since its tied to the tablet
 /// </summary>
@@ -23,7 +32,7 @@ public class ExplanationView : MonoBehaviour
 
     [Header("End Screen")]
     [Tooltip("Uses the index from viewpointtype")]
-    [TextArea]public List<string> endScreenMessages;
+    public List<EndScreenMessage> endScreenMessages;
 
     private Action onContinue;
     private Action onEnd;
@@ -33,11 +42,8 @@ public class ExplanationView : MonoBehaviour
         this.onContinue = onContinue;
 
         explanationText.GetComponent<TMPTextFormatter>().SetText(explanation);
-        //resultLabel.text = wasCorrect ? "Godt arbejde!" : "Hvad tænkte du på?";
 
-        boss.text = viewpoint == ViewpointType.Realist ? "Statsminister Jensen, Realisternes Parti" : "Statminister Jørgensen, Liberalisternes Parti";
-        mail.text = viewpoint == ViewpointType.Realist ? "Realisternes Parti" : "Liberalisternes Parti";
-        ideoImg.sprite = viewpoint == ViewpointType.Realist ? realSprite : libSprite;
+        SetPartyFlair(viewpoint);
 
         continueButton.onClick.RemoveAllListeners();
         continueButton.onClick.AddListener(OnContinueClicked);
@@ -45,18 +51,42 @@ public class ExplanationView : MonoBehaviour
         await TabletController.Instance.MoveOnScreen();
     }
 
-    public async void ShowEndScreen(Dictionary<ViewpointType, int> counts, float approvalRating, Action onEnd)
+    public async void ShowEndScreen(Dictionary<ViewpointType, int> counts, ViewpointType viewpoint, Action onEnd)
     {
         this.onEnd = onEnd;
 
         continueButton.onClick.RemoveAllListeners();
+
+        await TabletController.Instance.MoveOffScreen(true);
+
         continueButton.onClick.AddListener(OnEndClicked);
 
-        //the talk message
-        var topKvp = counts.OrderByDescending(kvp => kvp.Value).First();
-        int messageIndex = (int)topKvp.Key;
-        string message = endScreenMessages[messageIndex];
-        explanationText.GetComponent<TMPTextFormatter>().SetText(message);
+
+
+        //get the EndMessage for viewpoint and approval rating
+        EndScreenMessage viewpointMessage = default;
+        foreach (var message in endScreenMessages)
+        {
+            if (message.viewpoint == viewpoint)
+            {
+                viewpointMessage = message;
+                break;
+            }
+        }
+
+        var approval = UIApprovalRating.Instance.GetApprovalRating();
+        if(approval < 0.33f)
+        {
+            explanationText.GetComponent<TMPTextFormatter>().SetText(viewpointMessage.badMessage);
+        }
+        else if(approval < 0.66f)
+        {
+            explanationText.GetComponent<TMPTextFormatter>().SetText(viewpointMessage.midMessage);
+        }
+        else
+        {
+            explanationText.GetComponent<TMPTextFormatter>().SetText(viewpointMessage.goodMessage);
+        }
 
         //the number message
         var sb = new StringBuilder();
@@ -69,9 +99,20 @@ public class ExplanationView : MonoBehaviour
 
         var result = sb.ToString();
         resultLabel.text = result;
+        resultLabel.gameObject.SetActive(true);
+
+
+        continueButton.transform.GetComponentInChildren<TMP_Text>().text = "Afslut spil";
 
 
         await TabletController.Instance.MoveOnScreen();
+    }
+
+    private void SetPartyFlair(ViewpointType viewpoint)
+    {
+        boss.text = viewpoint == ViewpointType.Realist ? "Statsminister Jensen, Realisternes Parti" : "Statminister Jørgensen, Liberalisternes Parti";
+        mail.text = viewpoint == ViewpointType.Realist ? "Realisternes Parti" : "Liberalisternes Parti";
+        ideoImg.sprite = viewpoint == ViewpointType.Realist ? realSprite : libSprite;
     }
 
     public void Hide()
