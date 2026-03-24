@@ -471,6 +471,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6218089419142145152, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218089419142145152, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: endScreenMessages.Array.data[0].badMessage
       value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
@@ -514,6 +522,10 @@ PrefabInstance:
         vist et stort kendskab til partiets politiske m\xE5l, og du har handlet i
         partiets \xE5nd.\n\nJeg gl\xE6der mig til vores fortsatte samarbejde, godt
         g\xE5et! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323400847430381575, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
