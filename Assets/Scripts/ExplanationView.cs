@@ -94,6 +94,12 @@ public class ExplanationView : MonoBehaviour
 
         foreach (var kvp in counts)
         {
+            if (kvp.Key == ViewpointType.MiddleRoad) 
+            {
+                sb.AppendLine($"Neutral: {kvp.Value}");
+                continue;
+            }  //skip middle road since it doesn't have a party
+
             sb.AppendLine($"{kvp.Key}: {kvp.Value}");
         }
 
