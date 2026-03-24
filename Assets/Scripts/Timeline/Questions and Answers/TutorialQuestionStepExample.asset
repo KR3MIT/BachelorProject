@@ -14,13 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TutorialQuestionStep
   question: "Her st\xE5r beskrivelsen af scenariet."
   answers:
-  - answerText: "Her st\xE5r et svar"
-    viewpoint: 1
-    explanations:
-    - explanationText: "Her st\xE5r statsministerens reaktion"
-      viewpoint: 0
-    - explanationText: "Her st\xE5r statsministerens reaktion"
-      viewpoint: 1
   - answerText: "Her st\xE5r et andet svar"
     viewpoint: 0
     explanations:
@@ -28,13 +21,20 @@ MonoBehaviour:
       viewpoint: 0
     - explanationText: "Her st\xE5r statsministerens reaktion"
       viewpoint: 1
+  - answerText: "Her st\xE5r et svar"
+    viewpoint: 1
+    explanations:
+    - explanationText: "Her st\xE5r statsministerens reaktion"
+      viewpoint: 0
+    - explanationText: "Her st\xE5r statsministerens reaktion"
+      viewpoint: 1
   tutorialSteps:
   - position: {x: 0, y: 0}
-    tutorialText: "Velkommen til [TITEL HER].\n\nDu er blevet valgt som udenrigsminister
-      i den nye regering, og det er nu din opgave at styre Danmarks udenrigspolitik.\n\nFor
-      at have succes i denne opgave, skal du f\xF8lge dit partis ideologi. Hvis ikke
-      dette lykkes, risikerer du at blive fyret at statsministeren.\n\nKlik et sted
-      p\xE5 sk\xE6rmen for at fors\xE6tte."
+    tutorialText: "Velkommen til \"Udenrigsministeren\".\n\nDu er blevet valgt som
+      udenrigsminister i den nye regering, og det er nu din opgave at styre Danmarks
+      udenrigspolitik.\n\nFor at have succes i denne opgave, skal du f\xF8lge dit
+      partis ideologi. Hvis ikke dette lykkes, risikerer du at blive fyret at statsministeren.\n\nKlik
+      et sted p\xE5 sk\xE6rmen for at fors\xE6tte."
     trigger: 1
     delay: 0
   - position: {x: -165, y: 0}
