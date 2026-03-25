@@ -471,64 +471,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6218089419142145152, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218089419142145152, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -3
-      objectReference: {fileID: 0}
     - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: endScreenMessages.Array.data[0].badMessage
       value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
-        og jeg er ked af at meddele at du er afskedet fra stillingen pr dags dato.\n\nDu
+        og jeg er ked af at meddele at du afskediges fra stillingen pr. dags dato.\n\nDu
         har desv\xE6rre ageret uden for partiets ideologi for mange gange, og derfor
         bliver jeg n\xF8dt til at udn\xE6vne en ny udenrigsminister.\n\r\nDu f\xE5r
-        fra Departmentschefen n\xE6rmere detaljer om afskedsaudiens hos Kongen.\n\nGod
-        vind fremover."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: endScreenMessages.Array.data[0].midMessage
-      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
-        og selvom jeg har besluttet at beholde dig i stillingen, s\xE5 er der plads
-        til forbedring i fremtiden.\n\nHusk at l\xE6se op p\xE5 partiets politiske
-        m\xE5l og ager derefter.\n\nJeg ser frem til at f\xF8lge din forbedring fremover!"
+        fra departmentschefen n\xE6rmere detaljer om afskedsaudiens hos kongen."
       objectReference: {fileID: 0}
     - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: endScreenMessages.Array.data[1].badMessage
       value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
-        og jeg er ked af at meddele at du er afskedet fra stillingen pr dags dato.\n\nDu
+        og jeg er ked af at meddele at du afskediges fra stillingen pr. dags dato.\n\nDu
         har desv\xE6rre ageret uden for partiets ideologi for mange gange, og derfor
         bliver jeg n\xF8dt til at udn\xE6vne en ny udenrigsminister.\n\r\nDu f\xE5r
-        fra Departmentschefen n\xE6rmere detaljer om afskedsaudiens hos Kongen."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: endScreenMessages.Array.data[1].midMessage
-      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
-        og selvom jeg har besluttet at beholde dig i stillingen, s\xE5 er der plads
-        til forbedring i fremtiden.\n\nHusk at l\xE6se op p\xE5 partiets politiske
-        m\xE5l og ager derefter.\n\nJeg ser frem til at f\xF8lge din forbedring fremover!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: endScreenMessages.Array.data[0].goodMessage
-      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
-        og jeg ville gerne rose dig for din indsats.\n\nDu har igennem dine handlinger
-        vist et stort kendskab til partiets politiske m\xE5l, og du har handlet i
-        partiets \xE5nd.\n\nJeg gl\xE6der mig til vores fortsatte samarbejde, godt
-        g\xE5et! "
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: endScreenMessages.Array.data[1].goodMessage
-      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
-        og jeg ville gerne rose dig for din indsats.\n\nDu har igennem dine handlinger
-        vist et stort kendskab til partiets politiske m\xE5l, og du har handlet i
-        partiets \xE5nd.\n\nJeg gl\xE6der mig til vores fortsatte samarbejde, godt
-        g\xE5et! "
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323400847430381575, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+        fra departmentschefen n\xE6rmere detaljer om afskedsaudiens hos kongen."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1677,10 +1634,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3098341612906523759, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3929600598862209405, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1757,34 +1710,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6492245583149621900, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
-      objectReference: {fileID: 0}
-    - target: {fileID: 6492245583149621900, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: -1183493901
-      objectReference: {fileID: 0}
-    - target: {fileID: 6809176843007165742, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6809176843007165742, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6809176843007165742, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6821570967450095830, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
-      objectReference: {fileID: 0}
-    - target: {fileID: 6821570967450095830, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: -1183493901
-      objectReference: {fileID: 0}
     - target: {fileID: 7381046641442778977, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1816,22 +1741,6 @@ PrefabInstance:
     - target: {fileID: 8061962113151050879, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298479190655146255, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298479190655146255, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8865958284872708698, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
-      objectReference: {fileID: 0}
-    - target: {fileID: 8865958284872708698, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: -1183493901
       objectReference: {fileID: 0}
     - target: {fileID: 8970250166280795948, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_SizeDelta.y
