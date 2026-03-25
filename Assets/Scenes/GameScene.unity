@@ -471,22 +471,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: endScreenMessages.Array.data[0].badMessage
-      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
-        og jeg er ked af at meddele at du afskediges fra stillingen pr. dags dato.\n\nDu
-        har desv\xE6rre ageret uden for partiets ideologi for mange gange, og derfor
-        bliver jeg n\xF8dt til at udn\xE6vne en ny udenrigsminister.\n\r\nDu f\xE5r
-        fra departmentschefen n\xE6rmere detaljer om afskedsaudiens hos kongen."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
-      propertyPath: endScreenMessages.Array.data[1].badMessage
-      value: "Jeg har taget din periode som udenrigsminister op til overvejelse,
-        og jeg er ked af at meddele at du afskediges fra stillingen pr. dags dato.\n\nDu
-        har desv\xE6rre ageret uden for partiets ideologi for mange gange, og derfor
-        bliver jeg n\xF8dt til at udn\xE6vne en ny udenrigsminister.\n\r\nDu f\xE5r
-        fra departmentschefen n\xE6rmere detaljer om afskedsaudiens hos kongen."
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
