@@ -668,19 +668,34 @@ MonoBehaviour:
   libSprite: {fileID: 21300000, guid: 889502f11140c8f44bc70cfa0877d305, type: 3}
   endScreenMessages:
   - viewpoint: 0
-    badMessage: Jeg er meget utilfreds med dine valg over den sidste periode, og
-      du er derfor fyret. idk man im not a writer
-    midMessage: "Du bliver n\xF8dt til at samle op p\xE5 vores parti's holdninger
-      da der er meget plads til forbedring."
-    goodMessage: Godt arbejde! Du tog de rigtige valg for vores parti langt det meste
-      af tiden
+    badMessage: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+      og jeg er ked af at meddele at du er afskedet fra stillingen pr dags dato.\n\nDu
+      har desv\xE6rre ageret uden for partiets ideologi for mange gange, og derfor
+      bliver jeg n\xF8dt til at udn\xE6vne en ny udenrigsminister.\n\r\nDu f\xE5r
+      fra Departmentschefen n\xE6rmere detaljer om afskedsaudiens hos Kongen.\n\nGod
+      vind fremover."
+    midMessage: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+      og selvom jeg har besluttet at beholde dig i stillingen, s\xE5 er der plads
+      til forbedring i fremtiden.\n\nHusk at l\xE6se op p\xE5 partiets politiske
+      m\xE5l og ager derefter.\n\nJeg ser frem til at f\xF8lge din forbedring fremover!"
+    goodMessage: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+      og jeg ville gerne rose dig for din indsats.\n\nDu har igennem dine handlinger
+      vist et stort kendskab til partiets politiske m\xE5l, og du har handlet i partiets
+      \xE5nd.\n\nJeg gl\xE6der mig til vores fortsatte samarbejde, godt g\xE5et! "
   - viewpoint: 1
-    badMessage: Jeg er meget utilfreds med dine valg over den sidste periode, og
-      du er derfor fyret. idk man im not a writer
-    midMessage: "Du bliver n\xF8dt til at samle op p\xE5 vores parti's holdninger
-      da der er meget plads til forbedring."
-    goodMessage: Godt arbejde! Du tog de rigtige valg for vores parti langt det meste
-      af tiden
+    badMessage: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+      og jeg er ked af at meddele at du er afskedet fra stillingen pr dags dato.\n\nDu
+      har desv\xE6rre ageret uden for partiets ideologi for mange gange, og derfor
+      bliver jeg n\xF8dt til at udn\xE6vne en ny udenrigsminister.\n\r\nDu f\xE5r
+      fra Departmentschefen n\xE6rmere detaljer om afskedsaudiens hos Kongen."
+    midMessage: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+      og selvom jeg har besluttet at beholde dig i stillingen, s\xE5 er der plads
+      til forbedring i fremtiden.\n\nHusk at l\xE6se op p\xE5 partiets politiske
+      m\xE5l og ager derefter.\n\nJeg ser frem til at f\xF8lge din forbedring fremover!"
+    goodMessage: "Jeg har taget din periode som udenrigsminister op til overvejelse,
+      og jeg ville gerne rose dig for din indsats.\n\nDu har igennem dine handlinger
+      vist et stort kendskab til partiets politiske m\xE5l, og du har handlet i partiets
+      \xE5nd.\n\nJeg gl\xE6der mig til vores fortsatte samarbejde, godt g\xE5et! "
 --- !u!1 &1314105052749867887
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,7 +3903,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.014905, y: -2.46}
+  m_AnchoredPosition: {x: -0.014905, y: -3}
   m_SizeDelta: {x: 5.4018, y: 0.25895}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2825605392416802827
