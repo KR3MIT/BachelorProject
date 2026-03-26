@@ -59,4 +59,10 @@ public class DebugStats : MonoBehaviour
                     $"Hardware Acceleration: {(hardwareAcceleration ? "Enabled" : "Disabled")}\n" +
                     $"Session Time: {minutes:D2}:{seconds:D2}";
     }
+
+    public void SetQuality(int quality)
+    {
+                QualitySettings.SetQualityLevel(quality);
+    }
+
 }
