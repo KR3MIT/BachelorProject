@@ -13,22 +13,9 @@ MonoBehaviour:
   m_Name: QuestionStepExample
   m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
   question: "I er blevet inviteret til et interview p\xE5 nationalt tv med DR for
-    at diskutere Danmarks forsvar og mulige trusler fra andre lande. \n\nI skal v\xE6lge
-    hvilken handleplan, i vil pr\xE6sentere for det danske folk."
+    at diskutere Danmarks forsvar og mulige trusler fra andre lande. \n\nI skal v\xE6lge,
+    hvilken handleplan i vil pr\xE6sentere for det danske folk."
   answers:
-  - answerText: "I disse sv\xE6re tider har verden brug for sammenhold og samarbejde
-      mere end nogensinde f\xF8r. \n\nDanmark skal g\xE5 forrest i fredfyldt kommunikation
-      og konfliktbil\xE6ggelse p\xE5 det globale plan, samt have fokus p\xE5 at \xF8ge
-      det globale samarbejde."
-    viewpoint: 1
-    explanations:
-    - explanationText: "Jeg har lige set jeres interview, rigtig fint arbejde! \n\nDet
-        med fredfyldt konfliktbel\xE6ggelse var specielt godt n\xE6vnt."
-      viewpoint: 1
-    - explanationText: "Jeg har lige set jeres interview, og det var bestemt ikke
-        det bedste. \n\nDit svar ignorerer helt at Danmark burde styrke sin milit\xE6re
-        magt, som vi gik til valg p\xE5. \n\nHusk det n\xE6ste gang!"
-      viewpoint: 0
   - answerText: "Mens Danmark aldrig skal ignorere forsvaret, s\xE5 er det ogs\xE5
       vigtigt at bibeholde fokus p\xE5 at forhandle med andre lande. \n\nInternationale
       aftaler er et vigtigt v\xE6rkt\xF8j til at bibeholde freden, men det danske
@@ -43,6 +30,19 @@ MonoBehaviour:
     - explanationText: "Jeg har lige set jeres interview, og jeg har et par noter
         til jer. \n\nN\xE6ste gang m\xE5 i gerne have mere fokus p\xE5 Danmarks milit\xE6re
         magt, og at vi har et m\xE5l om at forbedre den. \n\nHusk det n\xE6ste gang!"
+      viewpoint: 0
+  - answerText: "I disse sv\xE6re tider har verden brug for sammenhold og samarbejde
+      mere end nogensinde f\xF8r. \n\nDanmark skal g\xE5 forrest i fredfyldt kommunikation
+      og konfliktbil\xE6ggelse p\xE5 det globale plan, samt have fokus p\xE5 at \xF8ge
+      det globale samarbejde."
+    viewpoint: 1
+    explanations:
+    - explanationText: "Jeg har lige set jeres interview, rigtig fint arbejde! \n\nDet
+        med fredfyldt konfliktbel\xE6ggelse var specielt godt n\xE6vnt."
+      viewpoint: 1
+    - explanationText: "Jeg har lige set jeres interview, og det var bestemt ikke
+        det bedste. \n\nDit svar ignorerer helt at Danmark burde styrke sin milit\xE6re
+        magt, som vi gik til valg p\xE5. \n\nHusk det n\xE6ste gang!"
       viewpoint: 0
   - answerText: "Danmark skal f\xF8rst og fremmest v\xE6rne om egne interesser, og
       dette g\xE6lder ogs\xE5 for forsvaret. \n\nDanmark skal fors\xE6tte med at
