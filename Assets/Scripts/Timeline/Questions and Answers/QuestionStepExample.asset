@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
   m_Name: QuestionStepExample
   m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
-  question: "Du er blevet inviteret til et nationalt tv-transmitteret interview med
-    DR for at diskutere Danmarks forsvar og mulige trusler fra andre lande. \n\nDu
-    skal v\xE6lge hvilken handleplan, du vil pr\xE6sentere for det danske folk."
+  question: "I er blevet inviteret til et interview p\xE5 nationalt tv med DR for
+    at diskutere Danmarks forsvar og mulige trusler fra andre lande. \n\nI skal v\xE6lge
+    hvilken handleplan, i vil pr\xE6sentere for det danske folk."
   answers:
   - answerText: "I disse sv\xE6re tider har verden brug for sammenhold og samarbejde
       mere end nogensinde f\xF8r. \n\nDanmark skal g\xE5 forrest i fredfyldt kommunikation
@@ -22,11 +22,11 @@ MonoBehaviour:
       det globale samarbejde."
     viewpoint: 1
     explanations:
-    - explanationText: "Jeg har lige set dit interview, rigtig fint arbejde! \n\nDet
+    - explanationText: "Jeg har lige set jeres interview, rigtig fint arbejde! \n\nDet
         med fredfyldt konfliktbel\xE6ggelse var specielt godt n\xE6vnt."
       viewpoint: 1
-    - explanationText: "Jeg har lige set dit interview, og det var bestemt ikke det
-        bedste. \n\nDit svar ignorerer helt at Danmark burde styrke sin milit\xE6re
+    - explanationText: "Jeg har lige set jeres interview, og det var bestemt ikke
+        det bedste. \n\nDit svar ignorerer helt at Danmark burde styrke sin milit\xE6re
         magt, som vi gik til valg p\xE5. \n\nHusk det n\xE6ste gang!"
       viewpoint: 0
   - answerText: "Mens Danmark aldrig skal ignorere forsvaret, s\xE5 er det ogs\xE5
@@ -36,12 +36,12 @@ MonoBehaviour:
       lande.\n"
     viewpoint: 2
     explanations:
-    - explanationText: "Jeg har lige set dit interview, og jeg har et par noter til
-        dig. \n\nN\xE6ste gang m\xE5 du gerne have mere fokus p\xE5 fremmelsen det
-        internationale samarbejde og interdependens, det er vores m\xE6rkesag!"
+    - explanationText: "Jeg har lige set jeres interview, og jeg har et par noter
+        til jer. \n\nN\xE6ste gang m\xE5 i gerne have mere fokus p\xE5 fremmelsen
+        det internationale samarbejde og interdependens, det er vores m\xE6rkesag!"
       viewpoint: 1
-    - explanationText: "Jeg har lige set dit interview, og jeg har et par noter til
-        dig. \n\nN\xE6ste gang m\xE5 du gerne have mere fokus p\xE5 Danmarks milit\xE6re
+    - explanationText: "Jeg har lige set jeres interview, og jeg har et par noter
+        til jer. \n\nN\xE6ste gang m\xE5 i gerne have mere fokus p\xE5 Danmarks milit\xE6re
         magt, og at vi har et m\xE5l om at forbedre den. \n\nHusk det n\xE6ste gang!"
       viewpoint: 0
   - answerText: "Danmark skal f\xF8rst og fremmest v\xE6rne om egne interesser, og
@@ -50,12 +50,12 @@ MonoBehaviour:
       p\xE5sat danskerne internationalt."
     viewpoint: 0
     explanations:
-    - explanationText: "Jeg har lige set dit interview, og det var bestemt ikke det
-        bedste. \n\nDit svar underspiller vores ambition om at \xF8ge Danmark internationale
-        samarbejde, og har i stedet fokus p\xE5 forsvarets magt, hvilket ikke er
-        vores partis fokus. \n\nHusk det n\xE6ste gang!"
+    - explanationText: "Jeg har lige set jeres interview, og det var bestemt ikke
+        det bedste. \n\nJeres svar underspiller vores ambition om at \xF8ge Danmark
+        internationale samarbejde, og har i stedet fokus p\xE5 forsvarets magt, hvilket
+        ikke er vores partis fokus. \n\nHusk det n\xE6ste gang!"
       viewpoint: 1
-    - explanationText: "Jeg har lige set dit interview, rigtig fint arbejde! \n\nDu
+    - explanationText: "Jeg har lige set jeres interview, rigtig fint arbejde! \n\nI
         fik kommunikeret vores \xF8nske om et st\xE6rkere og sikrere Danmark gennem
         et st\xE6rkt forsvar rigtig godt!"
       viewpoint: 0

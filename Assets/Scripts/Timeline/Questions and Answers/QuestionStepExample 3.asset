@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
   m_Name: QuestionStepExample 3
   m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
-  question: "Du skal til at begynde din tale for EU parlamentet, hvor din chef, statsministeren,
-    har bedt dig udtrykke regeringens syn p\xE5 EU\u2019s samlede forsvar. \n\nDu
-    skal v\xE6lge, hvilket synspunkt du vil udtrykke."
+  question: "I skal til at begynde jeres tale for EU parlamentet, hvor statsministeren
+    har bedt jer udtrykke regeringens syn p\xE5 EU\u2019s samlede forsvar. \n\nI
+    skal v\xE6lge, hvilket synspunkt I vil udtrykke."
   answers:
   - answerText: "EU skal beskytte egne landes interesser f\xF8rst og v\xE6re klar
       til at kunne h\xE5ndtere konflikter internt som eksternt p\xE5 ethvert tidspunkt.
@@ -23,14 +23,14 @@ MonoBehaviour:
       st\xE5 st\xE6rkt n\xE5r usikre tider h\xE6nder."
     viewpoint: 0
     explanations:
-    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne snakke
-        med dig om den. \n\nDet er ikke partiets holdning at EUs ressourcer og produktioner
+    - explanationText: "Jeg s\xE5 jeres tale for EU-parlamentet og ville gerne snakke
+        med jer om den. \n\nDet er ikke partiets holdning at EUs ressourcer og produktioner
         skal beskyttes p\xE5 bekostning af det internationale samarbejde og handel,
-        s\xE5 dette vil jeg bede dig om ikke at sige i fremtiden. \n\nHusk dette
+        s\xE5 dette vil jeg bede jer om ikke at sige i fremtiden. \n\nHusk dette
         til n\xE6ste gang!"
       viewpoint: 1
-    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne rose
-        dig for den. \n\nHvis EU skal cementere sig som stormagt i fremtiden, s\xE5
+    - explanationText: "Jeg s\xE5 jeres tale for EU-parlamentet og ville gerne rose
+        jer for den. \n\nHvis EU skal cementere sig som stormagt i fremtiden, s\xE5
         er den fysiske magt ekstremt vigtig for os!"
       viewpoint: 0
   - answerText: "Som set i den hidtil usete periode af fred p\xE5 det europ\xE6iske
@@ -40,15 +40,15 @@ MonoBehaviour:
       af demokratiet."
     viewpoint: 1
     explanations:
-    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne rose
-        dig for den. \n\nFredelig konfliktbil\xE6ggelse er ekstremt vigtigt for at
-        kunne bygge en fredfyldt, samarbejdende verden!"
+    - explanationText: "Jeg s\xE5 jeres tale for EU-parlamentet og ville gerne rose
+        jeres for den. \n\nFredelig konfliktbil\xE6ggelse er ekstremt vigtigt for
+        at kunne bygge en fredfyldt, samarbejdende verden!"
       viewpoint: 1
-    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne snakke
-        med dig om den. \n\nSelvom \xE5bent samarbejde p\xE5 den m\xE5de lyder godt
+    - explanationText: "Jeg s\xE5 jeres tale for EU-parlamentet og ville gerne snakke
+        med jer om den. \n\nSelvom \xE5bent samarbejde p\xE5 den m\xE5de lyder godt
         p\xE5 papiret, s\xE5 er det alt for farligt for Danmark at tage den position
         n\xE5r konflikter viser sig. \n\nPartiets position p\xE5 forsvar passer heller
-        ikke med din tales beskrivelser. Husk dette til n\xE6ste gang!"
+        ikke med jeres tales beskrivelser. Husk dette til n\xE6ste gang!"
       viewpoint: 0
   - answerText: "De europ\xE6iske lande har st\xE5et sammen uden interne konflikter
       i n\xE6sten 100 \xE5r, og mens dette forh\xE5bentligt kan forts\xE6tte i fremtiden,
@@ -57,15 +57,15 @@ MonoBehaviour:
       den nationale og regionale sikkerhed."
     viewpoint: 2
     explanations:
-    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne n\xE6vne
-        noget for dig. \n\nSelvom du rigtigt n\xE6vnte det gode samarbejde og fred
-        fra interne konflikter i EU, s\xE5 synes jeg, at du lagde for meget v\xE6gt
-        p\xE5 de nationale milit\xE6r styrker. \n\nDet er vores m\xE5l p\xE5 sigt
-        at eliminere behovet for stor milit\xE6r magt i verden, og dine ord viste
-        ikke dette klart nok. Husk dette til n\xE6ste gang!"
+    - explanationText: "Jeg s\xE5 jeres tale for EU-parlamentet og ville gerne n\xE6vne
+        noget for jer. \n\nSelvom i rigtigt n\xE6vnte det gode samarbejde og fred
+        fra interne konflikter i EU, s\xE5 synes jeg, at i lagde for meget v\xE6gt
+        p\xE5 de nationale forsvarsstyrker. \n\nDet er vores m\xE5l p\xE5 sigt at
+        eliminere behovet for stor milit\xE6r magt i verden, og jeres ord viste ikke
+        dette klart nok. Husk dette til n\xE6ste gang!"
       viewpoint: 1
-    - explanationText: "Jeg s\xE5 din tale for EU-parlamentet og ville gerne n\xE6vne
-        noget for dig. \n\nDet er partiets mening, at verden er og vil forblive usikker,
-        og derfor skal Danmarks og EUs fysiske magt have st\xF8rre fokus end du udtrykte
+    - explanationText: "Jeg s\xE5 jeres tale for EU-parlamentet og ville gerne n\xE6vne
+        noget for jer. \n\nDet er partiets mening, at verden er og vil forblive usikker,
+        og derfor skal Danmarks og EUs fysiske magt have st\xF8rre fokus end i udtrykte
         i talen. \n\nHusk dette til n\xE6ste gang."
       viewpoint: 0

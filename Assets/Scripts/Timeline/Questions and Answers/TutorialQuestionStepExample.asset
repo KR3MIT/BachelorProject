@@ -30,28 +30,30 @@ MonoBehaviour:
       viewpoint: 1
   tutorialSteps:
   - position: {x: 0, y: 0}
-    tutorialText: "Du er udpeget som udenrigsminister i en ny regering, og skal nu
-      varetage Danmarks udenrigspolitik.\r\n\r\nFor succes i jobbet skal du f\xF8lge
-      ideologien for Realisternes Parti. Hvis du mislykkes, risikerer du at blive
-      fyret af Statsministeren.\r\n\r\nKlik et sted p\xE5 sk\xE6rmen for at forts\xE6tte."
+    tutorialText: "I er blevet udpeget som medministre i en ny regering, og skal
+      nu varetage Danmarks udenrigspolitik sammen.\r\n\r\nFor at have succes i stillingen
+      skal i f\xF8lge ideologien for Realisternes Parti. Hvis i mislykkes, risikerer
+      i at blive afskediget af Statsministeren.\r\n\r\nKlik et sted p\xE5 sk\xE6rmen
+      for at forts\xE6tte."
     trigger: 1
     delay: 0
   - position: {x: -165, y: 0}
-    tutorialText: "P\xE5 h\xF8jre side af mappen vil du kunne se et scenarie, og
-      p\xE5 venstre side vil du kunne se et af dine mulige svar. \n\nTryk p\xE5 m\xE6rkerne
+    tutorialText: "P\xE5 h\xF8jre side af mappen vil i kunne se et scenarie, og p\xE5
+      venstre side vil i kunne se et af jeres mulige svar. \n\nTryk p\xE5 m\xE6rkerne
       i toppen af venstre papir for at skifte svar."
     trigger: 2
     delay: 0
   - position: {x: -165, y: -50}
-    tutorialText: "N\xE5r du har fundet det svar som du mener passer til dit partis
-      holdning, kan du klikke Godkend. \n\nDette l\xE5ser din handling i scenariet."
+    tutorialText: "N\xE5r i har fundet det svar som i mener passer til jeres partis
+      holdning, kan i klikke Godkend. \n\nDette l\xE5ser jeres handling i scenariet."
     trigger: 3
     delay: 0
   - position: {x: -300, y: 0}
-    tutorialText: "Efter hvert scenarie vil du se statsministerens reaktion p\xE5
-      dine handlinger. \n\nHvis du gentagne gange handler udenfor partiets ideologi,
-      vil statsministeren tage din position fra dig.\n\nHvis du handler indenfor
-      partiets m\xE5l og ideologi, stiger din popularitet, og du kan forblive i stillingen.\n\nTryk
-      forts\xE6t for at g\xE5 videre til n\xE6ste scenarie.\n\nHeld og lykke!"
+    tutorialText: "Efter hvert scenarie vil i se statsministerens reaktion p\xE5
+      jeres handlinger. \n\nHvis i gentagne gange handler udenfor partiets ideologi,
+      vil statsministeren tage jeres position fra jer.\n\nHvis i handler indenfor
+      partiets m\xE5l og ideologi, stiger jeres popularitet, og i kan forblive i
+      stillingen.\n\nTryk forts\xE6t for at g\xE5 videre til n\xE6ste scenarie.\n\nHeld
+      og lykke!"
     trigger: 1
     delay: 5000

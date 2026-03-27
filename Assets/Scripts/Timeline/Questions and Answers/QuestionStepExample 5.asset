@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
   m_Name: QuestionStepExample 5
   m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
-  question: "Du er p\xE5 vej til m\xF8de i NATO, hvor udenrigsministre fra medlemslandene
-    skal diskutere den nuv\xE6rende verdenssituation og fremtiden af NATO. \n\nDu
-    skal beslutte, hvordan du vil udtrykke Danmarks synspunkt."
+  question: "I er p\xE5 vej til m\xF8de i NATO, hvor udenrigsministre fra medlemslandene
+    skal diskutere den nuv\xE6rende verdenssituation og fremtiden af NATO. \n\nI
+    skal beslutte, hvordan i vil udtrykke Danmarks synspunkt."
   answers:
   - answerText: "NATO er en milit\xE6r alliance, og skal derfor have fokus p\xE5
       at styrke egen magt. \n\nMedlemsstaterne st\xE5r st\xE6rkere sammen i det globale
@@ -23,7 +23,7 @@ MonoBehaviour:
       ikke positivt for Danmark."
     viewpoint: 0
     explanations:
-    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nPartiets
+    - explanationText: "Jeg er lige blevet briefet p\xE5 jeres NATO-m\xF8de. \n\nPartiets
         holdning til NATO er bestemt ikke rettet mod at g\xF8re Danmark eller NATO
         en milit\xE6r supermagt, men i stedet til en organisation der fremmer internationalt
         samarbejde og en fredfyldt skabelse af f\xE6lles v\xE6rdier og interesser.
@@ -38,13 +38,13 @@ MonoBehaviour:
       i NATO, skal det give mening for alle parter."
     viewpoint: 2
     explanations:
-    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nJeg
-        forventede, at du ville l\xE6gge mere fokus p\xE5 NATOs mulighed for at bidrage
+    - explanationText: "Jeg er lige blevet briefet p\xE5 jeres NATO-m\xF8de. \n\nJeg
+        forventede, at i ville l\xE6gge mere fokus p\xE5 NATOs mulighed for at bidrage
         til st\xF8rre international samarbejde og fredfyldt skabelse af f\xE6llesv\xE6rdier,
         da dette er partiets \xF8nskede retning for organisationen. \n\nHusk gerne
         dette til n\xE6ste gang!"
       viewpoint: 1
-    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nPartiets
+    - explanationText: "Jeg er lige blevet briefet p\xE5 jeres NATO-m\xF8de. \n\nPartiets
         holdning til NATO er ikke rettet mod en umiddelbar udvidelse af medlemslandene,
         men snarere et st\xF8rre fokus p\xE5 at styrke magten for Danmark og de andre
         nuv\xE6rende medlemslande. \n\nHusk gerne dette til n\xE6ste gang!"
@@ -55,12 +55,12 @@ MonoBehaviour:
       v\xE6rdier, samt \xE5bne muligheder til samarbejde p\xE5 alle omr\xE5der. "
     viewpoint: 1
     explanations:
-    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de, og rigtig
+    - explanationText: "Jeg er lige blevet briefet p\xE5 jeres NATO-m\xF8de, og rigtig
         fint arbejde! \n\nOrganisationer som NATO er et st\xE6rkt v\xE6rkt\xF8j for
         fredfyldt udbredelse af f\xE6lles v\xE6rdier og normer, og det skal vi v\xE6re
         klar til at anvende globalt."
       viewpoint: 1
-    - explanationText: "Jeg er lige blevet briefet p\xE5 dit NATO-m\xF8de. \n\nPartiets
+    - explanationText: "Jeg er lige blevet briefet p\xE5 jeres NATO-m\xF8de. \n\nPartiets
         holdning til NATO er bestemt ikke rettet mod en ubetinget udvidelse af aftalen,
         men snarere et st\xF8rre fokus p\xE5 at styrke magten for Danmark og de andre
         medlemslande. \n\nHusk dette til n\xE6ste gang."

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae75645fe088644cb9e6f0114d9b8a2, type: 3}
   m_Name: QuestionStepExample 4
   m_EditorClassIdentifier: Assembly-CSharp::QuestionStep
-  question: "Gr\xF8nland har v\xE6ret i det globale s\xF8gelys, og du er derfor p\xE5
+  question: "Gr\xF8nland har v\xE6ret i det globale s\xF8gelys, og i er derfor p\xE5
     vej til Nuuk for at m\xF8de den gr\xF8nlandske regeringsleder. \n\nDet gr\xF8nlandske
     folk har l\xE6nge haft diskussioner og \xF8nsker om \xF8get selvst\xE6ndighed
-    fra Danmark, og du skal beslutte, hvordan du pr\xE6senterer det danske synspunkt
+    fra Danmark, og i skal beslutte, hvordan i pr\xE6senterer det danske synspunkt
     p\xE5 Gr\xF8nlands fremtid."
   answers:
   - answerText: "Danmark har en stor interesse i at forblive i kontrol af Gr\xF8nland,
@@ -26,10 +26,10 @@ MonoBehaviour:
     viewpoint: 0
     explanations:
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
-        regeringsleder her til morgen, og jeg er utilfreds med din h\xE5ndtering
+        regeringsleder her til morgen, og jeg er utilfreds med jeres h\xE5ndtering
         af m\xF8det. \n\nDet er ikke partiets intention at holde Gr\xF8nland som
-        gidsel, men vi skal i stedet opfordre til samarbejde og forst\xE5else for
-        og med det gr\xF8nlandske folk. \n\nRevurder dit ordvalg til n\xE6ste gang!"
+        gidsel, men vi skal i stedet opfordre til samarbejde med og forst\xE5else
+        for det gr\xF8nlandske folk. \n\nRevurder jeres ordvalg til n\xE6ste gang!"
       viewpoint: 1
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
         regeringsleder her til morgen, godt arbejde til jeres m\xF8de! \n\nDet er
@@ -48,7 +48,7 @@ MonoBehaviour:
         selv hvis de beslutter sig for at blive uafh\xE6ngige."
       viewpoint: 1
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
-        regeringsleder her til morgen, og jeg er utilfreds med din h\xE5ndtering
+        regeringsleder her til morgen, og jeg er utilfreds med jeres h\xE5ndtering
         af m\xF8det. \n\nDet er ikke i partiets interesse at miste kontrollen over
         Gr\xF8nland, og derfor skal vi ikke opfordre deres mulige afh\xE6ngighed.
         \n\nI en usikker verden er Danmarks magt en prioritet for os, og et uafh\xE6ngigt
@@ -61,15 +61,15 @@ MonoBehaviour:
     viewpoint: 2
     explanations:
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
-        regeringsleder her til morgen, og jeg har et par kommentarer til dig. \n\nPartiets
+        regeringsleder her til morgen, og jeg har et par kommentarer til jer. \n\nPartiets
         holdning er, at selv hvis Gr\xF8nland bliver uafh\xE6ngige vil vores samarbejde
-        forts\xE6tte, og derfor er folkets \xF8nsker vigtigst. \n\nDu kunne derfor
+        forts\xE6tte, og derfor er folkets \xF8nsker vigtigst. \n\nI kunne derfor
         godt have st\xF8ttet dem mere, da f\xE6lles interesser og samarbejde er vigtigt
         for vores alles fremtidige fred og sikkerhed!"
       viewpoint: 1
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
-        regeringsleder her til morgen, og jeg har et par kommentarer til dig. \n\nDet
+        regeringsleder her til morgen, og jeg har et par kommentarer til jer. \n\nDet
         er ikke i partiets interesse at miste kontrollen over Gr\xF8nland, og derfor
         skal vi ikke opfordre deres mulige afh\xE6ngighed. \n\nI fremtiden ser jeg
-        gerne, at du fokuserer mere p\xE5 dette, end du gjorde til m\xF8det."
+        gerne, at i fokuserer mere p\xE5 dette, end i gjorde til m\xF8det."
       viewpoint: 0
