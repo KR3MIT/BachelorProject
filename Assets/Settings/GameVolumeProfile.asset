@@ -186,7 +186,7 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   gaussianStart:
     m_OverrideState: 1
     m_Value: 10
@@ -197,7 +197,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   highQualitySampling:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
@@ -238,7 +238,7 @@ MonoBehaviour:
     m_Value: 0.9
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   scatter:
     m_OverrideState: 1
     m_Value: 0.7
@@ -418,8 +418,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.30666667
-          value: 0.29943502
+          time: 0.34018692
+          value: 0.2684825
           inSlope: 1.4650792
           outSlope: 1.4650792
           tangentMode: 0
@@ -427,8 +427,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.6
-          value: 0.6836158
+          time: 0.6542056
+          value: 0.73540854
           inSlope: 1
           outSlope: 1
           tangentMode: 0

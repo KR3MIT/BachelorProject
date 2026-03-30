@@ -1001,7 +1001,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5574217767439118547, guid: ab2ec05e324ae0149b117ada95a98617, type: 3}
       propertyPath: m_Lightmapping
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7125905541748231932, guid: ab2ec05e324ae0149b117ada95a98617, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
-  m_Dithering: 0
+  m_Dithering: 1
   m_ClearDepth: 1
   m_AllowXRRendering: 1
   m_AllowHDROutput: 1
@@ -1366,7 +1366,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
