@@ -15,6 +15,8 @@ public class AudioSliderScript : MonoBehaviour
     [SerializeField] private Sprite OffImage;
 
     [SerializeField] private Transform SliderPos;
+    [SerializeField] private Transform SlideEndPos;
+
     private Image _Image;
     private float cooldown;
     private bool hidden = true;
@@ -64,7 +66,6 @@ public class AudioSliderScript : MonoBehaviour
     {
         hidden = _bool;
 
-        SetSliderPos();
         if (!hidden) AudioShow(); else AudioHide();
     }
 
@@ -72,24 +73,18 @@ public class AudioSliderScript : MonoBehaviour
     {
         hidden = !hidden;
 
-        SetSliderPos();
         if (!hidden) AudioShow(); else AudioHide();
-    }
-
-    private void SetSliderPos()
-    {
-        audioPos = SliderPos.position;
     }
 
     private void AudioShow()
     {
         var transform = AudioSlider.gameObject.transform;
-        transform.DOJump(audioPos, 1f, 1, 1f).SetEase(Ease.OutBounce);
+        transform.DOJump(SliderPos.position, 1f, 1, 1f).SetEase(Ease.OutBounce);
     }
 
     private void AudioHide()
     {
         var transform = AudioSlider.gameObject.transform;
-        transform.DOJump(audioPos + new Vector3(0, -500, 0), 1f, 1, 1f).SetEase(Ease.OutBounce);
+        transform.DOJump(SlideEndPos.position, 1f, 1, 1f).SetEase(Ease.OutBounce);
     }
 }
