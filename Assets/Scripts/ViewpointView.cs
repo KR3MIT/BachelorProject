@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ViewpointView : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class ViewpointView : MonoBehaviour
     {
         initialPos1 = option1;
         initialPos2 = option2;
+
+        option1.GetComponent<Button>().onClick.AddListener(() => TooltipView.Instance.Hide());
+        option2.GetComponent<Button>().onClick.AddListener(() => TooltipView.Instance.Hide());
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
