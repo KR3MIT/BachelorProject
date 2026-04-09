@@ -45,6 +45,10 @@ public class GameSession
         {
             if(step is QuestionStep questionStep)
             {
+                if(step is TutorialQuestionStep)
+                {
+                    continue;
+                }
                 questionCount++;
             }
         }
