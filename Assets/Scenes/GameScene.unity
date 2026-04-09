@@ -1842,7 +1842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7124273650197786268, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_text
-      value: "V\xE6lg jeres ideologi"
+      value: "V\xE6lg \xE9n af disse ideologier"
       objectReference: {fileID: 0}
     - target: {fileID: 7381046641442778977, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_AnchorMax.y

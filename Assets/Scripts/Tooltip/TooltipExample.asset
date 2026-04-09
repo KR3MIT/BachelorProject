@@ -52,7 +52,7 @@ MonoBehaviour:
   - keyword: Alliance
     definition: "En alliance i international politik er en formel aftale mellem to
       eller flere stater om samarbejde, typisk med fokus p\xE5 forsvar og sikkerhed."
-    image: {fileID: 21300000, guid: 5d68dad9083c4014fbef1f38856ed566, type: 3}
+    image: {fileID: 0}
   - keyword: LP
     definition: "Liberalisternes Parti, et parti der ideologisk er st\xE6rkt pr\xE6get
       af teorien om liberalisme fra International Politik."
