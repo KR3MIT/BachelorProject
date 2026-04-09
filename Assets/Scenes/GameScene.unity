@@ -217,6 +217,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1612195736265142518, guid: 9ee096fe75034944285b27842ed56944, type: 3}
   m_PrefabInstance: {fileID: 398524611}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &270424267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6965924037217079386, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+  m_PrefabInstance: {fileID: 398524611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &284132279 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
@@ -472,6 +477,38 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: otherEmails.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: 'otherEmails.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1925283548}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: 'otherEmails.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1925283548}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: 'otherEmails.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1877353343}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: 'otherEmails.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2080571119}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: 'otherEmails.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1577613732}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: 'otherEmails.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1202410021}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: 'otherEmails.Array.data[6]'
+      value: 
+      objectReference: {fileID: 270424267}
+    - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: endScreenMessages.Array.data[0].badMessage
       value: "Jeg har taget jeres periode som udenrigsministre op til overvejelse,
         og jeg er ked af at meddele at i afskediges fra stillingen pr. dags dato.\n\nI
@@ -518,6 +555,10 @@ PrefabInstance:
         vist et stort kendskab til partiets politiske m\xE5l, og i har handlet i
         partiets \xE5nd.\n\nJeg gl\xE6der mig til vores fortsatte samarbejde, godt
         g\xE5et! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965924037217079386, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1057,6 +1098,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2538847196793269727, guid: 6a839d34852f1cf44986c62a6bd1e883, type: 3}
   m_PrefabInstance: {fileID: 1198349993}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1202410021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2372814434388812806, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+  m_PrefabInstance: {fileID: 398524611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1326090591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1498,6 +1544,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1577613732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3927290980771883797, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+  m_PrefabInstance: {fileID: 398524611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1670413678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,10 +1634,20 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: bc3693fd6a7ab604bbc354683fda952d, type: 2}
+--- !u!1 &1877353343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1466549106387372937, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+  m_PrefabInstance: {fileID: 398524611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1921052636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6219354899514741290, guid: 970ab830e76abe345b996187b97bd977, type: 3}
   m_PrefabInstance: {fileID: 1354699621}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1925283548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1093285711722924200, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+  m_PrefabInstance: {fileID: 398524611}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2015328708 stripped
 MonoBehaviour:
@@ -1724,6 +1785,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7cb92906886f944daaee62cabfec258, type: 3}
+--- !u!1 &2080571119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3442487739484474216, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+  m_PrefabInstance: {fileID: 398524611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4702136922221099972
 PrefabInstance:
   m_ObjectHideFlags: 0

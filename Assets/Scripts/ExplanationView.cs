@@ -29,6 +29,7 @@ public class ExplanationView : MonoBehaviour
     [SerializeField] private Image ideoImg;
     [SerializeField] private Sprite realSprite;
     [SerializeField] private Sprite libSprite;
+    [SerializeField] private GameObject[] otherEmails;
 
     [Header("End Screen")]
     [Tooltip("Uses the index from viewpointtype")]
@@ -37,9 +38,12 @@ public class ExplanationView : MonoBehaviour
     private Action onContinue;
     private Action onEnd;
 
-    public async void Show(string explanation, bool wasCorrect, Action onContinue, ViewpointType viewpoint)
+    public async void Show(string explanation, bool wasCorrect, Action onContinue, ViewpointType viewpoint, int currentStepIndex)
     {
         this.onContinue = onContinue;
+        if (currentStepIndex > 0) { otherEmails[currentStepIndex - 1].SetActive(false); }
+
+        otherEmails[currentStepIndex].SetActive(true);
 
         explanationText.GetComponent<TMPTextFormatter>().SetText(explanation);
 
