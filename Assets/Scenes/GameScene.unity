@@ -2316,6 +2316,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2442378079399023744, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
+      propertyPath: partyTooltipButton
+      value: 
+      objectReference: {fileID: 1716324318}
     - target: {fileID: 2927635507975935222, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
