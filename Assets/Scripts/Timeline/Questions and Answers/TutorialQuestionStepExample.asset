@@ -36,7 +36,7 @@ MonoBehaviour:
   - position: {x: 0, y: 0}
     tutorialText: "I er blevet udpeget som medministre i en ny regering, og skal
       nu varetage Danmarks udenrigspolitik sammen.\r\n\r\nFor at have succes i stillingen
-      skal i f\xF8lge ideologien for Realisternes Parti. Hvis i mislykkes, risikerer
+      skal i f\xF8lge ideologien for jeres valgte parti. Hvis i mislykkes, risikerer
       i at blive afskediget af Statsministeren.\r\n\r\nKlik et sted p\xE5 sk\xE6rmen
       for at forts\xE6tte."
     trigger: 1

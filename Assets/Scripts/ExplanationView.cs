@@ -79,7 +79,10 @@ public class ExplanationView : MonoBehaviour
 
         continueButton.onClick.AddListener(OnEndClicked);
 
-
+        var tempColor = explanationImage.color;
+        tempColor.a = 0f;
+        explanationImage.color = tempColor;
+        explanationImage.sprite = null;
 
         //get the EndMessage for viewpoint and approval rating
         EndScreenMessage viewpointMessage = default;
