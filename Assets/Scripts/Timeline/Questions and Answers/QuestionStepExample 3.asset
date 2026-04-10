@@ -29,10 +29,12 @@ MonoBehaviour:
         s\xE5 dette vil jeg bede jer om ikke at sige i fremtiden. \n\nHusk dette
         til n\xE6ste gang!"
       viewpoint: 1
+      image: {fileID: 21300000, guid: 4f23468244382974b83ebc4913e5471f, type: 3}
     - explanationText: "Jeg s\xE5 jeres tale for EU-parlamentet og ville gerne rose
         jer for den. \n\nHvis EU skal cementere sig som stormagt i fremtiden, s\xE5
         er den fysiske magt ekstremt vigtig for os!"
       viewpoint: 0
+      image: {fileID: 21300000, guid: 13e949775bc712449931a4a4d799d3cf, type: 3}
   - answerText: "Som set i den hidtil usete periode af fred p\xE5 det europ\xE6iske
       kontinent siden anden verdenskrig er internationalt samarbejde den bedste m\xE5de
       at bevare freden. \n\nEU burde v\xE6re s\xE5 \xE5bne s\xE5 muligt for globalt
@@ -44,12 +46,14 @@ MonoBehaviour:
         jer for den. \n\nFredelig konfliktbil\xE6ggelse er ekstremt vigtigt for at
         kunne bygge en fredfyldt, samarbejdende verden!"
       viewpoint: 1
+      image: {fileID: 21300000, guid: 13e949775bc712449931a4a4d799d3cf, type: 3}
     - explanationText: "Jeg s\xE5 jeres tale for EU-parlamentet og ville gerne snakke
         med jer om den. \n\nSelvom \xE5bent samarbejde p\xE5 den m\xE5de lyder godt
         p\xE5 papiret, s\xE5 er det alt for farligt for Danmark at tage den position
         n\xE5r konflikter viser sig. \n\nPartiets position p\xE5 forsvar passer heller
         ikke med jeres tales beskrivelser. Husk dette til n\xE6ste gang!"
       viewpoint: 0
+      image: {fileID: 21300000, guid: 4f23468244382974b83ebc4913e5471f, type: 3}
   - answerText: "De europ\xE6iske lande har st\xE5et sammen uden interne konflikter
       i n\xE6sten 100 \xE5r, og mens dette forh\xE5bentligt kan forts\xE6tte i fremtiden,
       skal vi altid v\xE6re v\xE5gne for at denne situation kan \xE6ndre sig. \n\nEU
@@ -64,8 +68,10 @@ MonoBehaviour:
         eliminere behovet for stor milit\xE6r magt i verden, og jeres ord viste ikke
         dette klart nok. Husk dette til n\xE6ste gang!"
       viewpoint: 1
+      image: {fileID: 21300000, guid: 4f23468244382974b83ebc4913e5471f, type: 3}
     - explanationText: "Jeg s\xE5 jeres tale for EU-parlamentet og ville gerne n\xE6vne
         noget for jer. \n\nDet er partiets mening, at verden er og vil forblive usikker,
         og derfor skal Danmarks og EUs fysiske magt have st\xF8rre fokus end i udtrykte
         i talen. \n\nHusk dette til n\xE6ste gang."
       viewpoint: 0
+      image: {fileID: 21300000, guid: 4f23468244382974b83ebc4913e5471f, type: 3}

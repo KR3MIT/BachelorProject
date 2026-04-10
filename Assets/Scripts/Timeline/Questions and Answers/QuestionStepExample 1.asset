@@ -22,6 +22,21 @@ MonoBehaviour:
     den internationale handel for sin egen \xF8konomiske v\xE6kst og sikkerhed p\xE5
     l\xE6ngere sigt."
   answers:
+  - answerText: "Stem ja. B\xE5de Danmark og resten af verden har godt af st\xF8rre
+      samarbejde og stigende interdependens."
+    viewpoint: 1
+    explanations:
+    - explanationText: "Jeg s\xE5, at i stemte ja til lovforslaget, tusind tak for
+        det! \n\nEn st\xE6rkere og nemmere handel med vores medlande kan kun v\xE6re
+        godt for danskerne, og s\xE5gar verden som helhed!"
+      viewpoint: 1
+      image: {fileID: 21300000, guid: 4959c713484583a41b6c4b8587a1ffe4, type: 3}
+    - explanationText: "Jeg s\xE5, at i stemte ja til lovforslaget som de eneste
+        i partiet, og jeg forst\xE5r ikke hvorfor. \n\nForslaget vil sv\xE6kke Danmarks
+        kontrol over egen produktion og ressourcer, og dette er ikke m\xE5let for
+        vores parti. \n\nT\xE6nk lidt mere over det n\xE6ste gang!"
+      viewpoint: 0
+      image: {fileID: 21300000, guid: b2bb654ebf4283540865810096edc49b, type: 3}
   - answerText: "Stem nej. Danmark skal beskytte den nationale sikkerhed og produktion
       af egne varer for at beskytte sig selv n\xE5r internationale relationer uundg\xE5eligt
       forringes."
@@ -32,20 +47,9 @@ MonoBehaviour:
         en mulighed for st\xE6rkere internationalt samarbejde, som vi st\xF8tter
         i partiet. \n\nT\xE6nk lidt mere over det n\xE6ste gang!"
       viewpoint: 1
+      image: {fileID: 21300000, guid: b2bb654ebf4283540865810096edc49b, type: 3}
     - explanationText: "Jeg s\xE5, at i stemte nej til lovforslaget, tusind tak for
         det! \n\nDanmarks kontrol over egen produktion og ressourcer er vigtigt for
         vores parti og danskerne som helhed."
       viewpoint: 0
-  - answerText: "Stem ja. B\xE5de Danmark og resten af verden har godt af st\xF8rre
-      samarbejde og stigende interdependens."
-    viewpoint: 1
-    explanations:
-    - explanationText: "Jeg s\xE5, at i stemte ja til lovforslaget, tusind tak for
-        det! \n\nEn st\xE6rkere og nemmere handel med vores medlande kan kun v\xE6re
-        godt for danskerne, og s\xE5gar verden som helhed!"
-      viewpoint: 1
-    - explanationText: "Jeg s\xE5, at i stemte ja til lovforslaget som de eneste
-        i partiet, og jeg forst\xE5r ikke hvorfor. \n\nForslaget vil sv\xE6kke Danmarks
-        kontrol over egen produktion og ressourcer, og dette er ikke m\xE5let for
-        vores parti. \n\nT\xE6nk lidt mere over det n\xE6ste gang!"
-      viewpoint: 0
+      image: {fileID: 21300000, guid: 4959c713484583a41b6c4b8587a1ffe4, type: 3}

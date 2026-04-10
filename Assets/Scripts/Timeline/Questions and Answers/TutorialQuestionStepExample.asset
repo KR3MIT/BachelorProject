@@ -19,15 +19,19 @@ MonoBehaviour:
     explanations:
     - explanationText: "Her st\xE5r statsministerens reaktion"
       viewpoint: 0
+      image: {fileID: 0}
     - explanationText: "Her st\xE5r statsministerens reaktion"
       viewpoint: 1
+      image: {fileID: 0}
   - answerText: "Her st\xE5r et svar"
     viewpoint: 1
     explanations:
     - explanationText: "Her st\xE5r statsministerens reaktion"
       viewpoint: 0
+      image: {fileID: 0}
     - explanationText: "Her st\xE5r statsministerens reaktion"
       viewpoint: 1
+      image: {fileID: 0}
   tutorialSteps:
   - position: {x: 0, y: 0}
     tutorialText: "I er blevet udpeget som medministre i en ny regering, og skal
@@ -45,8 +49,8 @@ MonoBehaviour:
     delay: 0
   - position: {x: -165, y: 0}
     tutorialText: "Alle understregede ord har en forklaringstekst, som kan ses ved
-      at holde musen over ordet.\n\nSet musen over ordet \"andet\" for at se forklaringen
-      og g\xE5 videre."
+      at holde musen over ordet.\n\nSet musen over ordet \"beskrivelsen\" for at
+      se forklaringen og g\xE5 videre."
     trigger: 4
     delay: 0
   - position: {x: -300, y: 0}

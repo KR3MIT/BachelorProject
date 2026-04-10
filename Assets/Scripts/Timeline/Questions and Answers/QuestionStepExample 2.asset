@@ -27,12 +27,14 @@ MonoBehaviour:
         p\xE5 den globale scene skal fremme det internationale samarbejde og varetage
         vores alles f\xE6lles interesser!"
       viewpoint: 1
+      image: {fileID: 21300000, guid: b32010e601d076d4e8a6a4da77541df8, type: 3}
     - explanationText: "Jeg har t\xE6nkt mere over det, i sagde til m\xF8det tidligere,
         og jeg er uenig i jeres overvejelser. \n\nDanmarks interesser burde v\xE6re
         af h\xF8jest prioritet for os i den danske regering, og vi kan kun forvente,
         at andre lande g\xF8r det samme. \n\nGenovervej venligst jeres kommunikation
         af partiets synspunkter p\xE5 emnet."
       viewpoint: 0
+      image: {fileID: 21300000, guid: 2484b2d9a289af14cbfb23511bc3b371, type: 3}
   - answerText: "Mens internationale aftaler kan v\xE6re midlertidigt effektive,
       skal Danmark altid v\xE6re forberedt p\xE5, at andre lande ikke overholder
       dem. \n\nDerudover skal Danmark selv v\xE6re klar p\xE5 at g\xE5 til opg\xF8r
@@ -46,11 +48,13 @@ MonoBehaviour:
         \n\nGenovervej venligst jeres kommunikation af partiets synspunkter p\xE5
         emnet."
       viewpoint: 1
+      image: {fileID: 21300000, guid: 2484b2d9a289af14cbfb23511bc3b371, type: 3}
     - explanationText: "Jeg har t\xE6nkt mere over det, i sagde til m\xF8det tidligere,
         og jeg kunne ikke v\xE6re mere enig i jeres overvejelser. \n\nDanmark skal
         altid v\xE6re forberedt p\xE5 konflikter b\xE5de t\xE6t p\xE5 og langt v\xE6k,
         og intenationale aftaler vil brydes p\xE5 et tidspunkt.\n"
       viewpoint: 0
+      image: {fileID: 21300000, guid: b32010e601d076d4e8a6a4da77541df8, type: 3}
   - answerText: "Danmark skal altid fors\xF8ge at opfylde sine l\xF8fter, og skal
       f\xF8lge traktater s\xE5 godt som muligt. \n\nMeget f\xE5 situationer berettiger
       en anden tilgang."
@@ -63,6 +67,7 @@ MonoBehaviour:
         ser ikke noget scenarie, hvor disse internationale l\xF8fter burde brydes.
         \n\nGenovervej gerne dette til n\xE6ste gang."
       viewpoint: 1
+      image: {fileID: 21300000, guid: 2484b2d9a289af14cbfb23511bc3b371, type: 3}
     - explanationText: "Jeg har t\xE6nkt mere over det, i sagde til m\xF8det tidligere,
         og jeg har en hurtig note. \n\nInternationale aftaler og traktater kan v\xE6re
         midlertidigt effektive, men vi kan ikke stole p\xE5 at andre lande overholder
@@ -70,3 +75,4 @@ MonoBehaviour:
         ogs\xE5 v\xE6re klar p\xE5 at bryde dem selv, hvis det bliver n\xF8dvendigt.
         \n\nGenovervej gerne dette til n\xE6ste gang."
       viewpoint: 0
+      image: {fileID: 21300000, guid: 2484b2d9a289af14cbfb23511bc3b371, type: 3}

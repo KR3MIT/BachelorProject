@@ -99,9 +99,9 @@ public class GameManager : MonoBehaviour, IGameUI
         questionView.Show(question, onAnswerSelected);
     }
 
-    void IGameUI.ShowExplanation(string text, bool wasCorrect, Action onContinue)
+    void IGameUI.ShowExplanation(string text, Sprite image, bool wasCorrect, Action onContinue)
     {
-        explanationView.Show(text, wasCorrect, onContinue, session.viewpoint, currentStepIndex);
+        explanationView.Show(text, image, wasCorrect, onContinue, session.viewpoint, currentStepIndex);
     }
 
     #endregion

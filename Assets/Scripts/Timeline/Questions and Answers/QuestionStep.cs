@@ -26,6 +26,7 @@ public class Explanation
 {
     [TextArea] public string explanationText;
     public ViewpointType viewpoint;
+    public Sprite image;
 }
 
 /// <summary>
@@ -71,7 +72,7 @@ public class QuestionStep : TimelineStep
 
         bool wasCorrect = answer.viewpoint == session.viewpoint;
 
-        session.ui.ShowExplanation(explanationText, wasCorrect, () => onComplete?.Invoke());
+        session.ui.ShowExplanation(explanationText, explanation.image, wasCorrect, () => onComplete?.Invoke());
     }
 
     protected virtual void ApprovalRecordAndChange(AnswerOption answer)

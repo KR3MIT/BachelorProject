@@ -31,11 +31,13 @@ MonoBehaviour:
         gidsel, men vi skal i stedet opfordre til samarbejde med og forst\xE5else
         for det gr\xF8nlandske folk. \n\nRevurder jeres ordvalg til n\xE6ste gang!"
       viewpoint: 1
+      image: {fileID: 21300000, guid: fb7bb6125da325c4791685e5abc3d0c3, type: 3}
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
         regeringsleder her til morgen, godt arbejde til jeres m\xF8de! \n\nDet er
         vigtigt for Danmark at beholde sin magt, og Gr\xF8nland har stor v\xE6rdi
         for Danmark p\xE5 mange parametre."
       viewpoint: 0
+      image: {fileID: 21300000, guid: bd95ac9e9a49815428b267b42027c928, type: 3}
   - answerText: "Det gr\xF8nlandske folks \xF8nsker burde komme f\xF8rst, og hvis
       folket \xF8nsker st\xF8rre selvst\xE6ndighed fra Danmark, s\xE5 burde de kunne
       f\xE5 det. \n\nDanmark vil altid anse Gr\xF8nland som en allieret og st\xE6rk
@@ -47,6 +49,7 @@ MonoBehaviour:
         vigtigt for partiet, at vi bibeholder det gode samarbejde med gr\xF8nl\xE6nderne,
         selv hvis de beslutter sig for at blive uafh\xE6ngige."
       viewpoint: 1
+      image: {fileID: 21300000, guid: bd95ac9e9a49815428b267b42027c928, type: 3}
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
         regeringsleder her til morgen, og jeg er utilfreds med jeres h\xE5ndtering
         af m\xF8det. \n\nDet er ikke i partiets interesse at miste kontrollen over
@@ -54,6 +57,7 @@ MonoBehaviour:
         \n\nI en usikker verden er Danmarks magt en prioritet for os, og et uafh\xE6ngigt
         Gr\xF8nland hj\xE6lper os p\xE5 ingen m\xE5de med at styrke den!"
       viewpoint: 0
+      image: {fileID: 21300000, guid: fb7bb6125da325c4791685e5abc3d0c3, type: 3}
   - answerText: "Gr\xF8nland og dets rolle p\xE5 den globale scene har altid haft
       stor betydning for Danmark, ikke kun strategisk men ogs\xE5 historisk. \n\nHvis
       det gr\xF8nlandske folk skal blive uafh\xE6ngige, skal det diskuteres og planl\xE6gges
@@ -67,9 +71,11 @@ MonoBehaviour:
         godt have st\xF8ttet dem mere, da f\xE6lles interesser og samarbejde er vigtigt
         for vores alles fremtidige fred og sikkerhed!"
       viewpoint: 1
+      image: {fileID: 21300000, guid: fb7bb6125da325c4791685e5abc3d0c3, type: 3}
     - explanationText: "Jeg modtog en opf\xF8lgende besked fra den gr\xF8nlandske
         regeringsleder her til morgen, og jeg har et par kommentarer til jer. \n\nDet
         er ikke i partiets interesse at miste kontrollen over Gr\xF8nland, og derfor
         skal vi ikke opfordre deres mulige afh\xE6ngighed. \n\nI fremtiden ser jeg
         gerne, at i fokuserer mere p\xE5 dette, end i gjorde til m\xF8det."
       viewpoint: 0
+      image: {fileID: 21300000, guid: fb7bb6125da325c4791685e5abc3d0c3, type: 3}
