@@ -38,6 +38,8 @@ public class TooltipView : MonoBehaviour
 
         layoutElement.enabled = headerLength > characterWrapLimit || definitionLength > characterWrapLimit;
 
+        TutorialView.Instance.CompleteStep(TutorialTrigger.HoverOverTooltip);
+
         panel.gameObject.SetActive(true);
 
         Canvas.ForceUpdateCanvases();

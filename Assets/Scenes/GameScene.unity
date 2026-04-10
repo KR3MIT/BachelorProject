@@ -217,6 +217,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1612195736265142518, guid: 9ee096fe75034944285b27842ed56944, type: 3}
   m_PrefabInstance: {fileID: 398524611}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &246164866 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6548488041375426595, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
+  m_PrefabInstance: {fileID: 4702136922221099972}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ebec971fa81b44aa245015a145ce86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TutorialView
 --- !u!1 &270424267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6965924037217079386, guid: 9ee096fe75034944285b27842ed56944, type: 3}
@@ -1783,14 +1794,38 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1805468217}
+        m_TargetAssemblyTypeName: PartyTooltip, Assembly-CSharp
+        m_MethodName: ChangeTooltipVisibility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 246164866}
+        m_TargetAssemblyTypeName: TutorialView, Assembly-CSharp
+        m_MethodName: CompleteStep
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 246164866}
+        m_TargetAssemblyTypeName: TutorialView, Assembly-CSharp
+        m_MethodName: CompleteStep
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1930,7 +1965,9 @@ MonoBehaviour:
   partyLogoSprites:
   - {fileID: 21300000, guid: 33124779aa6c2034dbe2758a259175fc, type: 3}
   - {fileID: 21300000, guid: 889502f11140c8f44bc70cfa0877d305, type: 3}
+  exitSprite: {fileID: 21300000, guid: c9a5fde5f4dd127418455a966c536184, type: 3}
   tooltipButton: {fileID: 1716324316}
+  questionView: {fileID: 761665722}
 --- !u!1 &1839369120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,7 +2596,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8988392202078686315, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}
-      insertIndex: 0
+      insertIndex: 3
       addedObject: {fileID: 1805468214}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d27d2dab7ecdf94e9f565c27f523c2a, type: 3}

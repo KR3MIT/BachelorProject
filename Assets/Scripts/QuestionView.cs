@@ -31,6 +31,7 @@ public class QuestionView : MonoBehaviour
     [SerializeField] private GameObject paperContainer;
     [SerializeField] private List<PaperData> paperDatas;
     [SerializeField] private Vector3 initialLeftPosition;
+    [SerializeField] private Button partyTooltipButton;
 
     private RectTransform canvasRect;
     private Action<int> currentCallback;
@@ -178,6 +179,7 @@ public class QuestionView : MonoBehaviour
     {
         HoverButtons,
         SelectButton,
+        EverythingButPartyTooltip,
         Everything,
         Nothing,
     }
@@ -191,6 +193,7 @@ public class QuestionView : MonoBehaviour
                     p.buttonHover.button.interactable = false;
                     p.answerButton.button.interactable = true;
                 }
+                partyTooltipButton.interactable = false;
                 break;
             case SetNotInteractable.SelectButton:
                 foreach (var p in paperDatas)
@@ -198,6 +201,15 @@ public class QuestionView : MonoBehaviour
                     p.buttonHover.button.interactable = true;
                     p.answerButton.button.interactable = false;
                 }
+                partyTooltipButton.interactable = false;
+                break;
+            case SetNotInteractable.EverythingButPartyTooltip:
+                foreach (var p in paperDatas)
+                {
+                    p.buttonHover.button.interactable = false;
+                    p.answerButton.button.interactable = false;
+                }
+                partyTooltipButton.interactable = true;
                 break;
             case SetNotInteractable.Everything:
                 foreach (var p in paperDatas)
@@ -205,6 +217,7 @@ public class QuestionView : MonoBehaviour
                     p.buttonHover.button.interactable = false;
                     p.answerButton.button.interactable = false;
                 }
+                partyTooltipButton.interactable = false;
                 break;
             case SetNotInteractable.Nothing:
                 foreach (var p in paperDatas)
@@ -212,6 +225,7 @@ public class QuestionView : MonoBehaviour
                     p.buttonHover.button.interactable = true;
                     p.answerButton.button.interactable = true;
                 }
+                partyTooltipButton.interactable = true;
                 break;
 
         }

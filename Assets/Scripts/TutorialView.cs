@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [Serializable]
 public enum TutorialTrigger
@@ -12,6 +13,9 @@ public enum TutorialTrigger
     Click,
     ChangeAnswer,
     AnswerSelected,
+    HoverOverTooltip,
+    OpenPartyTooltip,
+    ClosePartyTooltip
 
 }
 
@@ -36,6 +40,7 @@ public class TutorialView : MonoBehaviour
     private CanvasGroup canvasGroup;
     private RectTransform rect;
 
+
     private void Awake()
     {
         Instance = this;
@@ -48,7 +53,7 @@ public class TutorialView : MonoBehaviour
     private void Update()
     {
         //debug
-        if (Input.GetKeyDown(KeyCode.Space)) { CompleteStep(TutorialTrigger.Any); }
+        //if (Input.GetKeyDown(KeyCode.Space)) { CompleteStep(TutorialTrigger.Any); }
 
         if(Input.GetKeyDown(KeyCode.Mouse0) && currentStepIndex == 0) 
         { 
@@ -99,6 +104,12 @@ public class TutorialView : MonoBehaviour
         }
     }
 
+    public void CompleteStep(int enumIndex)
+    {
+        CompleteStep((TutorialTrigger)enumIndex);
+    }
+
+
     async void ShowStep(int stepIndex) 
     {
         switch (tutorialSteps[stepIndex].trigger)
@@ -111,6 +122,15 @@ public class TutorialView : MonoBehaviour
                 break;
             case TutorialTrigger.AnswerSelected:
                 questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.HoverButtons);
+                break;
+            case TutorialTrigger.HoverOverTooltip:
+                questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.Everything);
+                break;
+            case TutorialTrigger.OpenPartyTooltip:
+                questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.EverythingButPartyTooltip);
+                break;
+            case TutorialTrigger.ClosePartyTooltip:
+                questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.EverythingButPartyTooltip);
                 break;
             case TutorialTrigger.Any:
                 questionView.SetElementNotInteractable(QuestionView.SetNotInteractable.Nothing);

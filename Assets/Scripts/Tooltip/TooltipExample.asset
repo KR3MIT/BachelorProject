@@ -74,3 +74,6 @@ MonoBehaviour:
     definition: En traktat er en folkeretligt bindende, skriftlig aftale mellem to
       eller flere stater eller internationale organisationer.
     image: {fileID: 0}
+  - keyword: beskrivelsen
+    definition: "Her st\xE5r en forklaring af ordet."
+    image: {fileID: 0}

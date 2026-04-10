@@ -43,6 +43,23 @@ MonoBehaviour:
       i toppen af venstre papir for at skifte svar."
     trigger: 2
     delay: 0
+  - position: {x: -165, y: 0}
+    tutorialText: "Alle understregede ord har en forklaringstekst, som kan ses ved
+      at holde musen over ordet.\n\nSet musen over ordet \"andet\" for at se forklaringen
+      og g\xE5 videre."
+    trigger: 4
+    delay: 0
+  - position: {x: -300, y: 0}
+    tutorialText: "Hvis i p\xE5 noget tidspunkt bliver i tvivl om jeres partis ideologi,
+      kan i trykke p\xE5 partiets logo nederst i venstre hj\xF8rne.\n\nTryk p\xE5
+      ikonet for at g\xE5 videre"
+    trigger: 5
+    delay: 0
+  - position: {x: 100, y: 0}
+    tutorialText: "Her kan i se partiets holdninger og ideologi.\n\nTryk p\xE5 krydset
+      for at lukke siden."
+    trigger: 6
+    delay: 0
   - position: {x: -165, y: -50}
     tutorialText: "N\xE5r i har fundet det svar som i mener passer til jeres partis
       holdning, kan i klikke Godkend. \n\nDette l\xE5ser jeres handling i scenariet."

@@ -7,8 +7,12 @@ public class PartyTooltip : MonoBehaviour
     [SerializeField] private GameObject[] tooltipObjects;
     [SerializeField] private Sprite[] partyLogoSprites;
     private Image backgroundImage;
+    private Sprite sessionPartySprite;
+    [SerializeField] private Sprite exitSprite;
     [SerializeField] private GameObject tooltipButton;
-    [SerializeField] private GameSession session;
+    [SerializeField] private QuestionView questionView;
+    private GameObject sessionTooltip;
+    private bool isTooltipShowing = false;
 
     void Start()
     {
@@ -21,16 +25,44 @@ public class PartyTooltip : MonoBehaviour
     {
         backgroundImage.enabled = true;
         tooltipButton.SetActive(true);
-        switch (viewPointID)
-        {
-            case 0:
-                tooltipButton.GetComponent<Image>().sprite = partyLogoSprites[0];
-                break;
-            case 1:
-                tooltipButton.GetComponent<Image>().sprite = partyLogoSprites[1];
-                break;
-        }
+        sessionTooltip = tooltipObjects[viewPointID];
+        sessionPartySprite = partyLogoSprites[viewPointID];
+        tooltipButton.GetComponent<Image>().sprite = sessionPartySprite;
+    }
 
+    public void ChangeTooltipVisibility()
+    {
+        if (isTooltipShowing == false)
+        {
+            ShowPartyTooltip();
+        } else
+        {
+            HidePartyTooltip();
+        }
+    }
+
+    public void ShowPartyTooltip()
+    {
+        sessionTooltip.SetActive(true);
+        tooltipButton.GetComponent<Image>().sprite = exitSprite;
+        isTooltipShowing = true;
+        var questionTexts = questionView.GetComponentsInChildren<TMPTextFormatter>();
+        foreach (var questionText in questionTexts)
+        {
+            questionText.tooltipEnabled = false;
+        }
+    }
+
+    public void HidePartyTooltip()
+    {
+        sessionTooltip.SetActive(false);
+        tooltipButton.GetComponent<Image>().sprite = sessionPartySprite;
+        isTooltipShowing = false;
+        var questionTexts = questionView.GetComponentsInChildren<TMPTextFormatter>();
+        foreach (var questionText in questionTexts)
+        {
+            questionText.tooltipEnabled = true;
+        }
     }
 
 }
