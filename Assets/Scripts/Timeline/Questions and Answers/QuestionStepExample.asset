@@ -23,12 +23,29 @@ MonoBehaviour:
     viewpoint: 1
     explanations:
     - explanationText: "Jeg har lige set jeres interview, rigtig fint arbejde! \n\nDet
-        med fredfyldt konfliktbel\xE6ggelse var specielt godt n\xE6vnt."
+        med fredfyldt konfliktbil\xE6ggelse var specielt godt n\xE6vnt."
       viewpoint: 1
       image: {fileID: 21300000, guid: ce29367c2809db946a42c36d83f69cab, type: 3}
     - explanationText: "Jeg har lige set jeres interview, og det var bestemt ikke
         det bedste. \n\nDit svar ignorerer helt at Danmark burde styrke sin milit\xE6re
         magt, som vi gik til valg p\xE5. \n\nHusk det n\xE6ste gang!"
+      viewpoint: 0
+      image: {fileID: 21300000, guid: 2869103ee0c333e4fba3a4ba59d2ef1c, type: 3}
+  - answerText: "Mens Danmark aldrig skal ignorere forsvaret, s\xE5 er det ogs\xE5
+      vigtigt at bibeholde fokus p\xE5 at forhandle med andre lande. \n\nInternationale
+      aftaler er et vigtigt v\xE6rkt\xF8j til at bibeholde freden, men det danske
+      forsvar skal altid v\xE6re kampdygtigt, hvis disse aftaler brydes af andre
+      lande.\n"
+    viewpoint: 2
+    explanations:
+    - explanationText: "Jeg har lige set jeres interview, og jeg har et par noter
+        til jer. \n\nN\xE6ste gang m\xE5 i gerne have mere fokus p\xE5 fremmelsen
+        det internationale samarbejde og interdependens, det er vores m\xE6rkesag!"
+      viewpoint: 1
+      image: {fileID: 21300000, guid: 2869103ee0c333e4fba3a4ba59d2ef1c, type: 3}
+    - explanationText: "Jeg har lige set jeres interview, og jeg har et par noter
+        til jer. \n\nN\xE6ste gang m\xE5 i gerne have mere fokus p\xE5 Danmarks milit\xE6re
+        magt, og at vi har et m\xE5l om at forbedre den. \n\nHusk det n\xE6ste gang!"
       viewpoint: 0
       image: {fileID: 21300000, guid: 2869103ee0c333e4fba3a4ba59d2ef1c, type: 3}
   - answerText: "Danmark skal f\xF8rst og fremmest v\xE6rne om egne interesser, og
@@ -48,20 +65,3 @@ MonoBehaviour:
         et st\xE6rkt forsvar rigtig godt!"
       viewpoint: 0
       image: {fileID: 21300000, guid: ce29367c2809db946a42c36d83f69cab, type: 3}
-  - answerText: "Mens Danmark aldrig skal ignorere forsvaret, s\xE5 er det ogs\xE5
-      vigtigt at bibeholde fokus p\xE5 at forhandle med andre lande. \n\nInternationale
-      aftaler er et vigtigt v\xE6rkt\xF8j til at bibeholde freden, men det danske
-      forsvar skal altid v\xE6re kampdygtigt, hvis disse aftaler brydes af andre
-      lande.\n"
-    viewpoint: 2
-    explanations:
-    - explanationText: "Jeg har lige set jeres interview, og jeg har et par noter
-        til jer. \n\nN\xE6ste gang m\xE5 i gerne have mere fokus p\xE5 fremmelsen
-        det internationale samarbejde og interdependens, det er vores m\xE6rkesag!"
-      viewpoint: 1
-      image: {fileID: 21300000, guid: 2869103ee0c333e4fba3a4ba59d2ef1c, type: 3}
-    - explanationText: "Jeg har lige set jeres interview, og jeg har et par noter
-        til jer. \n\nN\xE6ste gang m\xE5 i gerne have mere fokus p\xE5 Danmarks milit\xE6re
-        magt, og at vi har et m\xE5l om at forbedre den. \n\nHusk det n\xE6ste gang!"
-      viewpoint: 0
-      image: {fileID: 21300000, guid: 2869103ee0c333e4fba3a4ba59d2ef1c, type: 3}
