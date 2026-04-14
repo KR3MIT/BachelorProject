@@ -518,6 +518,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1393635233}
+    - target: {fileID: 1218339440814707585, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218339440814707585, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.566
+      objectReference: {fileID: 0}
     - target: {fileID: 1612195736265142518, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_Name
       value: tablet
@@ -582,6 +590,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2.395
       objectReference: {fileID: 0}
+    - target: {fileID: 2723417194600788380, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2931986804380455438, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -642,6 +654,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3966152480426967057, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_FillCenter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966152480426967057, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3972495340152395352, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -674,6 +694,18 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4449393873807131669, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449393873807131669, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449393873807131669, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_NumberOfSteps
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5978874277919532462, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -685,6 +717,10 @@ PrefabInstance:
     - target: {fileID: 5978874277919532462, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115405353198584368, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6770937419048919240, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: otherEmails.Array.size
@@ -801,6 +837,18 @@ PrefabInstance:
     - target: {fileID: 7276788285857909906, guid: 9ee096fe75034944285b27842ed56944, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848101223511279711, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848101223511279711, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848101223511279711, guid: 9ee096fe75034944285b27842ed56944, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
