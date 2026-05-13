@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour, IGameUI
        
         //menu stuff
         mainMenu.Hide();
-        await mainMenu.MoveCameraToGame();
+        //await mainMenu.MoveCameraToGame();
         foreach (var obj in popUpObjects) obj.SetActive(true);
         //viewpoint stuff
         Debug.Log("Starting pre-game setup...");

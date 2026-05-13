@@ -48,7 +48,7 @@ public class MainMenuScript : MonoBehaviour
         
     }
 
-    public async Task MoveCameraToGame() 
+    public async Task MoveCameraToGame()
     {
         cam.transform.DOMove(gameCameraTransform.position, 1.5f).SetEase(Ease.InOutQuad);
         await cam.transform.DORotateQuaternion(gameCameraTransform.rotation, 1.5f).SetEase(Ease.InOutQuad).AsyncWaitForCompletion();
