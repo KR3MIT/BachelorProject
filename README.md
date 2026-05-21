@@ -12,9 +12,12 @@ Made in Unity 6000.3.8f1
 
 ## Developers;
 |                                   |                           |                                 |
+|-----------------------------------|---------------------------|---------------------------------|
 |Jason Malik Catanjal Hassan        | <jhassa23@student.aau.dk> | <jason.cm.hassan@gmail.com>     |
 |William Alexander Abildtrup        | <wabild23@student.aau.dk> | <william@abildtrup.eu>          |
 |Oskar Bodholdt Kaare               | <okaare23@student.aau.dk> | <oskar.kaare@gmail.com>         |
 |Victor Alexander Stuestøl Andersen | <vander23@student.aau.dk> | <victorstuestol5@gmail.com>     |
 |Mathias Kofoed Hansen              | <mkha23@student.aau.dk>   | <mathiaskofoedhansen@gmail.com> |
 |Mattias Frej Lindstrøm Ehlert      | <mehler23@student.aau.dk> | <mattiasehlert@gmail.com>       |
+|-----------------------------------|---------------------------|---------------------------------|
+|                                   |                           |                                 |
