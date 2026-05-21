@@ -19,5 +19,3 @@ Made in Unity 6000.3.8f1
 |Victor Alexander Stuestøl Andersen | <vander23@student.aau.dk> | <victorstuestol5@gmail.com>     |
 |Mathias Kofoed Hansen              | <mkha23@student.aau.dk>   | <mathiaskofoedhansen@gmail.com> |
 |Mattias Frej Lindstrøm Ehlert      | <mehler23@student.aau.dk> | <mattiasehlert@gmail.com>       |
-|-----------------------------------|---------------------------|---------------------------------|
-|                                   |                           |                                 |
