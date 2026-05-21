@@ -11,8 +11,7 @@ Made in Unity 6000.3.8f1
 (repo does not include executable, must build self or use itch.io link to play)
 
 ## Developers;
-|                                   |                           |                                 |
-|-----------------------------------|---------------------------|---------------------------------|
+
 |Jason Malik Catanjal Hassan        | <jhassa23@student.aau.dk> | <jason.cm.hassan@gmail.com>     |
 |William Alexander Abildtrup        | <wabild23@student.aau.dk> | <william@abildtrup.eu>          |
 |Oskar Bodholdt Kaare               | <okaare23@student.aau.dk> | <oskar.kaare@gmail.com>         |
