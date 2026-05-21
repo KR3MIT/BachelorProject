@@ -1,4 +1,5 @@
 # BachelorProject
+Medialogy 6th. semester project
 
 Department of Architecture, Design & Media Technology 
 [Aalborg University](http://www.aau.dk)
