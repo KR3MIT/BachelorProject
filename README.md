@@ -4,7 +4,7 @@ Medialogy 6th. semester project
 Department of Architecture, Design & Media Technology 
 [Aalborg University](http://www.aau.dk)
 
-[AV](https://youtu.be/-UX7E8ynVE8 "Video showcase")
+Video showcase [AV](https://youtu.be/-UX7E8ynVE8 "Video showcase")
 
 Play the game in a desktop browser [mattethisen.itch.io/udenrigsministrene](https://mattethisen.itch.io/udenrigsministrene "Newest release web build of project")
 
